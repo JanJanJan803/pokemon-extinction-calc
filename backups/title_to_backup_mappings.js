@@ -1,4 +1,5 @@
 backupFiles = {
+	"Pokémon Extinction": "extinction",
 	"Blaze Black/Volt White": "bb",
 	"Blaze Black 2/Volt White 2 Original": "bb2",
 	"Blaze Black 2/Volt White 2 Redux": "bb2redux1-4",

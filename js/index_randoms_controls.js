@@ -131,13 +131,23 @@ function performCalculations() {
 
 	
 
-	p1info.find(".sp .totalMod").text(p1.stats.spe);
-	p2info.find(".sp .totalMod").text(p2.stats.spe);
+	var spe1 = p1.stats.spe;
+	var spe2 = p2.stats.spe;
+	// Pokémon Extinction: field effects the engine does not model (Swamp) and Trick Room turn order.
+	var reverseOrder = false;
+	if (typeof extinctionAdjustSpeeds === "function") {
+		var adjusted = extinctionAdjustSpeeds(spe1, spe2, p1, p2);
+		spe1 = adjusted.p1;
+		spe2 = adjusted.p2;
+		reverseOrder = adjusted.trickRoom;
+	}
+	p1info.find(".sp .totalMod").text(spe1);
+	p2info.find(".sp .totalMod").text(spe2);
 
-	if (p1.stats.spe > p2.stats.spe) {
+	if (reverseOrder ? spe1 < spe2 : spe1 > spe2) {
 		p1info.find(".sp .totalMod").css('color', '#8be9fd')
 		p2info.find(".sp .totalMod").css('color', '#ff5555')
-	} else if (p1.stats.spe === p2.stats.spe) {
+	} else if (spe1 === spe2) {
 		p1info.find(".sp .totalMod").css('color', '#f0cf63')
 		p2info.find(".sp .totalMod").css('color', '#f0cf63')
 	} else {

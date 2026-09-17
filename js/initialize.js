@@ -44,6 +44,7 @@ const settings = {
 };
 
 const BLANK_DEV_TITLE = "Blank Slate Dev Calc";
+const POKEMON_EXTINCTION_TITLE = "Pokémon Extinction";
 const isBlankDevMode = settings.devMode && !params.get('data');
 const forceBlankConfig = getBool('forceBlankConfig');
 const DEFAULT_MASTERSHEET_SOURCE = "cascadewhite";
@@ -1217,7 +1218,19 @@ function setGameSettings(title) {
   $('.unbound-effects').hide()
   $('#maxL').next().remove()
   $('#maxR').next().remove() 
-  if (title == "Renegade Platinum") {
+  if (title == POKEMON_EXTINCTION_TITLE) {
+    // pokeemerald-expansion, Gen 9 mechanics. Same shape as Inclement Emerald.
+    gameGen = 8
+    settings.damageGen = 8
+    settings.gameSwitchIn = settings.switchIn
+    settings.sourceType = "full"
+    settings.typeChart = 6
+    settings.critGen = 8
+    showDex = false
+    showAI = false
+    $('label[for="snow"]').show().removeClass('btn-right').addClass('btn-mid')
+    $('label[for="hail"]').show()
+  } else if (title == "Renegade Platinum") {
     gameGen = 4
     settings.damageGen = 4
     if (!settings.noSwitch) {
@@ -2418,6 +2431,7 @@ function loadDefaultLists() {
       var options = getSetOptions();
       for (var i = 0; i < options.length; i++) {
         var option = options[i];
+        if (typeof extinctionSetOptionAllowed === "function" && !extinctionSetOptionAllowed(option, "player")) continue;
         // var pokeName = option.pokemon.toUpperCase();
         var fullName = option.text.toUpperCase();
         if (!query.term || query.term.toUpperCase().split(" ").every(function (term) {
@@ -2453,6 +2467,7 @@ function loadDefaultLists() {
       var options = getSetOptions();
       for (var i = 0; i < options.length; i++) {
         var option = options[i];
+        if (typeof extinctionSetOptionAllowed === "function" && !extinctionSetOptionAllowed(option, "opposing")) continue;
         // var pokeName = option.pokemon.toUpperCase();
         var fullName = option.text.toUpperCase();
         if (!query.term || query.term.toUpperCase().split(" ").every(function (term) {

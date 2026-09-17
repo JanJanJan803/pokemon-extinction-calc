@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+    <script>
+        // Pokémon Extinction fork: open the Pokémon Extinction data when no game is given.
+        (function () {
+            var params = new URLSearchParams(window.location.search);
+            if (!params.get("data")) {
+                params.set("data", "extinction");
+                params.set("dmgGen", "8");
+                params.set("gen", "8");
+                params.set("types", "6");
+                params.set("noSwitch", "1");
+                window.location.replace(window.location.pathname + "?" + params.toString());
+            }
+        })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark">
@@ -10,6 +24,7 @@
     <link type="text/css" rel="stylesheet" href="./css/main.css?003c246b" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/styles/ag-theme-alpine-dark.css">
     <link type="text/css" rel="stylesheet" href="./css/frags.css?splitcolors1" />
+    <link type="text/css" rel="stylesheet" href="./css/pokemon_extinction.css?1" />
     <link type="text/css" rel="stylesheet" href="./css/encounters.css?2b1e290b" />
     <link type="text/css" rel="stylesheet" href="./css/settings-ui.css?15f070fe" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css?1" />
@@ -2548,7 +2563,7 @@
     
 
 
-     <script type="text/javascript" src="./backups/title_to_backup_mappings.js?wishywashywhite2redux"></script>
+     <script type="text/javascript" src="./backups/title_to_backup_mappings.js?extinction1"></script>
 
 
     <script type="text/javascript" src="./calc/util.js?8fa0c7f3"></script>
@@ -2587,7 +2602,7 @@
     <script type="text/javascript" src="./js/calc_ui/dex.js?wishywashywhite2redux"></script>
     <script type="text/javascript" src="./js/unbound_adapter.js?20260501a"></script>
     <script type="text/javascript" src="./js/savereaders/save_constants/hge_includes.js?72ac966b"></script>
-    <script type="text/javascript" src="./js/initialize.js?59fc2d65"></script>
+    <script type="text/javascript" src="./js/initialize.js?extinction1"></script>
     <script type="text/javascript" src="./js/calc_ui/player_box.js?bbf0143e"></script>
     <script type="text/javascript" src="./js/calc_ui/box_filter_colors.js"></script>
 
@@ -2676,11 +2691,12 @@
     <script type="text/javascript" src="./calc/adaptable.js?afeb3759"></script>
     <script type="text/javascript" src="./calc/index.js?4025a2a4"></script>
     <script type="text/javascript" src="./js/shared_controls.js?abee24b0"></script>
-    <script type="text/javascript" src="./js/index_randoms_controls.js?b492f1fe"></script>
+    <script type="text/javascript" src="./js/index_randoms_controls.js?extinction1"></script>
     <script type="text/javascript" src="./js/moveset_import.js?gen5bridge1"></script>
     <script type="text/javascript" src="./js/fragsheet/frags.js?mobilefrags1"></script>
     <script type="text/javascript" src="./js/analytics/index.js?63b9ba20"></script>
     <script type="text/javascript" src="./js/bug_report.js?e8161abf"></script>
+    <script type="text/javascript" src="./js/pokemon_extinction.js?1"></script>
 
     <script type="text/javascript" src="./js/tab_comms/ms_comms.js?1"></script>
 </div>

@@ -1,0 +1,48 @@
+# Pokémon Extinction calculator
+
+A fork of [Dynamic Calc](https://github.com/hzla/Dynamic-Calc-Decomps), set up for Pokémon Extinction.
+
+## Regenerating the data
+
+All data comes from the hack's decomp. After changing trainers, box pools, species or moves, run
+this from the hack repo in a VS Code terminal. It exports, commits and pushes in one step:
+
+```sh
+tools/calc_export/update_calc.sh
+```
+
+To only export, without committing:
+
+```sh
+python3 tools/calc_export/export_calc.py --calc ../pokemon-extinction-calc
+```
+
+It writes `backups/extinction.js`. It needs devkitARM, because species and move data are read through the
+same C preprocessor the ROM build uses.
+
+## Running locally
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Then open <http://localhost:8000/>. Without a `?data=` parameter the page opens Pokémon Extinction.
+
+## What is Pokémon Extinction-specific
+
+| File | What it does |
+|---|---|
+| `backups/extinction.js` | Generated data: trainers, box pools, species, moves, per-trainer field info |
+| `js/pokemon_extinction.js` | Box picker, set-list filters, per-trainer field effects, Trick Room and Swamp speed order |
+| `css/pokemon_extinction.css` | Styles for the above |
+| `js/initialize.js` | `Pokémon Extinction` game settings; hooks the set-list filters |
+| `js/index_randoms_controls.js` | Hooks the Trick Room / Swamp speed colouring |
+| `index.html` | Default URL, script and style tags |
+
+## Not modelled yet
+
+- Draconic Terrain (Fairy moves deal half damage to grounded Pokemon)
+- Dragonize (Normal moves become Dragon, 1.2x)
+- Spice That Burns the Mouth (Fire and Grass at once; uses the higher attacking stat)
+- Torment Weather, Sea of Fire, Rainbow and Permanent Hazards are listed in the field notes only;
+  none of them changes a damage roll

@@ -1,0 +1,31 @@
+/* Pokémon Extinction additions (js/pokemon_extinction.js) */
+#ext-field { margin-top: 6px; }
+.ext-field-notes { margin-top: 4px; font-size: 0.85em; opacity: 0.8; }
+
+.ext-modal {
+    position: fixed; inset: 0; z-index: 10000;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex; align-items: center; justify-content: center;
+    padding: 16px;
+}
+.ext-modal[hidden] { display: none; }
+.ext-modal-dialog {
+    background: #282a36; color: #f8f8f2;
+    border-radius: 8px; padding: 12px 16px;
+    width: min(1100px, 100%); max-height: 90vh; overflow-y: auto;
+}
+.ext-modal-head {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    position: sticky; top: -12px; background: #282a36; padding: 8px 0;
+}
+.ext-modal-head strong { margin-right: auto; }
+.ext-modal-help { font-size: 0.85em; opacity: 0.8; margin: 4px 0 8px; }
+.ext-modal h3 { margin: 12px 0 6px; font-size: 1em; }
+.ext-pool { display: flex; flex-wrap: wrap; gap: 6px; }
+.ext-mon {
+    width: 84px; padding: 4px; border-radius: 6px; cursor: pointer; text-align: center;
+    border: 2px solid transparent; background: #343746; opacity: 0.55;
+}
+.ext-mon img { width: 56px; height: 56px; object-fit: contain; display: block; margin: 0 auto; }
+.ext-mon span { display: block; font-size: 0.75em; overflow-wrap: anywhere; }
+.ext-mon.owned { opacity: 1; border-color: #8be9fd; }
