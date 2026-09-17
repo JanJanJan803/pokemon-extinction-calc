@@ -293,6 +293,7 @@
     function updateFormToggles() {
         updateFormToggle("#p1");
         updateFormToggle("#p2");
+        updateBoxTag();
     }
 
     // ------------------------------------------------------------------------------------------
@@ -381,6 +382,53 @@
         $("#ext-box-count").text(owned.length + " selected");
     }
 
+    var LABELS_KEY = "extinctionBoxLabels";
+
+    function getBoxLabels() {
+        try {
+            return JSON.parse(localStorage.getItem(LABELS_KEY) || "{}");
+        } catch (e) {
+            return {};
+        }
+    }
+
+    // The calc stores every imported mon under one set name, "My Box", so the list would read
+    // "Charizard (My Box)" whichever box it came from. The pool is appended for display only:
+    // everything that parses these labels reads the species before " (" and the set name inside the
+    // brackets, so the suffix has to stay outside them.
+    function decorateBoxOptions(options) {
+        options.forEach(function (option) {
+            if (option && option.set === "My Box" && boxLabelFor(option.pokemon) &&
+                option.text.indexOf(" \u2014 ") === -1) {
+                option.text += " \u2014 " + boxLabelFor(option.pokemon);
+            }
+        });
+        return options;
+    }
+
+    function boxLabelFor(speciesName) {
+        var labels = getBoxLabels();
+        if (labels[speciesName]) return labels[speciesName];
+        // Megas the calc derives from a box mon (Abomasnow-Mega) inherit the base mon's box.
+        var base = String(speciesName || "").replace(/-(Mega.*|Primal)$/, "");
+        return labels[base] || "";
+    }
+
+    // The selected label itself cannot carry the box: the calc parses that text in many places to
+    // find the species and set again. A tag next to the Pokemon list shows it instead.
+    function updateBoxTag() {
+        var chosen = $("#p1 .set-selector").first().val() || $("#p1 .select2-chosen").first().text() || "";
+        var species = chosen.split(" (")[0].trim();
+        var isBoxSet = chosen.indexOf("(My Box)") !== -1;
+        var label = isBoxSet ? boxLabelFor($("#p1 .forme").val() || species) : "";
+        var tag = $("#ext-box-tag");
+        if (!tag.length) {
+            tag = $('<div id="ext-box-tag" class="ext-box-tag"></div>');
+            $("#p1 .set-selector").first().closest("div").after(tag);
+        }
+        tag.text(label).toggle(!!label);
+    }
+
     function importOwned() {
         var sets = extinctionData().player_sets || {};
         // The calc keeps one box set per species. When two pools share a species, import the later
@@ -409,6 +457,15 @@
         $("#clear-party").click();
         try {
             if (/\(My Box\)$/.test(localStorage.left || "")) localStorage.removeItem("left");
+        } catch (e) { /* storage unavailable */ }
+
+        var labels = {};
+        keys.forEach(function (key) {
+            var sep = key.indexOf("|");
+            labels[key.slice(0, sep)] = key.slice(sep + 1).replace(/ #\d+$/, "");
+        });
+        try {
+            localStorage.setItem(LABELS_KEY, JSON.stringify(labels));
         } catch (e) { /* storage unavailable */ }
 
         if (texts.length && typeof addSets === "function") {
@@ -491,6 +548,14 @@
                 addFieldControls();
                 addBoxPicker();
                 updateFormToggles();
+                if (typeof getSetOptions === "function" && !getSetOptions.extinctionWrapped) {
+                    var original = getSetOptions;
+                    window.getSetOptions = function (sets) {
+                        var options = original(sets);
+                        return isExtinction() ? decorateBoxOptions(options) : options;
+                    };
+                    window.getSetOptions.extinctionWrapped = true;
+                }
             } else if (tries > 200) {
                 clearInterval(timer);
             }
