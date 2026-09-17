@@ -919,6 +919,8 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
     }
     if ((0, util_2.isGrounded)(defender, field)) {
         if ((field.hasTerrain('Misty') && move.hasType('Dragon')) ||
+            // Pokemon Extinction: Draconic Terrain is Misty Terrain's mirror - it halves Fairy.
+            (field.hasTerrain('Draconic') && move.hasType('Fairy')) ||
             (field.hasTerrain('Grassy') && move.named('Bulldoze', 'Earthquake'))) {
             bpMods.push(2048);
             desc.terrain = field.terrain;

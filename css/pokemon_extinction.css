@@ -32,4 +32,41 @@
 .ext-box { border-top: 1px solid #44475a; margin-top: 10px; }
 .ext-box-import { margin-left: 8px; padding: 0 10px; font-size: 0.85em; }
 .ext-modal h4 { margin: 8px 0 4px; font-size: 0.9em; opacity: 0.8; }
-.ext-box-tag { margin: 2px 0 4px; font-size: 0.8em; opacity: 0.75; }
+
+/* Controls that do not apply to Pokemon Extinction (see the head script in index.html). */
+#toggle-auto-import-megas,
+#toggle-use-evs,
+#toggle-switch-preview,
+#toggle-hide-prevos-dead,
+#toggle-dex-species-modal,
+#toggle-show-ability-slot,
+#toggle-analytics,
+#save-toggle,
+.mega-box-header,
+.main-view-tab[data-view="fragsheet"],
+#fragsheet-link,
+#save-pok,
+#box-remove { display: none !important; }
+
+/* Move buttons: "Power-Up Punch" wrapped onto a second line once the selected move turns bold,
+   and this hack has longer move names still. Desktop only - the mobile layout sets its own widths. */
+@media (min-width: 800px) {
+    .btn.btn-xxxwide {
+        width: 11.5em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Draconic Terrain makes five terrain buttons where the layout was built for four. They shrink
+   rather than wrap, so the row keeps its joined look on a phone. */
+@media (max-width: 760px) {
+    #terrain-bar .btn-small {
+        width: auto;
+        min-width: 3.4em;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 0.9em;
+    }
+}

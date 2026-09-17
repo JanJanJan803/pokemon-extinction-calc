@@ -4114,7 +4114,7 @@ backup_data = {
     "sub_index": 5,
     "ability": "Scrappy"
    },
-   "Lvl 75 Kangaskhan - Mossdeep City ": {
+   "Lvl 75 Mossdeep City Bosses ": {
     "level": 75,
     "tr_id": 67,
     "ai": 0,
@@ -6533,9 +6533,9 @@ backup_data = {
     "sub_index": 0,
     "ability": "Drought"
    },
-   "Lvl 75 Groudon - Mossdeep City ": {
+   "Lvl 75 Mossdeep City Bosses ": {
     "level": 75,
-    "tr_id": 68,
+    "tr_id": 67,
     "ai": 0,
     "battle_type": "Singles",
     "reward_item": "",
@@ -6564,7 +6564,7 @@ backup_data = {
      "Stone Edge",
      "Substitute"
     ],
-    "sub_index": 0,
+    "sub_index": 1,
     "ability": "Drought"
    }
   },
@@ -9427,9 +9427,9 @@ backup_data = {
     "sub_index": 0,
     "ability": "Drizzle"
    },
-   "Lvl 75 Kyogre - Mossdeep City ": {
+   "Lvl 75 Mossdeep City Bosses ": {
     "level": 75,
-    "tr_id": 69,
+    "tr_id": 67,
     "ai": 0,
     "battle_type": "Singles",
     "reward_item": "",
@@ -9458,7 +9458,7 @@ backup_data = {
      "Thunder",
      "Thunder Wave"
     ],
-    "sub_index": 0,
+    "sub_index": 2,
     "ability": "Drizzle"
    }
   },
@@ -10572,7 +10572,7 @@ backup_data = {
     "ability": "Prankster"
    }
   },
-  "Floette": {
+  "Floette-Eternal": {
    "Lvl 78 Blue - Old Harbour ": {
     "level": 78,
     "tr_id": 49,
@@ -26240,6 +26240,9 @@ backup_data = {
     "Grass",
     "Ice"
    ],
+   "otherFormes": [
+    "Abomasnow-Mega"
+   ],
    "abilities": {
     "0": "Snow Warning",
     "2": "Soundproof"
@@ -26257,6 +26260,9 @@ backup_data = {
    "types": [
     "Grass",
     "Ice"
+   ],
+   "otherFormes": [
+    "Abomasnow-Mega"
    ],
    "abilities": {
     "0": "Filter",
@@ -26276,6 +26282,10 @@ backup_data = {
    "types": [
     "Dark"
    ],
+   "otherFormes": [
+    "Absol-Mega",
+    "Absol-Mega-Z"
+   ],
    "abilities": {
     "0": "Pressure",
     "1": "Super Luck",
@@ -26293,6 +26303,10 @@ backup_data = {
    },
    "types": [
     "Dark"
+   ],
+   "otherFormes": [
+    "Absol-Mega",
+    "Absol-Mega-Z"
    ],
    "abilities": {
     "0": "Magic Bounce",
@@ -26312,6 +26326,10 @@ backup_data = {
    "types": [
     "Dark",
     "Ghost"
+   ],
+   "otherFormes": [
+    "Absol-Mega",
+    "Absol-Mega-Z"
    ],
    "abilities": {
     "0": "Sharpness",
@@ -26366,6 +26384,9 @@ backup_data = {
     "Rock",
     "Flying"
    ],
+   "otherFormes": [
+    "Aerodactyl-Mega"
+   ],
    "abilities": {
     "0": "Rock Head",
     "1": "Pressure",
@@ -26384,6 +26405,9 @@ backup_data = {
    "types": [
     "Rock",
     "Flying"
+   ],
+   "otherFormes": [
+    "Aerodactyl-Mega"
    ],
    "abilities": {
     "0": "Tough Claws",
@@ -26404,6 +26428,9 @@ backup_data = {
     "Steel",
     "Rock"
    ],
+   "otherFormes": [
+    "Aggron-Mega"
+   ],
    "abilities": {
     "0": "Sturdy",
     "1": "Rock Head",
@@ -26421,6 +26448,9 @@ backup_data = {
    },
    "types": [
     "Steel"
+   ],
+   "otherFormes": [
+    "Aggron-Mega"
    ],
    "abilities": {
     "0": "Filter",
@@ -26440,6 +26470,9 @@ backup_data = {
    "types": [
     "Psychic"
    ],
+   "otherFormes": [
+    "Alakazam-Mega"
+   ],
    "abilities": {
     "0": "Synchronize",
     "1": "Inner Focus",
@@ -26457,6 +26490,9 @@ backup_data = {
    },
    "types": [
     "Psychic"
+   ],
+   "otherFormes": [
+    "Alakazam-Mega"
    ],
    "abilities": {
     "0": "Trace",
@@ -26512,6 +26548,9 @@ backup_data = {
     "Dragon",
     "Flying"
    ],
+   "otherFormes": [
+    "Altaria-Mega"
+   ],
    "abilities": {
     "0": "Natural Cure",
     "2": "Cloud Nine"
@@ -26529,6 +26568,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Altaria-Mega"
    ],
    "abilities": {
     "0": "Pixilate",
@@ -26602,6 +26644,9 @@ backup_data = {
    "types": [
     "Electric"
    ],
+   "otherFormes": [
+    "Ampharos-Mega"
+   ],
    "abilities": {
     "0": "Static",
     "2": "Plus"
@@ -26619,6 +26664,9 @@ backup_data = {
    "types": [
     "Electric",
     "Dragon"
+   ],
+   "otherFormes": [
+    "Ampharos-Mega"
    ],
    "abilities": {
     "0": "Fluffy",
@@ -27109,6 +27157,9 @@ backup_data = {
    "types": [
     "Ghost"
    ],
+   "otherFormes": [
+    "Banette-Mega"
+   ],
    "abilities": {
     "0": "Insomnia",
     "1": "Frisk",
@@ -27126,6 +27177,9 @@ backup_data = {
    },
    "types": [
     "Ghost"
+   ],
+   "otherFormes": [
+    "Banette-Mega"
    ],
    "abilities": {
     "0": "Prankster",
@@ -27146,6 +27200,9 @@ backup_data = {
     "Rock",
     "Water"
    ],
+   "otherFormes": [
+    "Barbaracle-Mega"
+   ],
    "abilities": {
     "0": "Tough Claws",
     "1": "Sniper",
@@ -27164,6 +27221,9 @@ backup_data = {
    "types": [
     "Rock",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Barbaracle-Mega"
    ],
    "abilities": {
     "0": "Tough Claws",
@@ -27276,6 +27336,9 @@ backup_data = {
     "Dragon",
     "Ice"
    ],
+   "otherFormes": [
+    "Baxcalibur-Mega"
+   ],
    "abilities": {
     "0": "Thermal Exchange",
     "2": "Ice Body"
@@ -27293,6 +27356,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Ice"
+   ],
+   "otherFormes": [
+    "Baxcalibur-Mega"
    ],
    "abilities": {
     "0": "Thermal Exchange",
@@ -27331,6 +27397,9 @@ backup_data = {
     "Bug",
     "Poison"
    ],
+   "otherFormes": [
+    "Beedrill-Mega"
+   ],
    "abilities": {
     "0": "Swarm",
     "2": "Sniper"
@@ -27348,6 +27417,9 @@ backup_data = {
    "types": [
     "Bug",
     "Poison"
+   ],
+   "otherFormes": [
+    "Beedrill-Mega"
    ],
    "abilities": {
     "0": "Adaptability",
@@ -27442,6 +27514,9 @@ backup_data = {
    "types": [
     "Water"
    ],
+   "otherFormes": [
+    "Blastoise-Mega"
+   ],
    "abilities": {
     "0": "Torrent",
     "2": "Rain Dish"
@@ -27458,6 +27533,9 @@ backup_data = {
    },
    "types": [
     "Water"
+   ],
+   "otherFormes": [
+    "Blastoise-Mega"
    ],
    "abilities": {
     "0": "Mega Launcher",
@@ -27478,6 +27556,9 @@ backup_data = {
     "Fire",
     "Fighting"
    ],
+   "otherFormes": [
+    "Blaziken-Mega"
+   ],
    "abilities": {
     "0": "Blaze",
     "2": "Speed Boost"
@@ -27495,6 +27576,9 @@ backup_data = {
    "types": [
     "Fire",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Blaziken-Mega"
    ],
    "abilities": {
     "0": "Speed Boost",
@@ -27752,6 +27836,9 @@ backup_data = {
     "Fire",
     "Ground"
    ],
+   "otherFormes": [
+    "Camerupt-Mega"
+   ],
    "abilities": {
     "0": "Magma Armor",
     "1": "Solid Rock",
@@ -27770,6 +27857,9 @@ backup_data = {
    "types": [
     "Fire",
     "Ground"
+   ],
+   "otherFormes": [
+    "Camerupt-Mega"
    ],
    "abilities": {
     "0": "Sheer Force",
@@ -27979,6 +28069,9 @@ backup_data = {
     "Ghost",
     "Fire"
    ],
+   "otherFormes": [
+    "Chandelure-Mega"
+   ],
    "abilities": {
     "0": "Flash Fire",
     "1": "Flame Body",
@@ -27997,6 +28090,9 @@ backup_data = {
    "types": [
     "Ghost",
     "Fire"
+   ],
+   "otherFormes": [
+    "Chandelure-Mega"
    ],
    "abilities": {
     "0": "Shadow Shield",
@@ -28017,6 +28113,10 @@ backup_data = {
     "Fire",
     "Flying"
    ],
+   "otherFormes": [
+    "Charizard-Mega-X",
+    "Charizard-Mega-Y"
+   ],
    "abilities": {
     "0": "Blaze",
     "2": "Solar Power"
@@ -28034,6 +28134,10 @@ backup_data = {
    "types": [
     "Fire",
     "Dragon"
+   ],
+   "otherFormes": [
+    "Charizard-Mega-X",
+    "Charizard-Mega-Y"
    ],
    "abilities": {
     "0": "Tough Claws",
@@ -28053,6 +28157,10 @@ backup_data = {
    "types": [
     "Fire",
     "Flying"
+   ],
+   "otherFormes": [
+    "Charizard-Mega-X",
+    "Charizard-Mega-Y"
    ],
    "abilities": {
     "0": "Drought",
@@ -28141,6 +28249,9 @@ backup_data = {
     "Grass",
     "Fighting"
    ],
+   "otherFormes": [
+    "Chesnaught-Mega"
+   ],
    "abilities": {
     "0": "Overgrow",
     "2": "Bulletproof"
@@ -28158,6 +28269,9 @@ backup_data = {
    "types": [
     "Grass",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Chesnaught-Mega"
    ],
    "abilities": {
     "0": "Bulletproof",
@@ -28211,6 +28325,9 @@ backup_data = {
    "types": [
     "Psychic"
    ],
+   "otherFormes": [
+    "Chimecho-Mega"
+   ],
    "abilities": {
     "0": "Levitate"
    }
@@ -28227,6 +28344,9 @@ backup_data = {
    "types": [
     "Psychic",
     "Steel"
+   ],
+   "otherFormes": [
+    "Chimecho-Mega"
    ],
    "abilities": {
     "0": "Levitate",
@@ -28295,6 +28415,9 @@ backup_data = {
    "types": [
     "Fairy"
    ],
+   "otherFormes": [
+    "Clefable-Mega"
+   ],
    "abilities": {
     "0": "Cute Charm",
     "1": "Magic Guard",
@@ -28313,6 +28436,9 @@ backup_data = {
    "types": [
     "Fairy",
     "Flying"
+   ],
+   "otherFormes": [
+    "Clefable-Mega"
    ],
    "abilities": {
     "0": "Soul-Heart",
@@ -28514,6 +28640,9 @@ backup_data = {
     "Fighting",
     "Ice"
    ],
+   "otherFormes": [
+    "Crabominable-Mega"
+   ],
    "abilities": {
     "0": "Hyper Cutter",
     "1": "Iron Fist",
@@ -28532,6 +28661,9 @@ backup_data = {
    "types": [
     "Fighting",
     "Ice"
+   ],
+   "otherFormes": [
+    "Crabominable-Mega"
    ],
    "abilities": {
     "0": "Ice Scales",
@@ -28731,6 +28863,9 @@ backup_data = {
    "types": [
     "Dark"
    ],
+   "otherFormes": [
+    "Darkrai-Mega"
+   ],
    "abilities": {
     "0": "Bad Dreams"
    }
@@ -28746,6 +28881,9 @@ backup_data = {
    },
    "types": [
     "Dark"
+   ],
+   "otherFormes": [
+    "Darkrai-Mega"
    ],
    "abilities": {
     "0": "Dark Aura",
@@ -28943,6 +29081,9 @@ backup_data = {
     "Fire",
     "Psychic"
    ],
+   "otherFormes": [
+    "Delphox-Mega"
+   ],
    "abilities": {
     "0": "Blaze",
     "2": "Magician"
@@ -28960,6 +29101,9 @@ backup_data = {
    "types": [
     "Fire",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Delphox-Mega"
    ],
    "abilities": {
     "0": "Levitate",
@@ -29080,6 +29224,9 @@ backup_data = {
     "Rock",
     "Fairy"
    ],
+   "otherFormes": [
+    "Diancie-Mega"
+   ],
    "abilities": {
     "0": "Clear Body",
     "1": "Serene Grace"
@@ -29097,6 +29244,9 @@ backup_data = {
    "types": [
     "Rock",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Diancie-Mega"
    ],
    "abilities": {
     "0": "Magic Bounce",
@@ -29264,6 +29414,9 @@ backup_data = {
     "Poison",
     "Dragon"
    ],
+   "otherFormes": [
+    "Dragalge-Mega"
+   ],
    "abilities": {
     "0": "Poison Point",
     "1": "Poison Touch",
@@ -29282,6 +29435,9 @@ backup_data = {
    "types": [
     "Poison",
     "Dragon"
+   ],
+   "otherFormes": [
+    "Dragalge-Mega"
    ],
    "abilities": {
     "0": "Regenerator",
@@ -29338,6 +29494,9 @@ backup_data = {
     "Dragon",
     "Flying"
    ],
+   "otherFormes": [
+    "Dragonite-Mega"
+   ],
    "abilities": {
     "0": "Inner Focus",
     "2": "Multiscale"
@@ -29355,6 +29514,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Flying"
+   ],
+   "otherFormes": [
+    "Dragonite-Mega"
    ],
    "abilities": {
     "0": "Multiscale",
@@ -29375,6 +29537,9 @@ backup_data = {
     "Normal",
     "Dragon"
    ],
+   "otherFormes": [
+    "Drampa-Mega"
+   ],
    "abilities": {
     "0": "Berserk",
     "1": "Sap Sipper",
@@ -29393,6 +29558,9 @@ backup_data = {
    "types": [
     "Normal",
     "Dragon"
+   ],
+   "otherFormes": [
+    "Drampa-Mega"
    ],
    "abilities": {
     "0": "Drizzle",
@@ -29723,6 +29891,9 @@ backup_data = {
    "types": [
     "Electric"
    ],
+   "otherFormes": [
+    "Eelektross-Mega"
+   ],
    "abilities": {
     "0": "Levitate"
    }
@@ -29738,6 +29909,9 @@ backup_data = {
    },
    "types": [
     "Electric"
+   ],
+   "otherFormes": [
+    "Eelektross-Mega"
    ],
    "abilities": {
     "0": "Hadron Engine",
@@ -29919,6 +30093,9 @@ backup_data = {
     "Fire",
     "Fighting"
    ],
+   "otherFormes": [
+    "Emboar-Mega"
+   ],
    "abilities": {
     "0": "Blaze",
     "2": "Reckless"
@@ -29936,6 +30113,9 @@ backup_data = {
    "types": [
     "Fire",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Emboar-Mega"
    ],
    "abilities": {
     "0": "Supreme Overlord",
@@ -30151,6 +30331,9 @@ backup_data = {
     "Ground",
     "Steel"
    ],
+   "otherFormes": [
+    "Excadrill-Mega"
+   ],
    "abilities": {
     "0": "Sand Rush",
     "1": "Sand Force",
@@ -30169,6 +30352,9 @@ backup_data = {
    "types": [
     "Ground",
     "Steel"
+   ],
+   "otherFormes": [
+    "Excadrill-Mega"
    ],
    "abilities": {
     "0": "Piercing Drill",
@@ -30241,6 +30427,9 @@ backup_data = {
    "types": [
     "Fighting"
    ],
+   "otherFormes": [
+    "Falinks-Mega"
+   ],
    "abilities": {
     "0": "Battle Armor",
     "2": "Defiant"
@@ -30257,6 +30446,9 @@ backup_data = {
    },
    "types": [
     "Fighting"
+   ],
+   "otherFormes": [
+    "Falinks-Mega"
    ],
    "abilities": {
     "0": "Instant Preparation",
@@ -30349,6 +30541,9 @@ backup_data = {
    "types": [
     "Water"
    ],
+   "otherFormes": [
+    "Feraligatr-Mega"
+   ],
    "abilities": {
     "0": "Torrent",
     "2": "Sheer Force"
@@ -30366,6 +30561,9 @@ backup_data = {
    "types": [
     "Water",
     "Dragon"
+   ],
+   "otherFormes": [
+    "Feraligatr-Mega"
    ],
    "abilities": {
     "0": "Dragonize",
@@ -30526,6 +30724,9 @@ backup_data = {
    "types": [
     "Fairy"
    ],
+   "otherFormes": [
+    "Floette-Mega"
+   ],
    "abilities": {
     "0": "Flower Veil",
     "2": "Symbiosis"
@@ -30542,6 +30743,9 @@ backup_data = {
    },
    "types": [
     "Fairy"
+   ],
+   "otherFormes": [
+    "Floette-Mega"
    ],
    "abilities": {
     "0": "Fairy Aura",
@@ -30740,6 +30944,9 @@ backup_data = {
     "Psychic",
     "Fighting"
    ],
+   "otherFormes": [
+    "Gallade-Mega"
+   ],
    "abilities": {
     "0": "Steadfast",
     "1": "Sharpness",
@@ -30758,6 +30965,9 @@ backup_data = {
    "types": [
     "Psychic",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Gallade-Mega"
    ],
    "abilities": {
     "0": "Inner Focus",
@@ -30815,6 +31025,10 @@ backup_data = {
     "Dragon",
     "Ground"
    ],
+   "otherFormes": [
+    "Garchomp-Mega",
+    "Garchomp-Mega-Z"
+   ],
    "abilities": {
     "0": "Sand Veil",
     "2": "Rough Skin"
@@ -30833,6 +31047,10 @@ backup_data = {
     "Dragon",
     "Ground"
    ],
+   "otherFormes": [
+    "Garchomp-Mega",
+    "Garchomp-Mega-Z"
+   ],
    "abilities": {
     "0": "Intimidate",
     "1": "Intimidate",
@@ -30850,6 +31068,10 @@ backup_data = {
    },
    "types": [
     "Dragon"
+   ],
+   "otherFormes": [
+    "Garchomp-Mega",
+    "Garchomp-Mega-Z"
    ],
    "abilities": {
     "0": "Levitate",
@@ -30870,6 +31092,9 @@ backup_data = {
     "Psychic",
     "Fairy"
    ],
+   "otherFormes": [
+    "Gardevoir-Mega"
+   ],
    "abilities": {
     "0": "Synchronize",
     "1": "Trace",
@@ -30888,6 +31113,9 @@ backup_data = {
    "types": [
     "Psychic",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Gardevoir-Mega"
    ],
    "abilities": {
     "0": "Pixilate",
@@ -31049,6 +31277,9 @@ backup_data = {
     "Ghost",
     "Poison"
    ],
+   "otherFormes": [
+    "Gengar-Mega"
+   ],
    "abilities": {
     "0": "Cursed Body",
     "2": "Levitate"
@@ -31066,6 +31297,9 @@ backup_data = {
    "types": [
     "Ghost",
     "Poison"
+   ],
+   "otherFormes": [
+    "Gengar-Mega"
    ],
    "abilities": {
     "0": "Shadow Tag",
@@ -31192,6 +31426,9 @@ backup_data = {
    "types": [
     "Ice"
    ],
+   "otherFormes": [
+    "Glalie-Mega"
+   ],
    "abilities": {
     "0": "Inner Focus",
     "1": "Ice Body",
@@ -31209,6 +31446,9 @@ backup_data = {
    },
    "types": [
     "Ice"
+   ],
+   "otherFormes": [
+    "Glalie-Mega"
    ],
    "abilities": {
     "0": "Refrigerate",
@@ -31317,6 +31557,9 @@ backup_data = {
    "types": [
     "Rock",
     "Poison"
+   ],
+   "otherFormes": [
+    "Glimmora-Mega"
    ],
    "abilities": {
     "0": "Adaptability",
@@ -31429,6 +31672,9 @@ backup_data = {
     "Bug",
     "Water"
    ],
+   "otherFormes": [
+    "Golisopod-Mega"
+   ],
    "abilities": {
     "0": "Emergency Exit",
     "2": "Shell Armor"
@@ -31446,6 +31692,9 @@ backup_data = {
    "types": [
     "Bug",
     "Steel"
+   ],
+   "otherFormes": [
+    "Golisopod-Mega"
    ],
    "abilities": {
     "0": "Regenerator",
@@ -31466,6 +31715,9 @@ backup_data = {
     "Ground",
     "Ghost"
    ],
+   "otherFormes": [
+    "Golurk-Mega"
+   ],
    "abilities": {
     "0": "Iron Fist",
     "1": "Klutz",
@@ -31484,6 +31736,9 @@ backup_data = {
    "types": [
     "Ground",
     "Ghost"
+   ],
+   "otherFormes": [
+    "Golurk-Mega"
    ],
    "abilities": {
     "0": "Unseen Fist",
@@ -31741,6 +31996,9 @@ backup_data = {
     "Water",
     "Dark"
    ],
+   "otherFormes": [
+    "Greninja-Mega"
+   ],
    "abilities": {
     "0": "Torrent",
     "2": "Protean"
@@ -31792,6 +32050,9 @@ backup_data = {
    "types": [
     "Water",
     "Dark"
+   ],
+   "otherFormes": [
+    "Greninja-Mega"
    ],
    "abilities": {
     "0": "Protean",
@@ -31867,6 +32128,9 @@ backup_data = {
    "types": [
     "Ground"
    ],
+   "otherFormes": [
+    "Groudon-Primal"
+   ],
    "abilities": {
     "0": "Drought"
    }
@@ -31883,6 +32147,9 @@ backup_data = {
    "types": [
     "Ground",
     "Fire"
+   ],
+   "otherFormes": [
+    "Groudon-Primal"
    ],
    "abilities": {
     "0": "Desolate Land",
@@ -32026,6 +32293,9 @@ backup_data = {
     "Water",
     "Flying"
    ],
+   "otherFormes": [
+    "Gyarados-Mega"
+   ],
    "abilities": {
     "0": "Intimidate",
     "2": "Moxie"
@@ -32043,6 +32313,9 @@ backup_data = {
    "types": [
     "Water",
     "Dark"
+   ],
+   "otherFormes": [
+    "Gyarados-Mega"
    ],
    "abilities": {
     "0": "Mold Breaker",
@@ -32100,6 +32373,9 @@ backup_data = {
     "Fighting",
     "Flying"
    ],
+   "otherFormes": [
+    "Hawlucha-Mega"
+   ],
    "abilities": {
     "0": "Limber",
     "1": "Unburden",
@@ -32118,6 +32394,9 @@ backup_data = {
    "types": [
     "Fighting",
     "Flying"
+   ],
+   "otherFormes": [
+    "Hawlucha-Mega"
    ],
    "abilities": {
     "0": "Stamina",
@@ -32174,6 +32453,9 @@ backup_data = {
     "Fire",
     "Steel"
    ],
+   "otherFormes": [
+    "Heatran-Mega"
+   ],
    "abilities": {
     "0": "Flash Fire",
     "2": "Flame Body"
@@ -32191,6 +32473,9 @@ backup_data = {
    "types": [
     "Fire",
     "Steel"
+   ],
+   "otherFormes": [
+    "Heatran-Mega"
    ],
    "abilities": {
     "0": "Earth Eater",
@@ -32230,6 +32515,9 @@ backup_data = {
     "Bug",
     "Fighting"
    ],
+   "otherFormes": [
+    "Heracross-Mega"
+   ],
    "abilities": {
     "0": "Swarm",
     "1": "Guts",
@@ -32248,6 +32536,9 @@ backup_data = {
    "types": [
     "Bug",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Heracross-Mega"
    ],
    "abilities": {
     "0": "Skill Link",
@@ -32409,6 +32700,9 @@ backup_data = {
     "Dark",
     "Fire"
    ],
+   "otherFormes": [
+    "Houndoom-Mega"
+   ],
    "abilities": {
     "0": "Early Bird",
     "1": "Flash Fire",
@@ -32427,6 +32721,9 @@ backup_data = {
    "types": [
     "Dark",
     "Fire"
+   ],
+   "otherFormes": [
+    "Houndoom-Mega"
    ],
    "abilities": {
     "0": "Solar Power",
@@ -32855,6 +33152,9 @@ backup_data = {
    "types": [
     "Normal"
    ],
+   "otherFormes": [
+    "Kangaskhan-Mega"
+   ],
    "abilities": {
     "0": "Early Bird",
     "1": "Scrappy",
@@ -32872,6 +33172,9 @@ backup_data = {
    },
    "types": [
     "Normal"
+   ],
+   "otherFormes": [
+    "Kangaskhan-Mega"
    ],
    "abilities": {
     "0": "Parental Bond",
@@ -33145,6 +33448,9 @@ backup_data = {
    "types": [
     "Water"
    ],
+   "otherFormes": [
+    "Kyogre-Primal"
+   ],
    "abilities": {
     "0": "Drizzle"
    }
@@ -33160,6 +33466,9 @@ backup_data = {
    },
    "types": [
     "Water"
+   ],
+   "otherFormes": [
+    "Kyogre-Primal"
    ],
    "abilities": {
     "0": "Primordial Sea",
@@ -33340,6 +33649,9 @@ backup_data = {
     "Dragon",
     "Psychic"
    ],
+   "otherFormes": [
+    "Latias-Mega"
+   ],
    "abilities": {
     "0": "Levitate"
    }
@@ -33356,6 +33668,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Latias-Mega"
    ],
    "abilities": {
     "0": "Levitate",
@@ -33376,6 +33691,9 @@ backup_data = {
     "Dragon",
     "Psychic"
    ],
+   "otherFormes": [
+    "Latios-Mega"
+   ],
    "abilities": {
     "0": "Levitate"
    }
@@ -33392,6 +33710,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Latios-Mega"
    ],
    "abilities": {
     "0": "Levitate",
@@ -33613,6 +33934,9 @@ backup_data = {
    "types": [
     "Normal"
    ],
+   "otherFormes": [
+    "Lopunny-Mega"
+   ],
    "abilities": {
     "0": "Cute Charm",
     "1": "Klutz",
@@ -33631,6 +33955,9 @@ backup_data = {
    "types": [
     "Normal",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Lopunny-Mega"
    ],
    "abilities": {
     "0": "Scrappy",
@@ -33651,6 +33978,10 @@ backup_data = {
     "Fighting",
     "Steel"
    ],
+   "otherFormes": [
+    "Lucario-Mega",
+    "Lucario-Mega-Z"
+   ],
    "abilities": {
     "0": "Steadfast",
     "1": "Inner Focus",
@@ -33670,6 +34001,10 @@ backup_data = {
     "Fighting",
     "Steel"
    ],
+   "otherFormes": [
+    "Lucario-Mega",
+    "Lucario-Mega-Z"
+   ],
    "abilities": {
     "0": "Adaptability",
     "1": "Adaptability",
@@ -33688,6 +34023,10 @@ backup_data = {
    "types": [
     "Fighting",
     "Steel"
+   ],
+   "otherFormes": [
+    "Lucario-Mega",
+    "Lucario-Mega-Z"
    ],
    "abilities": {
     "0": "Mind's Eye",
@@ -33937,6 +34276,9 @@ backup_data = {
     "Steel",
     "Fairy"
    ],
+   "otherFormes": [
+    "Magearna-Mega"
+   ],
    "abilities": {
     "0": "Soul-Heart"
    }
@@ -33953,6 +34295,9 @@ backup_data = {
    "types": [
     "Steel",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Magearna-Mega"
    ],
    "abilities": {
     "0": "Soul-Heart",
@@ -33973,6 +34318,9 @@ backup_data = {
     "Steel",
     "Fairy"
    ],
+   "otherFormes": [
+    "Magearna-Original-Mega"
+   ],
    "abilities": {
     "0": "Soul-Heart"
    }
@@ -33989,6 +34337,9 @@ backup_data = {
    "types": [
     "Steel",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Magearna-Original-Mega"
    ],
    "abilities": {
     "0": "Soul-Heart"
@@ -34079,6 +34430,9 @@ backup_data = {
     "Dark",
     "Psychic"
    ],
+   "otherFormes": [
+    "Malamar-Mega"
+   ],
    "abilities": {
     "0": "Contrary",
     "1": "Suction Cups",
@@ -34097,6 +34451,9 @@ backup_data = {
    "types": [
     "Dark",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Malamar-Mega"
    ],
    "abilities": {
     "0": "Contrary",
@@ -34170,6 +34527,9 @@ backup_data = {
    "types": [
     "Electric"
    ],
+   "otherFormes": [
+    "Manectric-Mega"
+   ],
    "abilities": {
     "0": "Static",
     "1": "Lightning Rod",
@@ -34187,6 +34547,9 @@ backup_data = {
    },
    "types": [
     "Electric"
+   ],
+   "otherFormes": [
+    "Manectric-Mega"
    ],
    "abilities": {
     "0": "Intimidate",
@@ -34406,6 +34769,9 @@ backup_data = {
     "Steel",
     "Fairy"
    ],
+   "otherFormes": [
+    "Mawile-Mega"
+   ],
    "abilities": {
     "0": "Hyper Cutter",
     "1": "Intimidate",
@@ -34424,6 +34790,9 @@ backup_data = {
    "types": [
     "Steel",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Mawile-Mega"
    ],
    "abilities": {
     "0": "Huge Power",
@@ -34461,6 +34830,9 @@ backup_data = {
    "types": [
     "Grass"
    ],
+   "otherFormes": [
+    "Meganium-Mega"
+   ],
    "abilities": {
     "0": "Overgrow",
     "2": "Leaf Guard"
@@ -34478,6 +34850,9 @@ backup_data = {
    "types": [
     "Grass",
     "Fairy"
+   ],
+   "otherFormes": [
+    "Meganium-Mega"
    ],
    "abilities": {
     "0": "Mega Sol",
@@ -34531,6 +34906,9 @@ backup_data = {
    "types": [
     "Psychic"
    ],
+   "otherFormes": [
+    "Meowstic-Mega"
+   ],
    "abilities": {
     "0": "Keen Eye",
     "1": "Infiltrator",
@@ -34549,10 +34927,49 @@ backup_data = {
    "types": [
     "Psychic"
    ],
+   "otherFormes": [
+    "Meowstic-F-Mega"
+   ],
    "abilities": {
     "0": "Keen Eye",
     "1": "Infiltrator",
     "2": "Competitive"
+   }
+  },
+  "Meowstic-F-Mega": {
+   "bs": {
+    "hp": 74,
+    "at": 48,
+    "df": 76,
+    "sa": 143,
+    "sd": 101,
+    "sp": 124
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Psychic Surge",
+    "1": "Psychic Surge",
+    "2": "Psychic Surge"
+   }
+  },
+  "Meowstic-Mega": {
+   "bs": {
+    "hp": 74,
+    "at": 48,
+    "df": 76,
+    "sa": 143,
+    "sd": 101,
+    "sp": 124
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Neuroforce",
+    "1": "Neuroforce",
+    "2": "Neuroforce"
    }
   },
   "Meowth": {
@@ -34638,6 +35055,9 @@ backup_data = {
     "Steel",
     "Psychic"
    ],
+   "otherFormes": [
+    "Metagross-Mega"
+   ],
    "abilities": {
     "0": "Clear Body",
     "2": "Light Metal"
@@ -34655,6 +35075,9 @@ backup_data = {
    "types": [
     "Steel",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Metagross-Mega"
    ],
    "abilities": {
     "0": "Tough Claws",
@@ -34690,6 +35113,10 @@ backup_data = {
    "types": [
     "Psychic"
    ],
+   "otherFormes": [
+    "Mewtwo-Mega-X",
+    "Mewtwo-Mega-Y"
+   ],
    "abilities": {
     "0": "Pressure",
     "2": "Unnerve"
@@ -34708,6 +35135,10 @@ backup_data = {
     "Psychic",
     "Fighting"
    ],
+   "otherFormes": [
+    "Mewtwo-Mega-X",
+    "Mewtwo-Mega-Y"
+   ],
    "abilities": {
     "0": "Steadfast",
     "1": "Steadfast",
@@ -34725,6 +35156,10 @@ backup_data = {
    },
    "types": [
     "Psychic"
+   ],
+   "otherFormes": [
+    "Mewtwo-Mega-X",
+    "Mewtwo-Mega-Y"
    ],
    "abilities": {
     "0": "Insomnia",
@@ -35187,6 +35622,9 @@ backup_data = {
     "Psychic",
     "Ghost"
    ],
+   "otherFormes": [
+    "Necrozma-Ultra"
+   ],
    "abilities": {
     "0": "Prism Armor"
    }
@@ -35203,6 +35641,9 @@ backup_data = {
    "types": [
     "Psychic",
     "Steel"
+   ],
+   "otherFormes": [
+    "Necrozma-Ultra"
    ],
    "abilities": {
     "0": "Prism Armor"
@@ -35939,6 +36380,9 @@ backup_data = {
     "Normal",
     "Flying"
    ],
+   "otherFormes": [
+    "Pidgeot-Mega"
+   ],
    "abilities": {
     "0": "Keen Eye",
     "1": "Tangled Feet",
@@ -35957,6 +36401,9 @@ backup_data = {
    "types": [
     "Normal",
     "Flying"
+   ],
+   "otherFormes": [
+    "Pidgeot-Mega"
    ],
    "abilities": {
     "0": "No Guard",
@@ -36248,6 +36695,9 @@ backup_data = {
    "types": [
     "Bug"
    ],
+   "otherFormes": [
+    "Pinsir-Mega"
+   ],
    "abilities": {
     "0": "Hyper Cutter",
     "1": "Mold Breaker",
@@ -36266,6 +36716,9 @@ backup_data = {
    "types": [
     "Bug",
     "Flying"
+   ],
+   "otherFormes": [
+    "Pinsir-Mega"
    ],
    "abilities": {
     "0": "Aerilate",
@@ -36534,6 +36987,9 @@ backup_data = {
     "Fire",
     "Normal"
    ],
+   "otherFormes": [
+    "Pyroar-Mega"
+   ],
    "abilities": {
     "0": "Rivalry",
     "1": "Unnerve",
@@ -36552,6 +37008,9 @@ backup_data = {
    "types": [
     "Fire",
     "Normal"
+   ],
+   "otherFormes": [
+    "Pyroar-Mega"
    ],
    "abilities": {
     "0": "Kings Pride",
@@ -36715,6 +37174,10 @@ backup_data = {
    "types": [
     "Electric"
    ],
+   "otherFormes": [
+    "Raichu-Mega-X",
+    "Raichu-Mega-Y"
+   ],
    "abilities": {
     "0": "Static",
     "2": "Lightning Rod"
@@ -36749,6 +37212,10 @@ backup_data = {
    "types": [
     "Electric"
    ],
+   "otherFormes": [
+    "Raichu-Mega-X",
+    "Raichu-Mega-Y"
+   ],
    "abilities": {
     "0": "Levitate",
     "1": "Levitate",
@@ -36766,6 +37233,10 @@ backup_data = {
    },
    "types": [
     "Electric"
+   ],
+   "otherFormes": [
+    "Raichu-Mega-X",
+    "Raichu-Mega-Y"
    ],
    "abilities": {
     "0": "Transistor",
@@ -36877,6 +37348,9 @@ backup_data = {
     "Dragon",
     "Flying"
    ],
+   "otherFormes": [
+    "Rayquaza-Mega"
+   ],
    "abilities": {
     "0": "Air Lock"
    }
@@ -36893,6 +37367,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Flying"
+   ],
+   "otherFormes": [
+    "Rayquaza-Mega"
    ],
    "abilities": {
     "0": "Delta Stream",
@@ -37338,6 +37815,9 @@ backup_data = {
     "Dark",
     "Ghost"
    ],
+   "otherFormes": [
+    "Sableye-Mega"
+   ],
    "abilities": {
     "0": "Keen Eye",
     "1": "Stall",
@@ -37356,6 +37836,9 @@ backup_data = {
    "types": [
     "Dark",
     "Ghost"
+   ],
+   "otherFormes": [
+    "Sableye-Mega"
    ],
    "abilities": {
     "0": "Magic Bounce",
@@ -37376,6 +37859,9 @@ backup_data = {
     "Dragon",
     "Flying"
    ],
+   "otherFormes": [
+    "Salamence-Mega"
+   ],
    "abilities": {
     "0": "Intimidate",
     "2": "Moxie"
@@ -37393,6 +37879,9 @@ backup_data = {
    "types": [
     "Dragon",
     "Flying"
+   ],
+   "otherFormes": [
+    "Salamence-Mega"
    ],
    "abilities": {
     "0": "Aerilate",
@@ -37552,6 +38041,9 @@ backup_data = {
    "types": [
     "Grass"
    ],
+   "otherFormes": [
+    "Sceptile-Mega"
+   ],
    "abilities": {
     "0": "Overgrow",
     "2": "Unburden"
@@ -37569,6 +38061,9 @@ backup_data = {
    "types": [
     "Grass",
     "Dragon"
+   ],
+   "otherFormes": [
+    "Sceptile-Mega"
    ],
    "abilities": {
     "0": "Beads of Ruin",
@@ -37589,6 +38084,9 @@ backup_data = {
     "Bug",
     "Steel"
    ],
+   "otherFormes": [
+    "Scizor-Mega"
+   ],
    "abilities": {
     "0": "Swarm",
     "1": "Technician",
@@ -37607,6 +38105,9 @@ backup_data = {
    "types": [
     "Bug",
     "Steel"
+   ],
+   "otherFormes": [
+    "Scizor-Mega"
    ],
    "abilities": {
     "0": "Technician",
@@ -37627,6 +38128,9 @@ backup_data = {
     "Bug",
     "Poison"
    ],
+   "otherFormes": [
+    "Scolipede-Mega"
+   ],
    "abilities": {
     "0": "Poison Point",
     "1": "Swarm",
@@ -37645,6 +38149,9 @@ backup_data = {
    "types": [
     "Bug",
     "Poison"
+   ],
+   "otherFormes": [
+    "Scolipede-Mega"
    ],
    "abilities": {
     "0": "Tinted Lens",
@@ -37665,6 +38172,9 @@ backup_data = {
     "Grass",
     "Fire"
    ],
+   "otherFormes": [
+    "Scovillain-Mega"
+   ],
    "abilities": {
     "0": "Chlorophyll",
     "1": "Insomnia",
@@ -37683,6 +38193,9 @@ backup_data = {
    "types": [
     "Grass",
     "Fire"
+   ],
+   "otherFormes": [
+    "Scovillain-Mega"
    ],
    "abilities": {
     "0": "Two Headed",
@@ -37703,6 +38216,9 @@ backup_data = {
     "Dark",
     "Fighting"
    ],
+   "otherFormes": [
+    "Scrafty-Mega"
+   ],
    "abilities": {
     "0": "Shed Skin",
     "1": "Moxie",
@@ -37721,6 +38237,9 @@ backup_data = {
    "types": [
     "Dark",
     "Fighting"
+   ],
+   "otherFormes": [
+    "Scrafty-Mega"
    ],
    "abilities": {
     "0": "Intimidate",
@@ -37866,6 +38385,9 @@ backup_data = {
     "Water",
     "Dark"
    ],
+   "otherFormes": [
+    "Sharpedo-Mega"
+   ],
    "abilities": {
     "0": "Rough Skin",
     "2": "Speed Boost"
@@ -37883,6 +38405,9 @@ backup_data = {
    "types": [
     "Water",
     "Dark"
+   ],
+   "otherFormes": [
+    "Sharpedo-Mega"
    ],
    "abilities": {
     "0": "Strong Jaw",
@@ -38441,6 +38966,9 @@ backup_data = {
     "Steel",
     "Flying"
    ],
+   "otherFormes": [
+    "Skarmory-Mega"
+   ],
    "abilities": {
     "0": "Keen Eye",
     "1": "Sturdy",
@@ -38459,6 +38987,9 @@ backup_data = {
    "types": [
     "Steel",
     "Flying"
+   ],
+   "otherFormes": [
+    "Skarmory-Mega"
    ],
    "abilities": {
     "0": "Good as Gold",
@@ -38588,6 +39119,9 @@ backup_data = {
     "Water",
     "Psychic"
    ],
+   "otherFormes": [
+    "Slowbro-Mega"
+   ],
    "abilities": {
     "0": "Oblivious",
     "1": "Own Tempo",
@@ -38625,6 +39159,9 @@ backup_data = {
    "types": [
     "Water",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Slowbro-Mega"
    ],
    "abilities": {
     "0": "Shell Armor",
@@ -38993,6 +39530,9 @@ backup_data = {
     "Normal",
     "Flying"
    ],
+   "otherFormes": [
+    "Staraptor-Mega"
+   ],
    "abilities": {
     "0": "Intimidate",
     "2": "Reckless"
@@ -39010,6 +39550,9 @@ backup_data = {
    "types": [
     "Fighting",
     "Flying"
+   ],
+   "otherFormes": [
+    "Staraptor-Mega"
    ],
    "abilities": {
     "0": "Tough Claws",
@@ -39030,6 +39573,9 @@ backup_data = {
     "Water",
     "Psychic"
    ],
+   "otherFormes": [
+    "Starmie-Mega"
+   ],
    "abilities": {
     "0": "Illuminate",
     "1": "Natural Cure",
@@ -39048,6 +39594,9 @@ backup_data = {
    "types": [
     "Water",
     "Psychic"
+   ],
+   "otherFormes": [
+    "Starmie-Mega"
    ],
    "abilities": {
     "0": "Pure Power",
@@ -39068,6 +39617,9 @@ backup_data = {
     "Steel",
     "Ground"
    ],
+   "otherFormes": [
+    "Steelix-Mega"
+   ],
    "abilities": {
     "0": "Rock Head",
     "1": "Sturdy",
@@ -39086,6 +39638,9 @@ backup_data = {
    "types": [
     "Steel",
     "Ground"
+   ],
+   "otherFormes": [
+    "Steelix-Mega"
    ],
    "abilities": {
     "0": "Sand Force",
@@ -39252,6 +39807,9 @@ backup_data = {
     "Water",
     "Ground"
    ],
+   "otherFormes": [
+    "Swampert-Mega"
+   ],
    "abilities": {
     "0": "Torrent",
     "2": "Damp"
@@ -39269,6 +39827,9 @@ backup_data = {
    "types": [
     "Water",
     "Ground"
+   ],
+   "otherFormes": [
+    "Swampert-Mega"
    ],
    "abilities": {
     "0": "Swift Swim",
@@ -39508,9 +40069,31 @@ backup_data = {
     "Dragon",
     "Water"
    ],
+   "otherFormes": [
+    "Tatsugiri-Mega"
+   ],
    "abilities": {
     "0": "Commander",
     "2": "Storm Drain"
+   }
+  },
+  "Tatsugiri-Mega": {
+   "bs": {
+    "hp": 68,
+    "at": 65,
+    "df": 90,
+    "sa": 135,
+    "sd": 125,
+    "sp": 92
+   },
+   "types": [
+    "Dragon",
+    "Water"
+   ],
+   "abilities": {
+    "0": "Dazzling",
+    "1": "Dazzling",
+    "2": "Dazzling"
    }
   },
   "Tauros": {
@@ -40073,6 +40656,9 @@ backup_data = {
     "Rock",
     "Dark"
    ],
+   "otherFormes": [
+    "Tyranitar-Mega"
+   ],
    "abilities": {
     "0": "Sand Stream",
     "2": "Unnerve"
@@ -40090,6 +40676,9 @@ backup_data = {
    "types": [
     "Rock",
     "Dark"
+   ],
+   "otherFormes": [
+    "Tyranitar-Mega"
    ],
    "abilities": {
     "0": "Sand Stream",
@@ -40345,6 +40934,9 @@ backup_data = {
     "Grass",
     "Poison"
    ],
+   "otherFormes": [
+    "Venusaur-Mega"
+   ],
    "abilities": {
     "0": "Overgrow",
     "1": "Thick Fat",
@@ -40363,6 +40955,9 @@ backup_data = {
    "types": [
     "Grass",
     "Poison"
+   ],
+   "otherFormes": [
+    "Venusaur-Mega"
    ],
    "abilities": {
     "0": "Thick Fat",
@@ -40418,6 +41013,9 @@ backup_data = {
     "Grass",
     "Poison"
    ],
+   "otherFormes": [
+    "Victreebel-Mega"
+   ],
    "abilities": {
     "0": "Chlorophyll",
     "2": "Gluttony"
@@ -40435,6 +41033,9 @@ backup_data = {
    "types": [
     "Grass",
     "Poison"
+   ],
+   "otherFormes": [
+    "Victreebel-Mega"
    ],
    "abilities": {
     "0": "Poison Puppeteer",
@@ -41096,6 +41697,9 @@ backup_data = {
    "types": [
     "Electric"
    ],
+   "otherFormes": [
+    "Zeraora-Mega"
+   ],
    "abilities": {
     "0": "Volt Absorb"
    }
@@ -41111,6 +41715,9 @@ backup_data = {
    },
    "types": [
     "Electric"
+   ],
+   "otherFormes": [
+    "Zeraora-Mega"
    ],
    "abilities": {
     "0": "Iron Fist",
@@ -46504,30 +47111,8 @@ backup_data = {
    "map_terrain": null
   },
   "67": {
-   "label": "Kangaskhan - Mossdeep City",
-   "id": "EVENT_SPECIES_KANGASKHAN",
-   "location": "MossdeepCity",
-   "doubles": false,
-   "starting_status": [],
-   "ai": "Smart Trainer",
-   "map": "MossdeepCity",
-   "map_weather": null,
-   "map_terrain": null
-  },
-  "68": {
-   "label": "Groudon - Mossdeep City",
-   "id": "EVENT_SPECIES_GROUDON",
-   "location": "MossdeepCity",
-   "doubles": false,
-   "starting_status": [],
-   "ai": "Smart Trainer",
-   "map": "MossdeepCity",
-   "map_weather": null,
-   "map_terrain": null
-  },
-  "69": {
-   "label": "Kyogre - Mossdeep City",
-   "id": "EVENT_SPECIES_KYOGRE",
+   "label": "Mossdeep City Bosses",
+   "id": "EVENT_MossdeepCity",
    "location": "MossdeepCity",
    "doubles": false,
    "starting_status": [],
@@ -46804,15 +47389,563 @@ backup_data = {
   },
   "67": {
    "prev": 66,
-   "next": 68
+   "next": 67
+  }
+ },
+ "form_items": {
+  "Abomasnow": {
+   "Abomasite": "Abomasnow-Mega"
   },
-  "68": {
-   "prev": 67,
-   "next": 69
+  "Abomasnow-Mega": {
+   "Abomasite": "Abomasnow-Mega"
   },
-  "69": {
-   "prev": 68,
-   "next": 69
+  "Absol": {
+   "Absolite": "Absol-Mega",
+   "Absolite Z": "Absol-Mega-Z"
+  },
+  "Absol-Mega": {
+   "Absolite": "Absol-Mega",
+   "Absolite Z": "Absol-Mega-Z"
+  },
+  "Absol-Mega-Z": {
+   "Absolite": "Absol-Mega",
+   "Absolite Z": "Absol-Mega-Z"
+  },
+  "Aerodactyl": {
+   "Aerodactylite": "Aerodactyl-Mega"
+  },
+  "Aerodactyl-Mega": {
+   "Aerodactylite": "Aerodactyl-Mega"
+  },
+  "Aggron": {
+   "Aggronite": "Aggron-Mega"
+  },
+  "Aggron-Mega": {
+   "Aggronite": "Aggron-Mega"
+  },
+  "Alakazam": {
+   "Alakazite": "Alakazam-Mega"
+  },
+  "Alakazam-Mega": {
+   "Alakazite": "Alakazam-Mega"
+  },
+  "Altaria": {
+   "Altarianite": "Altaria-Mega"
+  },
+  "Altaria-Mega": {
+   "Altarianite": "Altaria-Mega"
+  },
+  "Ampharos": {
+   "Ampharosite": "Ampharos-Mega"
+  },
+  "Ampharos-Mega": {
+   "Ampharosite": "Ampharos-Mega"
+  },
+  "Banette": {
+   "Banettite": "Banette-Mega"
+  },
+  "Banette-Mega": {
+   "Banettite": "Banette-Mega"
+  },
+  "Barbaracle": {
+   "Barbaracite": "Barbaracle-Mega"
+  },
+  "Barbaracle-Mega": {
+   "Barbaracite": "Barbaracle-Mega"
+  },
+  "Baxcalibur": {
+   "Baxcalibrite": "Baxcalibur-Mega"
+  },
+  "Baxcalibur-Mega": {
+   "Baxcalibrite": "Baxcalibur-Mega"
+  },
+  "Beedrill": {
+   "Beedrillite": "Beedrill-Mega"
+  },
+  "Beedrill-Mega": {
+   "Beedrillite": "Beedrill-Mega"
+  },
+  "Blastoise": {
+   "Blastoisinite": "Blastoise-Mega"
+  },
+  "Blastoise-Mega": {
+   "Blastoisinite": "Blastoise-Mega"
+  },
+  "Blaziken": {
+   "Blazikenite": "Blaziken-Mega"
+  },
+  "Blaziken-Mega": {
+   "Blazikenite": "Blaziken-Mega"
+  },
+  "Camerupt": {
+   "Cameruptite": "Camerupt-Mega"
+  },
+  "Camerupt-Mega": {
+   "Cameruptite": "Camerupt-Mega"
+  },
+  "Chandelure": {
+   "Chandelurite": "Chandelure-Mega"
+  },
+  "Chandelure-Mega": {
+   "Chandelurite": "Chandelure-Mega"
+  },
+  "Charizard": {
+   "Charizardite X": "Charizard-Mega-X",
+   "Charizardite Y": "Charizard-Mega-Y"
+  },
+  "Charizard-Mega-X": {
+   "Charizardite X": "Charizard-Mega-X",
+   "Charizardite Y": "Charizard-Mega-Y"
+  },
+  "Charizard-Mega-Y": {
+   "Charizardite X": "Charizard-Mega-X",
+   "Charizardite Y": "Charizard-Mega-Y"
+  },
+  "Chesnaught": {
+   "Chesnaughtite": "Chesnaught-Mega"
+  },
+  "Chesnaught-Mega": {
+   "Chesnaughtite": "Chesnaught-Mega"
+  },
+  "Chimecho": {
+   "Chimechite": "Chimecho-Mega"
+  },
+  "Chimecho-Mega": {
+   "Chimechite": "Chimecho-Mega"
+  },
+  "Clefable": {
+   "Clefablite": "Clefable-Mega"
+  },
+  "Clefable-Mega": {
+   "Clefablite": "Clefable-Mega"
+  },
+  "Crabominable": {
+   "Crabominite": "Crabominable-Mega"
+  },
+  "Crabominable-Mega": {
+   "Crabominite": "Crabominable-Mega"
+  },
+  "Darkrai": {
+   "Darkranite": "Darkrai-Mega"
+  },
+  "Darkrai-Mega": {
+   "Darkranite": "Darkrai-Mega"
+  },
+  "Delphox": {
+   "Delphoxite": "Delphox-Mega"
+  },
+  "Delphox-Mega": {
+   "Delphoxite": "Delphox-Mega"
+  },
+  "Diancie": {
+   "Diancite": "Diancie-Mega"
+  },
+  "Diancie-Mega": {
+   "Diancite": "Diancie-Mega"
+  },
+  "Dragalge": {
+   "Dragalgite": "Dragalge-Mega"
+  },
+  "Dragalge-Mega": {
+   "Dragalgite": "Dragalge-Mega"
+  },
+  "Dragonite": {
+   "Dragoninite": "Dragonite-Mega"
+  },
+  "Dragonite-Mega": {
+   "Dragoninite": "Dragonite-Mega"
+  },
+  "Drampa": {
+   "Drampanite": "Drampa-Mega"
+  },
+  "Drampa-Mega": {
+   "Drampanite": "Drampa-Mega"
+  },
+  "Eelektross": {
+   "Eelektrossite": "Eelektross-Mega"
+  },
+  "Eelektross-Mega": {
+   "Eelektrossite": "Eelektross-Mega"
+  },
+  "Emboar": {
+   "Emboarite": "Emboar-Mega"
+  },
+  "Emboar-Mega": {
+   "Emboarite": "Emboar-Mega"
+  },
+  "Excadrill": {
+   "Excadrite": "Excadrill-Mega"
+  },
+  "Excadrill-Mega": {
+   "Excadrite": "Excadrill-Mega"
+  },
+  "Falinks": {
+   "Falinksite": "Falinks-Mega"
+  },
+  "Falinks-Mega": {
+   "Falinksite": "Falinks-Mega"
+  },
+  "Feraligatr": {
+   "Feraligite": "Feraligatr-Mega"
+  },
+  "Feraligatr-Mega": {
+   "Feraligite": "Feraligatr-Mega"
+  },
+  "Floette-Eternal": {
+   "Floettite": "Floette-Mega"
+  },
+  "Floette-Mega": {
+   "Floettite": "Floette-Mega"
+  },
+  "Gallade": {
+   "Galladite": "Gallade-Mega"
+  },
+  "Gallade-Mega": {
+   "Galladite": "Gallade-Mega"
+  },
+  "Garchomp": {
+   "Garchompite": "Garchomp-Mega",
+   "Garchompite Z": "Garchomp-Mega-Z"
+  },
+  "Garchomp-Mega": {
+   "Garchompite": "Garchomp-Mega",
+   "Garchompite Z": "Garchomp-Mega-Z"
+  },
+  "Garchomp-Mega-Z": {
+   "Garchompite": "Garchomp-Mega",
+   "Garchompite Z": "Garchomp-Mega-Z"
+  },
+  "Gardevoir": {
+   "Gardevoirite": "Gardevoir-Mega"
+  },
+  "Gardevoir-Mega": {
+   "Gardevoirite": "Gardevoir-Mega"
+  },
+  "Gengar": {
+   "Gengarite": "Gengar-Mega"
+  },
+  "Gengar-Mega": {
+   "Gengarite": "Gengar-Mega"
+  },
+  "Glalie": {
+   "Glalitite": "Glalie-Mega"
+  },
+  "Glalie-Mega": {
+   "Glalitite": "Glalie-Mega"
+  },
+  "Glimmora-Mega": {
+   "Glimmoranite": "Glimmora-Mega"
+  },
+  "Golisopod": {
+   "Golisopite": "Golisopod-Mega"
+  },
+  "Golisopod-Mega": {
+   "Golisopite": "Golisopod-Mega"
+  },
+  "Golurk": {
+   "Golurkite": "Golurk-Mega"
+  },
+  "Golurk-Mega": {
+   "Golurkite": "Golurk-Mega"
+  },
+  "Greninja": {
+   "Greninjite": "Greninja-Mega"
+  },
+  "Greninja-Mega": {
+   "Greninjite": "Greninja-Mega"
+  },
+  "Groudon": {
+   "Red Orb": "Groudon-Primal"
+  },
+  "Groudon-Primal": {
+   "Red Orb": "Groudon-Primal"
+  },
+  "Gyarados": {
+   "Gyaradosite": "Gyarados-Mega"
+  },
+  "Gyarados-Mega": {
+   "Gyaradosite": "Gyarados-Mega"
+  },
+  "Hawlucha": {
+   "Hawluchanite": "Hawlucha-Mega"
+  },
+  "Hawlucha-Mega": {
+   "Hawluchanite": "Hawlucha-Mega"
+  },
+  "Heatran": {
+   "Heatranite": "Heatran-Mega"
+  },
+  "Heatran-Mega": {
+   "Heatranite": "Heatran-Mega"
+  },
+  "Heracross": {
+   "Heracronite": "Heracross-Mega"
+  },
+  "Heracross-Mega": {
+   "Heracronite": "Heracross-Mega"
+  },
+  "Houndoom": {
+   "Houndoominite": "Houndoom-Mega"
+  },
+  "Houndoom-Mega": {
+   "Houndoominite": "Houndoom-Mega"
+  },
+  "Kangaskhan": {
+   "Kangaskhanite": "Kangaskhan-Mega"
+  },
+  "Kangaskhan-Mega": {
+   "Kangaskhanite": "Kangaskhan-Mega"
+  },
+  "Kyogre": {
+   "Blue Orb": "Kyogre-Primal"
+  },
+  "Kyogre-Primal": {
+   "Blue Orb": "Kyogre-Primal"
+  },
+  "Latias": {
+   "Latiasite": "Latias-Mega"
+  },
+  "Latias-Mega": {
+   "Latiasite": "Latias-Mega"
+  },
+  "Latios": {
+   "Latiosite": "Latios-Mega"
+  },
+  "Latios-Mega": {
+   "Latiosite": "Latios-Mega"
+  },
+  "Lopunny": {
+   "Lopunnite": "Lopunny-Mega"
+  },
+  "Lopunny-Mega": {
+   "Lopunnite": "Lopunny-Mega"
+  },
+  "Lucario": {
+   "Lucarionite": "Lucario-Mega",
+   "Lucarionite Z": "Lucario-Mega-Z"
+  },
+  "Lucario-Mega": {
+   "Lucarionite": "Lucario-Mega",
+   "Lucarionite Z": "Lucario-Mega-Z"
+  },
+  "Lucario-Mega-Z": {
+   "Lucarionite": "Lucario-Mega",
+   "Lucarionite Z": "Lucario-Mega-Z"
+  },
+  "Magearna": {
+   "Magearnite": "Magearna-Mega"
+  },
+  "Magearna-Mega": {
+   "Magearnite": "Magearna-Mega"
+  },
+  "Magearna-Original": {
+   "Magearnite": "Magearna-Original-Mega"
+  },
+  "Magearna-Original-Mega": {
+   "Magearnite": "Magearna-Original-Mega"
+  },
+  "Malamar": {
+   "Malamarite": "Malamar-Mega"
+  },
+  "Malamar-Mega": {
+   "Malamarite": "Malamar-Mega"
+  },
+  "Manectric": {
+   "Manectite": "Manectric-Mega"
+  },
+  "Manectric-Mega": {
+   "Manectite": "Manectric-Mega"
+  },
+  "Mawile": {
+   "Mawilite": "Mawile-Mega"
+  },
+  "Mawile-Mega": {
+   "Mawilite": "Mawile-Mega"
+  },
+  "Meganium": {
+   "Meganiumite": "Meganium-Mega"
+  },
+  "Meganium-Mega": {
+   "Meganiumite": "Meganium-Mega"
+  },
+  "Meowstic": {
+   "Meowsticite": "Meowstic-Mega"
+  },
+  "Meowstic-F": {
+   "Meowsticite": "Meowstic-F-Mega"
+  },
+  "Metagross": {
+   "Metagrossite": "Metagross-Mega"
+  },
+  "Metagross-Mega": {
+   "Metagrossite": "Metagross-Mega"
+  },
+  "Mewtwo": {
+   "Mewtwonite X": "Mewtwo-Mega-X",
+   "Mewtwonite Y": "Mewtwo-Mega-Y"
+  },
+  "Mewtwo-Mega-X": {
+   "Mewtwonite X": "Mewtwo-Mega-X",
+   "Mewtwonite Y": "Mewtwo-Mega-Y"
+  },
+  "Mewtwo-Mega-Y": {
+   "Mewtwonite X": "Mewtwo-Mega-X",
+   "Mewtwonite Y": "Mewtwo-Mega-Y"
+  },
+  "Necrozma-Dawn-Wings": {
+   "Ultranecrozium Z": "Necrozma-Ultra"
+  },
+  "Necrozma-Dusk-Mane": {
+   "Ultranecrozium Z": "Necrozma-Ultra"
+  },
+  "Pidgeot": {
+   "Pidgeotite": "Pidgeot-Mega"
+  },
+  "Pidgeot-Mega": {
+   "Pidgeotite": "Pidgeot-Mega"
+  },
+  "Pinsir": {
+   "Pinsirite": "Pinsir-Mega"
+  },
+  "Pinsir-Mega": {
+   "Pinsirite": "Pinsir-Mega"
+  },
+  "Pyroar": {
+   "Pyroarite": "Pyroar-Mega"
+  },
+  "Pyroar-Mega": {
+   "Pyroarite": "Pyroar-Mega"
+  },
+  "Raichu": {
+   "Raichunite X": "Raichu-Mega-X",
+   "Raichunite Y": "Raichu-Mega-Y"
+  },
+  "Raichu-Mega-X": {
+   "Raichunite X": "Raichu-Mega-X",
+   "Raichunite Y": "Raichu-Mega-Y"
+  },
+  "Raichu-Mega-Y": {
+   "Raichunite X": "Raichu-Mega-X",
+   "Raichunite Y": "Raichu-Mega-Y"
+  },
+  "Sableye": {
+   "Sablenite": "Sableye-Mega"
+  },
+  "Sableye-Mega": {
+   "Sablenite": "Sableye-Mega"
+  },
+  "Salamence": {
+   "Salamencite": "Salamence-Mega"
+  },
+  "Salamence-Mega": {
+   "Salamencite": "Salamence-Mega"
+  },
+  "Sceptile": {
+   "Sceptilite": "Sceptile-Mega"
+  },
+  "Sceptile-Mega": {
+   "Sceptilite": "Sceptile-Mega"
+  },
+  "Scizor": {
+   "Scizorite": "Scizor-Mega"
+  },
+  "Scizor-Mega": {
+   "Scizorite": "Scizor-Mega"
+  },
+  "Scolipede": {
+   "Scolipite": "Scolipede-Mega"
+  },
+  "Scolipede-Mega": {
+   "Scolipite": "Scolipede-Mega"
+  },
+  "Scovillain": {
+   "Scovillainite": "Scovillain-Mega"
+  },
+  "Scovillain-Mega": {
+   "Scovillainite": "Scovillain-Mega"
+  },
+  "Scrafty": {
+   "Scraftinite": "Scrafty-Mega"
+  },
+  "Scrafty-Mega": {
+   "Scraftinite": "Scrafty-Mega"
+  },
+  "Sharpedo": {
+   "Sharpedonite": "Sharpedo-Mega"
+  },
+  "Sharpedo-Mega": {
+   "Sharpedonite": "Sharpedo-Mega"
+  },
+  "Skarmory": {
+   "Skarmorite": "Skarmory-Mega"
+  },
+  "Skarmory-Mega": {
+   "Skarmorite": "Skarmory-Mega"
+  },
+  "Slowbro": {
+   "Slowbronite": "Slowbro-Mega"
+  },
+  "Slowbro-Mega": {
+   "Slowbronite": "Slowbro-Mega"
+  },
+  "Staraptor": {
+   "Staraptite": "Staraptor-Mega"
+  },
+  "Staraptor-Mega": {
+   "Staraptite": "Staraptor-Mega"
+  },
+  "Starmie": {
+   "Starminite": "Starmie-Mega"
+  },
+  "Starmie-Mega": {
+   "Starminite": "Starmie-Mega"
+  },
+  "Steelix": {
+   "Steelixite": "Steelix-Mega"
+  },
+  "Steelix-Mega": {
+   "Steelixite": "Steelix-Mega"
+  },
+  "Swampert": {
+   "Swampertite": "Swampert-Mega"
+  },
+  "Swampert-Mega": {
+   "Swampertite": "Swampert-Mega"
+  },
+  "Tatsugiri": {
+   "Tatsugirinite": "Tatsugiri-Mega"
+  },
+  "Tyranitar": {
+   "Tyranitarite": "Tyranitar-Mega"
+  },
+  "Tyranitar-Mega": {
+   "Tyranitarite": "Tyranitar-Mega"
+  },
+  "Venusaur": {
+   "Venusaurite": "Venusaur-Mega"
+  },
+  "Venusaur-Mega": {
+   "Venusaurite": "Venusaur-Mega"
+  },
+  "Victreebel": {
+   "Victreebelite": "Victreebel-Mega"
+  },
+  "Victreebel-Mega": {
+   "Victreebelite": "Victreebel-Mega"
+  },
+  "Zeraora": {
+   "Zeraorite": "Zeraora-Mega"
+  },
+  "Zeraora-Mega": {
+   "Zeraorite": "Zeraora-Mega"
+  }
+ },
+ "form_moves": {
+  "Rayquaza": {
+   "Dragon Ascent": "Rayquaza-Mega"
+  },
+  "Rayquaza-Mega": {
+   "Dragon Ascent": "Rayquaza-Mega"
   }
  }
 }

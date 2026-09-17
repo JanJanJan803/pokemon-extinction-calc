@@ -1,5 +1,20 @@
 (function () {
     const games = {
+        "pokemon-extinction": {
+            id: "pokemon-extinction",
+            title: "Pokémon Extinction",
+            coverImage: "",
+            description: "",
+            sourceTitle: "Pokémon Extinction",
+            variants: [
+                {
+                    label: "Emerald Base Rom",
+                    source: "./index.html?data=extinction&dmgGen=8&gen=8&types=6&noSwitch=1&evs=0",
+                    coverImage: "",
+                    description: ""
+                }
+            ]
+        },
         "ancestral-x": {
             id: "ancestral-x",
             title: "Ancestral X",
@@ -713,6 +728,7 @@
             id: "featured",
             title: "Featured",
             gameIds: [
+                "pokemon-extinction",
                 "renegade-platinum",
                 "emerald-imperium-1-3",
                 "platinum-kaizo",

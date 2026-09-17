@@ -104,6 +104,7 @@
     var TERRAIN_STATUSES = {
         "Electric Terrain": "Electric", "Grassy Terrain": "Grassy",
         "Misty Terrain": "Misty", "Psychic Terrain": "Psychic",
+        "Draconic Terrain": "Draconic",
     };
 
     function applyTrainerField(info) {
@@ -204,13 +205,27 @@
         $("#p2 .poke-sprite").attr("src", "./img/" + style + "/" + name.replace("-glitched", "") + "." + ext);
     };
 
-    function formTarget(item, formeSelect) {
+    // Which form this Pokemon can actually reach, from the ROM's own form change tables: the stone
+    // it holds, or Dragon Ascent for Rayquaza. Falls back to the calc's Mega stone list for anything
+    // the export does not cover.
+    function formTarget(panel, formeSelect) {
+        var data = extinctionData();
+        var item = $(panel).find(".item").val();
+        var current = formeSelect.val() || "";
+        var base = current.replace(/-(Mega.*|Primal)$/, "");
+        var byItem = (data.form_items || {})[base] || (data.form_items || {})[current] || {};
+        var byMove = (data.form_moves || {})[base] || {};
+
+        if (item && byItem[item]) return byItem[item];
+        var moves = $(panel).find(".move-selector").map(function () { return $(this).val(); }).get();
+        for (var move in byMove) {
+            if (moves.indexOf(move) !== -1) return byMove[move];
+        }
         if (!item) return null;
+
         var stones = (typeof calc !== "undefined" && calc.MEGA_STONES) || {};
         var candidates = [];
         if (stones[item]) {
-            // Older entries map a stone to the base species, newer ones straight to the Mega.
-            // Charizardite X / Mewtwonite Y and friends pick one of two Megas, named by the suffix.
             var suffix = (item.match(/ (X|Y)$/) || [])[1];
             candidates.push(stones[item]);
             if (suffix) candidates.push(stones[item] + "-Mega-" + suffix);
@@ -226,9 +241,8 @@
         return null;
     }
 
-    // The Form dropdown is built from the calc's own data, so it offers forms this ROM does not
-    // have (Sevii forms, Megas the hack never added) and both Mega Charizards whatever stone is
-    // held. A Pokemon can only reach the form its item gives it, so drop the rest.
+    // The Form dropdown is built from the calc's own data, so it offers forms this ROM does not have
+    // and every Mega of a species whatever stone is held. Only the form the Pokemon can reach stays.
     function filterFormeOptions(panel, target) {
         var formeSelect = $(panel).find(".forme");
         var poks = extinctionData().poks || {};
@@ -239,7 +253,6 @@
             var unreachableForm = /-(Mega|Primal)/.test(name) && name !== target;
             if (!poks[name] || unreachableForm) $(this).remove();
         });
-        // Nothing left to choose between: the calc hides a single-option dropdown anyway.
         formeSelect.closest("div").toggleClass("hide", formeSelect.find("option").length < 2 && !target);
     }
 
@@ -250,7 +263,7 @@
         var current = formeSelect.val() || "";
         // Switching to a Mega clears the stone in the calc, so once a Mega or Primal form is
         // selected the current form is what tells us where to switch back to.
-        var target = /-(Mega|Primal)/.test(current) ? current : formTarget(item, formeSelect);
+        var target = /-(Mega|Primal)/.test(current) ? current : formTarget(panel, formeSelect);
 
         if (!isExtinction()) {
             button.remove();
@@ -294,7 +307,6 @@
         preferBoxSetName();
         updateFormToggle("#p1");
         updateFormToggle("#p2");
-        updateBoxTag();
     }
 
     // ------------------------------------------------------------------------------------------
@@ -447,20 +459,6 @@
             selector.val(renamed);
             $("#p1 .select2-chosen").first().text(renamed);
         }
-    }
-
-    // A tag next to the Pokemon list also names the box, for the panel itself.
-    function updateBoxTag() {
-        var chosen = $("#p1 .set-selector").first().val() || $("#p1 .select2-chosen").first().text() || "";
-        var species = chosen.split(" (")[0].trim();
-        var isBoxSet = /\(([^)]*)\)\s*$/.test(chosen) && !!boxLabelFor(species);
-        var label = isBoxSet ? boxLabelFor($("#p1 .forme").val() || species) : "";
-        var tag = $("#ext-box-tag");
-        if (!tag.length) {
-            tag = $('<div id="ext-box-tag" class="ext-box-tag"></div>');
-            $("#p1 .set-selector").first().closest("div").after(tag);
-        }
-        tag.text(label).toggle(!!label);
     }
 
     function importOwned() {

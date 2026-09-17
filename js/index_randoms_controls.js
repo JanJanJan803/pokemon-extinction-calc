@@ -314,7 +314,7 @@ function displayDamageHits(damage, hitLabels) {
 		}
 		var formatted = damage.map(function (value, index) {
 			if (index === medianIndex) {
-				return `<span id='dmg-median' title='AI Simulated Dmg Roll'>${value}</span>`;
+				return `<span id='dmg-median' title='The roll the in-game AI uses when it decides'>${value}</span>`;
 			}
 			return value;
 		});
