@@ -132,7 +132,9 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
 
 
     var breaksProtect = move.breaksProtect || move.isZ || attacker.isDynamaxed ||
-        (attacker.hasAbility('Unseen Fist') && move.flags.contact);
+        (attacker.hasAbility('Unseen Fist') && move.flags.contact) ||
+        // Pokemon Extinction: Piercing Drill - physical moves ignore Protect.
+        (attacker.hasAbility('Piercing Drill') && move.category === 'Physical');
     if (field.defenderSide.isProtected && !breaksProtect) {
         desc.isProtected = true;
         return result;
@@ -185,7 +187,9 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     if (move.named('Weather Ball')) {
         var holdingUmbrella = attacker.hasItem('Utility Umbrella');
         type =
-            field.hasWeather('Sun', 'Harsh Sunshine') && !holdingUmbrella ? 'Fire'
+            // Pokemon Extinction: Mega Sol - Weather Ball behaves as though the sun were out.
+            attacker.hasAbility('Mega Sol') && !holdingUmbrella ? 'Fire'
+                : field.hasWeather('Sun', 'Harsh Sunshine') && !holdingUmbrella ? 'Fire'
                 : field.hasWeather('Rain', 'Heavy Rain') && !holdingUmbrella ? 'Water'
                     : field.hasWeather('Sand') ? 'Rock'
                         : field.hasWeather('Hail', 'Snow') ? 'Ice'
@@ -267,6 +271,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     var hasAteAbilityTypeChange = false;
     var isAerilate = false;
     var isPixilate = false;
+    var isDragonize = false;
     var isRefrigerate = false;
     var isGalvanize = false;
     var isLiquidVoice = false;
@@ -286,13 +291,17 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         else if ((isPixilate = attacker.hasAbility('Pixilate') && normal)) {
             type = 'Fairy';
         }
+        // Pokemon Extinction: Dragonize - the Dragon-type member of the -ate family.
+        else if ((isDragonize = attacker.hasAbility('Dragonize') && normal)) {
+            type = 'Dragon';
+        }
         else if ((isRefrigerate = attacker.hasAbility('Refrigerate') && normal)) {
             type = 'Ice';
         }
         else if ((isNormalize = attacker.hasAbility('Normalize'))) {
             type = 'Normal';
         }
-        if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize) {
+        if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize || isDragonize) {
             desc.attackerAbility = attacker.ability;
             hasAteAbilityTypeChange = true;
         }
@@ -407,7 +416,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     desc.HPEVs = (0, util_2.getStatDescriptionText)(gen, defender, 'hp');
     var fixedDamage = (0, util_2.handleFixedDamageMoves)(attacker, move);
     if (fixedDamage) {
-        if (attacker.hasAbility('Parental Bond', 'ORAORAORAORA')) {
+        if (attacker.hasAbility('Parental Bond', 'ORAORAORAORA', 'Two Headed')) {
             result.damage = [fixedDamage, fixedDamage];
             desc.attackerAbility = attacker.ability;
         }
@@ -503,7 +512,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     var isSpread = field.gameType !== 'Singles' &&
         ['allAdjacent', 'allAdjacentFoes'].includes(move.target);
     var childDamage;
-    if (attacker.hasAbility('Parental Bond') && move.hits === 1 && !isSpread) {
+    // Pokemon Extinction: Two Headed is Parental Bond under another name.
+    if (attacker.hasAbility('Parental Bond', 'Two Headed') && move.hits === 1 && !isSpread) {
         var child = attacker.clone();
         child.ability = 'Parental Bond (Child)';
         (0, util_2.checkMultihitBoost)(gen, child, defender, move, field, desc);
@@ -542,7 +552,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
             var newAttack = calculateAttackSMSSSV(gen, attacker, defender, move, field, desc, isCritical, profile, ctx);
             var newDefense = calculateDefenseSMSSSV(gen, attacker, defender, move, field, desc, isCritical, profile, ctx);
             hasAteAbilityTypeChange = hasAteAbilityTypeChange &&
-                attacker.hasAbility('Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Normalize');
+                attacker.hasAbility('Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Normalize', 'Dragonize');
             if (move.timesUsed > 1) {
                 preStellarStabMod = (0, util_2.getStabMod)(attacker, move, desc);
                 typeEffectiveness = turn2typeEffectiveness;
@@ -1207,6 +1217,9 @@ function calculateAtModsSMSSSV(gen, attacker, defender, move, field, desc, profi
     if ((attacker.hasAbility('Hadron Engine') && move.category === 'Special' &&
         field.hasTerrain('Electric') && (0, util_2.isGrounded)(attacker, field)) ||
         (attacker.hasAbility('Orichalcum Pulse') && move.category === 'Physical' &&
+            field.hasWeather('Sun', 'Harsh Sunshine') && !attacker.hasItem('Utility Umbrella')) ||
+        // Pokemon Extinction: Kings Pride - Orichalcum Pulse for special moves.
+        (attacker.hasAbility('Kings Pride') && move.category === 'Special' &&
             field.hasWeather('Sun', 'Harsh Sunshine') && !attacker.hasItem('Utility Umbrella'))) {
         atMods.push(5461);
         desc.attackerAbility = attacker.ability;

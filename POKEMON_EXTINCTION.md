@@ -40,16 +40,23 @@ Then open <http://localhost:8000/>. Without a `?data=` parameter the page opens 
 | `js/index_randoms_controls.js` | Hooks the Trick Room / Swamp speed colouring |
 | `index.html` | Default URL, script and style tags |
 
+## The hack's custom abilities
+
+Implemented in `calc/mechanics/gen789.js`, next to the official ability each one copies:
+
+| Ability | Effect |
+|---|---|
+| Dragonize | Normal moves become Dragon, x1.2 (the -ate family) |
+| Kings Pride | In sun, special moves x1.3333 (Orichalcum Pulse for special) |
+| Two Headed | Parental Bond: a second hit at 0.25 |
+| Mega Sol | Weather Ball is always Fire (it also skips Solar Beam's charge, which the calc never modelled) |
+| Piercing Drill | Physical moves ignore Protect |
+| Instant Preparation | +1 Def, +1 Sp. Def and +1 Speed on entry, once per battle. Set those stages yourself; the calc never applies boosts on its own. |
+
 ## Not modelled yet
 
 The data is right, but the damage engine has no behaviour for these:
 
 - Draconic Terrain (Fairy moves deal half damage to grounded Pokemon)
-- Dragonize (Normal moves become Dragon, 1.2x) - Noivern and Mega Feraligatr
-- The other custom abilities: Piercing Drill, Mega Sol, Kings Pride, Two Headed, Instant Preparation.
-  They are shown on the Pokemon, but change no damage number.
-- Spice That Burns the Mouth (Fire and Grass at once; uses the higher attacking stat)
 - Torment Weather, Sea of Fire, Rainbow and Permanent Hazards are listed in the field notes only;
   none of them changes a damage roll
-- The Form dropdown also offers forms this ROM does not have (Sevii forms, some Megas), because the
-  list comes from the calc's own data

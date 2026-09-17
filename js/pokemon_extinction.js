@@ -210,7 +210,11 @@
         var candidates = [];
         if (stones[item]) {
             // Older entries map a stone to the base species, newer ones straight to the Mega.
-            candidates.push(stones[item], stones[item] + "-Mega");
+            // Charizardite X / Mewtwonite Y and friends pick one of two Megas, named by the suffix.
+            var suffix = (item.match(/ (X|Y)$/) || [])[1];
+            candidates.push(stones[item]);
+            if (suffix) candidates.push(stones[item] + "-Mega-" + suffix);
+            candidates.push(stones[item] + "-Mega");
         }
         if (item === "Red Orb") candidates.push("Groudon-Primal");
         if (item === "Blue Orb") candidates.push("Kyogre-Primal");
@@ -222,6 +226,23 @@
         return null;
     }
 
+    // The Form dropdown is built from the calc's own data, so it offers forms this ROM does not
+    // have (Sevii forms, Megas the hack never added) and both Mega Charizards whatever stone is
+    // held. A Pokemon can only reach the form its item gives it, so drop the rest.
+    function filterFormeOptions(panel, target) {
+        var formeSelect = $(panel).find(".forme");
+        var poks = extinctionData().poks || {};
+        var current = formeSelect.val();
+        formeSelect.find("option").each(function () {
+            var name = $(this).attr("value");
+            if (name === current) return;
+            var unreachableForm = /-(Mega|Primal)/.test(name) && name !== target;
+            if (!poks[name] || unreachableForm) $(this).remove();
+        });
+        // Nothing left to choose between: the calc hides a single-option dropdown anyway.
+        formeSelect.closest("div").toggleClass("hide", formeSelect.find("option").length < 2 && !target);
+    }
+
     function updateFormToggle(panel) {
         var formeSelect = $(panel).find(".forme");
         var item = $(panel).find(".item").val();
@@ -231,7 +252,12 @@
         // selected the current form is what tells us where to switch back to.
         var target = /-(Mega|Primal)/.test(current) ? current : formTarget(item, formeSelect);
 
-        if (!isExtinction() || !target) {
+        if (!isExtinction()) {
+            button.remove();
+            return;
+        }
+        if (!target) {
+            filterFormeOptions(panel, null);
             button.remove();
             return;
         }
@@ -255,6 +281,7 @@
                 setAbility($(panel), wanted);
             });
         }
+        filterFormeOptions(panel, target);
         var isBase = current !== target;
         var label = /-Primal/.test(target) ? "Primal" : "Mega";
         if (isBase && item) button.attr("data-item", item); // remember the stone for the way back

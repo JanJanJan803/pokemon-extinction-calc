@@ -26936,6 +26936,24 @@ backup_data = {
     "2": "Propeller Tail"
    }
   },
+  "Articuno": {
+   "bs": {
+    "hp": 90,
+    "at": 85,
+    "df": 100,
+    "sa": 95,
+    "sd": 125,
+    "sp": 85
+   },
+   "types": [
+    "Ice",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Pressure",
+    "2": "Snow Cloak"
+   }
+  },
   "Articuno-Galar": {
    "bs": {
     "hp": 90,
@@ -27553,6 +27571,25 @@ backup_data = {
    "abilities": {
     "0": "Wind Rider",
     "2": "Infiltrator"
+   }
+  },
+  "Braviary": {
+   "bs": {
+    "hp": 100,
+    "at": 123,
+    "df": 75,
+    "sa": 57,
+    "sd": 75,
+    "sp": 80
+   },
+   "types": [
+    "Normal",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Keen Eye",
+    "1": "Sheer Force",
+    "2": "Defiant"
    }
   },
   "Braviary-Hisui": {
@@ -28930,6 +28967,22 @@ backup_data = {
     "2": "Levitate"
    }
   },
+  "Deoxys": {
+   "bs": {
+    "hp": 50,
+    "at": 180,
+    "df": 20,
+    "sa": 180,
+    "sd": 20,
+    "sp": 150
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Pressure"
+   }
+  },
   "Deoxys-Attack": {
    "bs": {
     "hp": 50,
@@ -28938,6 +28991,22 @@ backup_data = {
     "sa": 180,
     "sd": 20,
     "sp": 150
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Pressure"
+   }
+  },
+  "Deoxys-Defense": {
+   "bs": {
+    "hp": 50,
+    "at": 70,
+    "df": 160,
+    "sa": 70,
+    "sd": 160,
+    "sp": 90
    },
    "types": [
     "Psychic"
@@ -29461,6 +29530,24 @@ backup_data = {
     "2": "Hydration"
    }
   },
+  "Dudunsparce": {
+   "bs": {
+    "hp": 125,
+    "at": 100,
+    "df": 80,
+    "sa": 85,
+    "sd": 75,
+    "sp": 55
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Serene Grace",
+    "1": "Run Away",
+    "2": "Rattled"
+   }
+  },
   "Dudunsparce-Three-Segment": {
    "bs": {
     "hp": 125,
@@ -29656,6 +29743,24 @@ backup_data = {
     "0": "Hadron Engine",
     "1": "Hadron Engine",
     "2": "Hadron Engine"
+   }
+  },
+  "Eevee": {
+   "bs": {
+    "hp": 55,
+    "at": 55,
+    "df": 50,
+    "sa": 45,
+    "sd": 65,
+    "sp": 55
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Run Away",
+    "1": "Adaptability",
+    "2": "Anticipation"
    }
   },
   "Eevee-Starter": {
@@ -29997,6 +30102,23 @@ backup_data = {
     "0": "Keen Eye",
     "1": "Infiltrator",
     "2": "Own Tempo"
+   }
+  },
+  "Eternatus": {
+   "bs": {
+    "hp": 140,
+    "at": 85,
+    "df": 95,
+    "sa": 145,
+    "sd": 95,
+    "sp": 130
+   },
+   "types": [
+    "Poison",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Pressure"
    }
   },
   "Eternatus-Eternamax": {
@@ -30791,6 +30913,25 @@ backup_data = {
     "2": "Clear Body"
    }
   },
+  "Gastrodon": {
+   "bs": {
+    "hp": 111,
+    "at": 83,
+    "df": 68,
+    "sa": 92,
+    "sd": 82,
+    "sp": 39
+   },
+   "types": [
+    "Water",
+    "Ground"
+   ],
+   "abilities": {
+    "0": "Sticky Hold",
+    "1": "Storm Drain",
+    "2": "Sand Force"
+   }
+  },
   "Gastrodon-East": {
    "bs": {
     "hp": 111,
@@ -30810,7 +30951,75 @@ backup_data = {
     "2": "Sand Force"
    }
   },
+  "Genesect": {
+   "bs": {
+    "hp": 71,
+    "at": 120,
+    "df": 95,
+    "sa": 120,
+    "sd": 95,
+    "sp": 99
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Download"
+   }
+  },
+  "Genesect-Burn": {
+   "bs": {
+    "hp": 71,
+    "at": 120,
+    "df": 95,
+    "sa": 120,
+    "sd": 95,
+    "sp": 99
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Download"
+   }
+  },
+  "Genesect-Chill": {
+   "bs": {
+    "hp": 71,
+    "at": 120,
+    "df": 95,
+    "sa": 120,
+    "sd": 95,
+    "sp": 99
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Download"
+   }
+  },
   "Genesect-Douse": {
+   "bs": {
+    "hp": 71,
+    "at": 120,
+    "df": 95,
+    "sa": 120,
+    "sd": 95,
+    "sp": 99
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Download"
+   }
+  },
+  "Genesect-Shock": {
    "bs": {
     "hp": 71,
     "at": 120,
@@ -31169,6 +31378,25 @@ backup_data = {
     "2": "Swift Swim"
    }
   },
+  "Golem": {
+   "bs": {
+    "hp": 80,
+    "at": 120,
+    "df": 130,
+    "sa": 55,
+    "sd": 65,
+    "sp": 45
+   },
+   "types": [
+    "Rock",
+    "Ground"
+   ],
+   "abilities": {
+    "0": "Rock Head",
+    "1": "Sturdy",
+    "2": "Sand Veil"
+   }
+  },
   "Golem-Alola": {
    "bs": {
     "hp": 80,
@@ -31353,6 +31581,25 @@ backup_data = {
     "0": "Protosynthesis"
    }
   },
+  "Gourgeist": {
+   "bs": {
+    "hp": 65,
+    "at": 90,
+    "df": 122,
+    "sa": 58,
+    "sd": 75,
+    "sp": 84
+   },
+   "types": [
+    "Ghost",
+    "Grass"
+   ],
+   "abilities": {
+    "0": "Pickup",
+    "1": "Frisk",
+    "2": "Insomnia"
+   }
+  },
   "Gourgeist-Large": {
    "bs": {
     "hp": 75,
@@ -31361,6 +31608,44 @@ backup_data = {
     "sa": 58,
     "sd": 75,
     "sp": 69
+   },
+   "types": [
+    "Ghost",
+    "Grass"
+   ],
+   "abilities": {
+    "0": "Pickup",
+    "1": "Frisk",
+    "2": "Insomnia"
+   }
+  },
+  "Gourgeist-Small": {
+   "bs": {
+    "hp": 55,
+    "at": 85,
+    "df": 122,
+    "sa": 58,
+    "sd": 75,
+    "sp": 99
+   },
+   "types": [
+    "Ghost",
+    "Grass"
+   ],
+   "abilities": {
+    "0": "Pickup",
+    "1": "Frisk",
+    "2": "Insomnia"
+   }
+  },
+  "Gourgeist-Super": {
+   "bs": {
+    "hp": 85,
+    "at": 100,
+    "df": 122,
+    "sa": 58,
+    "sd": 75,
+    "sp": 54
    },
    "types": [
     "Ghost",
@@ -31619,6 +31904,24 @@ backup_data = {
    "abilities": {
     "0": "Overgrow",
     "2": "Unburden"
+   }
+  },
+  "Growlithe": {
+   "bs": {
+    "hp": 55,
+    "at": 70,
+    "df": 45,
+    "sa": 70,
+    "sd": 50,
+    "sp": 60
+   },
+   "types": [
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Flash Fire",
+    "2": "Justified"
    }
   },
   "Growlithe-Hisui": {
@@ -34054,6 +34357,24 @@ backup_data = {
     "2": "Stakeout"
    }
   },
+  "Maushold": {
+   "bs": {
+    "hp": 74,
+    "at": 75,
+    "df": 70,
+    "sa": 65,
+    "sd": 75,
+    "sp": 111
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Friend Guard",
+    "1": "Cheek Pouch",
+    "2": "Technician"
+   }
+  },
   "Maushold-Four": {
    "bs": {
     "hp": 74,
@@ -34234,6 +34555,24 @@ backup_data = {
     "2": "Competitive"
    }
   },
+  "Meowth": {
+   "bs": {
+    "hp": 40,
+    "at": 45,
+    "df": 35,
+    "sa": 40,
+    "sd": 40,
+    "sp": 90
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Pickup",
+    "1": "Technician",
+    "2": "Unnerve"
+   }
+  },
   "Meowth-Alola": {
    "bs": {
     "hp": 40,
@@ -34250,6 +34589,24 @@ backup_data = {
     "0": "Pickup",
     "1": "Technician",
     "2": "Rattled"
+   }
+  },
+  "Meowth-Galar": {
+   "bs": {
+    "hp": 50,
+    "at": 65,
+    "df": 55,
+    "sa": 40,
+    "sd": 40,
+    "sp": 40
+   },
+   "types": [
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Pickup",
+    "1": "Tough Claws",
+    "2": "Unnerve"
    }
   },
   "Mesprit": {
@@ -34480,7 +34837,41 @@ backup_data = {
     "0": "Disguise"
    }
   },
+  "Mimikyu-Totem": {
+   "bs": {
+    "hp": 55,
+    "at": 90,
+    "df": 80,
+    "sa": 50,
+    "sd": 105,
+    "sp": 96
+   },
+   "types": [
+    "Ghost",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Disguise"
+   }
+  },
   "Minior": {
+   "bs": {
+    "hp": 60,
+    "at": 60,
+    "df": 100,
+    "sa": 60,
+    "sd": 100,
+    "sp": 60
+   },
+   "types": [
+    "Rock",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Shields Down"
+   }
+  },
+  "Minior-Meteor": {
    "bs": {
     "hp": 60,
     "at": 60,
@@ -34512,6 +34903,24 @@ backup_data = {
    "abilities": {
     "0": "Minus",
     "2": "Volt Absorb"
+   }
+  },
+  "Moltres": {
+   "bs": {
+    "hp": 90,
+    "at": 100,
+    "df": 90,
+    "sa": 125,
+    "sd": 85,
+    "sp": 90
+   },
+   "types": [
+    "Fire",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Pressure",
+    "2": "Flame Body"
    }
   },
   "Moltres-Galar": {
@@ -34749,6 +35158,39 @@ backup_data = {
     "0": "Beast Boost"
    }
   },
+  "Necrozma": {
+   "bs": {
+    "hp": 97,
+    "at": 107,
+    "df": 101,
+    "sa": 127,
+    "sd": 89,
+    "sp": 79
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Prism Armor"
+   }
+  },
+  "Necrozma-Dawn-Wings": {
+   "bs": {
+    "hp": 97,
+    "at": 113,
+    "df": 109,
+    "sa": 157,
+    "sd": 127,
+    "sp": 77
+   },
+   "types": [
+    "Psychic",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Prism Armor"
+   }
+  },
   "Necrozma-Dusk-Mane": {
    "bs": {
     "hp": 97,
@@ -34764,6 +35206,23 @@ backup_data = {
    ],
    "abilities": {
     "0": "Prism Armor"
+   }
+  },
+  "Necrozma-Ultra": {
+   "bs": {
+    "hp": 97,
+    "at": 167,
+    "df": 97,
+    "sa": 167,
+    "sd": 97,
+    "sp": 129
+   },
+   "types": [
+    "Psychic",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Neuroforce"
    }
   },
   "Nidoking": {
@@ -35052,6 +35511,24 @@ backup_data = {
     "2": "Thick Fat"
    }
   },
+  "Oinkologne-F": {
+   "bs": {
+    "hp": 115,
+    "at": 90,
+    "df": 70,
+    "sa": 59,
+    "sd": 90,
+    "sp": 65
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Aroma Veil",
+    "1": "Gluttony",
+    "2": "Thick Fat"
+   }
+  },
   "Okidogi": {
    "bs": {
     "hp": 88,
@@ -35108,6 +35585,40 @@ backup_data = {
     "2": "Telepathy"
    }
   },
+  "Oricorio": {
+   "bs": {
+    "hp": 75,
+    "at": 70,
+    "df": 70,
+    "sa": 98,
+    "sd": 70,
+    "sp": 93
+   },
+   "types": [
+    "Fire",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Dancer"
+   }
+  },
+  "Oricorio-Pa'u": {
+   "bs": {
+    "hp": 75,
+    "at": 70,
+    "df": 70,
+    "sa": 98,
+    "sd": 70,
+    "sp": 93
+   },
+   "types": [
+    "Psychic",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Dancer"
+   }
+  },
   "Oricorio-Pom-Pom": {
    "bs": {
     "hp": 75,
@@ -35119,6 +35630,23 @@ backup_data = {
    },
    "types": [
     "Electric",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Dancer"
+   }
+  },
+  "Oricorio-Sensu": {
+   "bs": {
+    "hp": 75,
+    "at": 70,
+    "df": 70,
+    "sa": 98,
+    "sd": 70,
+    "sp": 93
+   },
+   "types": [
+    "Ghost",
     "Flying"
    ],
    "abilities": {
@@ -35160,6 +35688,24 @@ backup_data = {
     "0": "Run Away",
     "1": "Pickup",
     "2": "Volt Absorb"
+   }
+  },
+  "Palkia": {
+   "bs": {
+    "hp": 90,
+    "at": 120,
+    "df": 100,
+    "sa": 150,
+    "sd": 120,
+    "sp": 100
+   },
+   "types": [
+    "Water",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Pressure",
+    "2": "Telepathy"
    }
   },
   "Palkia-Origin": {
@@ -35418,7 +35964,143 @@ backup_data = {
     "2": "No Guard"
    }
   },
+  "Pikachu": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Alola": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
   "Pikachu-Belle": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Cosplay": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Hoenn": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Kalos": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Libre": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Original": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Partner": {
    "bs": {
     "hp": 35,
     "at": 55,
@@ -35452,6 +36134,57 @@ backup_data = {
     "2": "Lightning Rod"
    }
   },
+  "Pikachu-Pop-Star": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Rock-Star": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Sinnoh": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
   "Pikachu-Starter": {
    "bs": {
     "hp": 70,
@@ -35460,6 +36193,40 @@ backup_data = {
     "sa": 100,
     "sd": 70,
     "sp": 120
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-Unova": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "2": "Lightning Rod"
+   }
+  },
+  "Pikachu-World": {
+   "bs": {
+    "hp": 35,
+    "at": 55,
+    "df": 40,
+    "sa": 50,
+    "sd": 50,
+    "sp": 90
    },
    "types": [
     "Electric"
@@ -35590,6 +36357,24 @@ backup_data = {
    "abilities": {
     "0": "Weak Armor",
     "2": "Cursed Body"
+   }
+  },
+  "Porygon": {
+   "bs": {
+    "hp": 65,
+    "at": 60,
+    "df": 70,
+    "sa": 85,
+    "sd": 75,
+    "sp": 40
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Trace",
+    "1": "Download",
+    "2": "Analytic"
    }
   },
   "Porygon-Z": {
@@ -36025,6 +36810,24 @@ backup_data = {
     "2": "Anticipation"
    }
   },
+  "Raticate": {
+   "bs": {
+    "hp": 55,
+    "at": 81,
+    "df": 60,
+    "sa": 50,
+    "sd": 70,
+    "sp": 97
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Run Away",
+    "1": "Guts",
+    "2": "Hustle"
+   }
+  },
   "Raticate-Alola": {
    "bs": {
     "hp": 75,
@@ -36384,6 +37187,40 @@ backup_data = {
     "2": "Technician"
    }
   },
+  "Rotom": {
+   "bs": {
+    "hp": 50,
+    "at": 50,
+    "df": 77,
+    "sa": 95,
+    "sd": 77,
+    "sp": 91
+   },
+   "types": [
+    "Electric",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Levitate"
+   }
+  },
+  "Rotom-Fan": {
+   "bs": {
+    "hp": 50,
+    "at": 65,
+    "df": 107,
+    "sa": 105,
+    "sd": 107,
+    "sp": 86
+   },
+   "types": [
+    "Electric",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Levitate"
+   }
+  },
   "Rotom-Frost": {
    "bs": {
     "hp": 50,
@@ -36413,6 +37250,23 @@ backup_data = {
    "types": [
     "Electric",
     "Fire"
+   ],
+   "abilities": {
+    "0": "Levitate"
+   }
+  },
+  "Rotom-Mow": {
+   "bs": {
+    "hp": 50,
+    "at": 65,
+    "df": 107,
+    "sa": 105,
+    "sd": 107,
+    "sp": 86
+   },
+   "types": [
+    "Electric",
+    "Grass"
    ],
    "abilities": {
     "0": "Levitate"
@@ -36579,6 +37433,23 @@ backup_data = {
    ],
    "abilities": {
     "0": "Corrosion"
+   }
+  },
+  "Samurott": {
+   "bs": {
+    "hp": 95,
+    "at": 100,
+    "df": 85,
+    "sa": 108,
+    "sd": 70,
+    "sp": 70
+   },
+   "types": [
+    "Water"
+   ],
+   "abilities": {
+    "0": "Torrent",
+    "2": "Shell Armor"
    }
   },
   "Samurott-Hisui": {
@@ -37035,6 +37906,23 @@ backup_data = {
     "0": "Natural Cure"
    }
   },
+  "Shaymin-Sky": {
+   "bs": {
+    "hp": 100,
+    "at": 103,
+    "df": 75,
+    "sa": 120,
+    "sd": 75,
+    "sp": 127
+   },
+   "types": [
+    "Grass",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Serene Grace"
+   }
+  },
   "Shelgon": {
    "bs": {
     "hp": 65,
@@ -37053,6 +37941,24 @@ backup_data = {
    }
   },
   "Shellos": {
+   "bs": {
+    "hp": 76,
+    "at": 48,
+    "df": 48,
+    "sa": 57,
+    "sd": 62,
+    "sp": 34
+   },
+   "types": [
+    "Water"
+   ],
+   "abilities": {
+    "0": "Sticky Hold",
+    "1": "Storm Drain",
+    "2": "Sand Force"
+   }
+  },
+  "Shellos-East": {
    "bs": {
     "hp": 76,
     "at": 48,
@@ -37144,6 +38050,134 @@ backup_data = {
     "2": "Sand Veil"
    }
   },
+  "Silvally": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Flying"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Bug": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Bug"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Dark": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Dark"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Dragon": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Electric": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Fairy": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Fighting": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Fire": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Fire"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
   "Silvally-Flying": {
    "bs": {
     "hp": 105,
@@ -37155,6 +38189,150 @@ backup_data = {
    },
    "types": [
     "Flying"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Ghost": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Grass": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Grass"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Ground": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Ground"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Ice": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Ice"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Poison": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Poison"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Psychic": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Rock": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Rock"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Steel": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Steel"
+   ],
+   "abilities": {
+    "0": "RKS System"
+   }
+  },
+  "Silvally-Water": {
+   "bs": {
+    "hp": 105,
+    "at": 105,
+    "df": 105,
+    "sa": 105,
+    "sd": 105,
+    "sp": 105
+   },
+   "types": [
+    "Water"
    ],
    "abilities": {
     "0": "RKS System"
@@ -37176,6 +38354,24 @@ backup_data = {
     "0": "Gluttony",
     "1": "Speed Boost",
     "2": "Blaze"
+   }
+  },
+  "Sinistcha": {
+   "bs": {
+    "hp": 71,
+    "at": 60,
+    "df": 106,
+    "sa": 121,
+    "sd": 80,
+    "sp": 70
+   },
+   "types": [
+    "Grass",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Hospitality",
+    "2": "Heatproof"
    }
   },
   "Sinistcha-Masterpiece": {
@@ -37673,7 +38869,64 @@ backup_data = {
     "2": "Oblivious"
    }
   },
+  "Squawkabilly": {
+   "bs": {
+    "hp": 82,
+    "at": 96,
+    "df": 51,
+    "sa": 45,
+    "sd": 51,
+    "sp": 92
+   },
+   "types": [
+    "Normal",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Hustle",
+    "2": "Guts"
+   }
+  },
+  "Squawkabilly-Blue": {
+   "bs": {
+    "hp": 82,
+    "at": 96,
+    "df": 51,
+    "sa": 45,
+    "sd": 51,
+    "sp": 92
+   },
+   "types": [
+    "Normal",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Hustle",
+    "2": "Guts"
+   }
+  },
   "Squawkabilly-White": {
+   "bs": {
+    "hp": 82,
+    "at": 96,
+    "df": 51,
+    "sa": 45,
+    "sd": 51,
+    "sp": 92
+   },
+   "types": [
+    "Normal",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Hustle",
+    "2": "Sheer Force"
+   }
+  },
+  "Squawkabilly-Yellow": {
    "bs": {
     "hp": 82,
     "at": 96,
@@ -37856,6 +39109,25 @@ backup_data = {
     "0": "Intimidate",
     "1": "Sand Rush",
     "2": "Scrappy"
+   }
+  },
+  "Stunfisk": {
+   "bs": {
+    "hp": 109,
+    "at": 66,
+    "df": 84,
+    "sa": 81,
+    "sd": 99,
+    "sp": 32
+   },
+   "types": [
+    "Ground",
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Static",
+    "1": "Limber",
+    "2": "Sand Veil"
    }
   },
   "Stunfisk-Galar": {
@@ -38369,6 +39641,24 @@ backup_data = {
    "abilities": {
     "0": "Justified",
     "2": "Scrappy"
+   }
+  },
+  "Thundurus": {
+   "bs": {
+    "hp": 79,
+    "at": 115,
+    "df": 70,
+    "sa": 125,
+    "sd": 80,
+    "sp": 111
+   },
+   "types": [
+    "Electric",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Prankster",
+    "2": "Defiant"
    }
   },
   "Thundurus-Therian": {
@@ -39220,6 +40510,44 @@ backup_data = {
     "2": "Effect Spore"
    }
   },
+  "Vivillon": {
+   "bs": {
+    "hp": 80,
+    "at": 52,
+    "df": 50,
+    "sa": 90,
+    "sd": 50,
+    "sp": 89
+   },
+   "types": [
+    "Bug",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Shield Dust",
+    "1": "Compound Eyes",
+    "2": "Friend Guard"
+   }
+  },
+  "Vivillon-Fancy": {
+   "bs": {
+    "hp": 80,
+    "at": 52,
+    "df": 50,
+    "sa": 90,
+    "sd": 50,
+    "sp": 89
+   },
+   "types": [
+    "Bug",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Shield Dust",
+    "1": "Compound Eyes",
+    "2": "Friend Guard"
+   }
+  },
   "Vivillon-Pokeball": {
    "bs": {
     "hp": 80,
@@ -39669,6 +40997,24 @@ backup_data = {
     "2": "Toxic Boost"
    }
   },
+  "Zapdos": {
+   "bs": {
+    "hp": 90,
+    "at": 90,
+    "df": 85,
+    "sa": 125,
+    "sd": 90,
+    "sp": 100
+   },
+   "types": [
+    "Electric",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Pressure",
+    "2": "Static"
+   }
+  },
   "Zapdos-Galar": {
    "bs": {
     "hp": 90,
@@ -39770,6 +41116,22 @@ backup_data = {
     "0": "Iron Fist",
     "1": "Iron Fist",
     "2": "Iron Fist"
+   }
+  },
+  "Zorua": {
+   "bs": {
+    "hp": 40,
+    "at": 65,
+    "df": 40,
+    "sa": 80,
+    "sd": 40,
+    "sp": 65
+   },
+   "types": [
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Illusion"
    }
   },
   "Zorua-Hisui": {
