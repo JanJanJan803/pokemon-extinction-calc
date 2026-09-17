@@ -269,7 +269,10 @@ $(".result-move").change(function () {
 			desc = correctImpossibleMultihitOHKOText(result, desc);
 			if (desc.indexOf('--') === -1) desc += ' -- possibly the worst move ever';
 			$("#mainResult").text(desc);
-			var summary = displayDamageHits(normalizeDamageForDisplay(result), getBeatUpHitLabels(result));
+			// Pokemon Extinction: the AI reads the PLAYER's attacks at the maximum roll and its own
+			// at the median, so which roll is worth marking depends on whose move this is.
+			var isPlayerMove = ($(this).attr("id") || "").indexOf("resultMoveL") === 0;
+			var summary = displayDamageHits(normalizeDamageForDisplay(result), getBeatUpHitLabels(result), isPlayerMove);
 			var rest = "";
 			var newLine = summary.indexOf('\n');
 			if (newLine > -1) {
@@ -300,7 +303,7 @@ function getBeatUpHitLabels(result) {
 	return result.move.beatUpParty.map(function(member) { return member.name || "Party member"; });
 }
 
-function displayDamageHits(damage, hitLabels) {
+function displayDamageHits(damage, hitLabels, isPlayerMove) {
 	hitLabels = Array.isArray(hitLabels) ? hitLabels : [];
 	// Fixed Damage
 	if (typeof damage === 'number') return (hitLabels[0] ? "1st Hit (" + hitLabels[0] + "): " : "") + damage.toString();
@@ -312,9 +315,15 @@ function displayDamageHits(damage, hitLabels) {
 		} else if (settings && settings.damageGen === 5) {
 			medianIndex = 0;
 		}
+		// Pokemon Extinction reads incoming damage at the maximum roll, its own at the median.
+		var isExtinction = typeof TITLE === "string" && TITLE === "Pokémon Extinction";
+		var markedIndex = (isExtinction && isPlayerMove) ? damage.length - 1 : medianIndex;
+		var markedTitle = (isExtinction && isPlayerMove)
+			? "The roll the AI assumes for your attacks: it plans against your highest roll"
+			: "The roll the AI assumes for its own attacks";
 		var formatted = damage.map(function (value, index) {
-			if (index === medianIndex) {
-				return `<span id='dmg-median' title='The roll the in-game AI uses when it decides'>${value}</span>`;
+			if (index === markedIndex) {
+				return `<span id='dmg-median' title='${markedTitle}'>${value}</span>`;
 			}
 			return value;
 		});

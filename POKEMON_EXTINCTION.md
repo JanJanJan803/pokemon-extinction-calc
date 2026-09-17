@@ -53,6 +53,11 @@ Implemented in `calc/mechanics/gen789.js`, next to the official ability each one
 | Piercing Drill | Physical moves ignore Protect |
 | Instant Preparation | +1 Def, +1 Sp. Def and +1 Speed on entry, once per battle. Set those stages yourself; the calc never applies boosts on its own. |
 
+## Reading the calculator
+
+- The marked damage roll is the one the AI plans with: your attacks are marked at the **maximum**
+  roll, because the AI assumes your best roll against it, and its own attacks at the **median**.
+
 ## Not modelled yet
 
 The data is right, but the damage engine has no behaviour for these:
