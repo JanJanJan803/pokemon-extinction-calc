@@ -29,3 +29,6 @@
 .ext-mon img { width: 56px; height: 56px; object-fit: contain; display: block; margin: 0 auto; }
 .ext-mon span { display: block; font-size: 0.75em; overflow-wrap: anywhere; }
 .ext-mon.owned { opacity: 1; border-color: #8be9fd; }
+.ext-box { border-top: 1px solid #44475a; margin-top: 10px; }
+.ext-box-import { margin-left: 8px; padding: 0 10px; font-size: 0.85em; }
+.ext-modal h4 { margin: 8px 0 4px; font-size: 0.9em; opacity: 0.8; }

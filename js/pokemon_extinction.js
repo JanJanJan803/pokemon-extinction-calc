@@ -220,21 +220,37 @@
         return groups;
     }
 
+    function boxOf(pool) {
+        var m = pool.match(/^Box (\d+)/);
+        return m ? m[1] : pool;
+    }
+
     function renderPicker() {
         var owned = getOwned();
         var groups = poolGroups();
-        var html = "";
+        var boxes = {};
         Object.keys(groups).sort().forEach(function (pool) {
-            html += '<h3>' + pool + '</h3><div class="ext-pool">';
-            groups[pool].forEach(function (entry) {
-                var key = entry.species + "|" + entry.label;
-                var set = entry.set;
-                var tip = entry.species + " Lv" + set.level + " (" + set.nature + ", " + set.ability + ")" +
-                    (set.item ? " @ " + set.item : "") + "\n" + set.moves.join(", ");
-                html += '<div class="ext-mon' + (owned.indexOf(key) !== -1 ? " owned" : "") + '" data-key="' +
-                    key.replace(/"/g, "&quot;") + '" title="' + tip.replace(/"/g, "&quot;") + '">' +
-                    '<img src="' + spriteSrc(entry.species) + '" loading="lazy" alt="">' +
-                    '<span>' + entry.species + '</span></div>';
+            (boxes[boxOf(pool)] = boxes[boxOf(pool)] || []).push(pool);
+        });
+        var html = "";
+        Object.keys(boxes).sort().forEach(function (box) {
+            html += '<div class="ext-box" data-box="' + box + '"><h3>Box ' + box +
+                ' <button type="button" class="bs-btn ext-box-import" data-box="' + box + '">Import Box ' + box +
+                '</button></h3>';
+            boxes[box].forEach(function (pool) {
+                var sub = pool.replace(/^Box \d+\s*/, "");
+                html += '<h4>' + (sub || "Pool") + '</h4><div class="ext-pool">';
+                groups[pool].forEach(function (entry) {
+                    var key = entry.species + "|" + entry.label;
+                    var set = entry.set;
+                    var tip = entry.species + " Lv" + set.level + " (" + set.nature + ", " + set.ability + ")" +
+                        (set.item ? " @ " + set.item : "") + "\n" + set.moves.join(", ");
+                    html += '<div class="ext-mon' + (owned.indexOf(key) !== -1 ? " owned" : "") + '" data-key="' +
+                        key.replace(/"/g, "&quot;") + '" title="' + tip.replace(/"/g, "&quot;") + '">' +
+                        '<img src="' + spriteSrc(entry.species) + '" loading="lazy" alt="">' +
+                        '<span>' + entry.species + '</span></div>';
+                });
+                html += "</div>";
             });
             html += "</div>";
         });
@@ -244,20 +260,40 @@
 
     function importOwned() {
         var sets = extinctionData().player_sets || {};
-        var texts = getOwned().map(function (key) {
+        // The calc keeps one box set per species. When two pools share a species, import the later
+        // box last so its set is the one kept - that is the version a player has later in the game.
+        var keys = getOwned().slice().sort(function (a, b) {
+            var la = a.slice(a.indexOf("|") + 1), lb = b.slice(b.indexOf("|") + 1);
+            return la < lb ? -1 : la > lb ? 1 : 0;
+        });
+        var texts = keys.map(function (key) {
             var sep = key.indexOf("|");
             var species = key.slice(0, sep);
             var set = sets[species] && sets[species][key.slice(sep + 1)];
             return set ? showdownText(species, set) : null;
         }).filter(Boolean);
 
-        // Replace the box rather than merging, so deselected mons disappear.
-        if (typeof removeMyBoxEntries === "function" && typeof getStoredCustomSets === "function") {
-            localStorage.customsets = JSON.stringify(removeMyBoxEntries(getStoredCustomSets()));
+        // Replace the box rather than merging: a new split wipes the player's old encounters.
+        // updateDex compares against the STORED box to know what to remove, so the stored box must
+        // still be the old one when it runs - it then stores the result itself. Only "My Box" sets
+        // are touched; the trainer sets live in the same table and stay.
+        if (typeof updateDex === "function" && typeof getStoredCustomSets === "function" &&
+            typeof removeMyBoxEntries === "function") {
+            updateDex(removeMyBoxEntries(getStoredCustomSets()));
+            customSets = getStoredCustomSets();
         }
-        $("#clearSets").click();
+        // The party and the left-side selection point at the old box.
+        $("#clear-party").click();
+        try {
+            if (/\(My Box\)$/.test(localStorage.left || "")) localStorage.removeItem("left");
+        } catch (e) { /* storage unavailable */ }
+
         if (texts.length && typeof addSets === "function") {
             addSets(texts.join("\n\n"), "My Box");
+            // Show a Pokemon from the new box instead of one that no longer exists.
+            $(".player-poks .trainer-pok, .player-megas .trainer-pok").first().click();
+        } else if (typeof get_box === "function") {
+            get_box();
         }
     }
 
@@ -273,7 +309,8 @@
             '<span id="ext-box-count"></span>' +
             '<button type="button" class="bs-btn" id="ext-box-import">Import selected</button>' +
             '<button type="button" class="bs-btn" id="ext-box-close">Close</button></div>' +
-            '<p class="ext-modal-help">Click a Pokemon to select it. Hover for its set. Held items can be changed on the left after importing.</p>' +
+            '<p class="ext-modal-help">"Import Box N" imports that whole box. Or click single Pokemon and use "Import selected". ' +
+            'Every import replaces the previously imported Pokemon. Hover for a set; held items can be changed on the left after importing.</p>' +
             '<div id="ext-box-list"></div></div></div>'
         );
 
@@ -285,6 +322,16 @@
             $("#ext-box-modal").prop("hidden", true);
         });
         $("#ext-box-import").on("click", function () {
+            importOwned();
+            $("#ext-box-modal").prop("hidden", true);
+        });
+        // A new split hands out a new box and wipes the old one, so importing a box replaces
+        // whatever was imported before.
+        $("#ext-box-list").on("click", ".ext-box-import", function () {
+            var box = $(this).attr("data-box");
+            setOwned($('#ext-box-list .ext-box[data-box="' + box + '"] .ext-mon').map(function () {
+                return $(this).attr("data-key");
+            }).get());
             importOwned();
             $("#ext-box-modal").prop("hidden", true);
         });
