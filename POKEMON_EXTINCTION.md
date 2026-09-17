@@ -53,6 +53,12 @@ Implemented in `calc/mechanics/gen789.js`, next to the official ability each one
 | Piercing Drill | Physical moves ignore Protect |
 | Instant Preparation | +1 Def, +1 Sp. Def and +1 Speed on entry, once per battle. Set those stages yourself; the calc never applies boosts on its own. |
 
+## Shortcuts
+
+Right click a box icon to add that Pokemon to the party view. That is the only one left: the alt+key
+shortcuts and the other right-click actions were removed, because a hidden shortcut nobody needs is
+just a surprise waiting to happen.
+
 ## Reading the calculator
 
 - The marked damage roll is the one the AI plans with: your attacks are marked at the **maximum**

@@ -241,33 +241,11 @@ $(document).ready(function() {
     })
 
     // Apply highest damage roll to max HP
-    $('.results-right label').on('contextmenu', function(e) {
-        e.preventDefault()
-        $(this).click()
-        let matches = $('#damageValues').text().match(/\d+/g)
-        let dmg = parseInt(matches[matches.length - 1])
-
-        let newHP = Math.max(parseInt($('#p1 .max-hp').text()) - dmg, 0)
-
-        $('#p1 .current-hp').val(newHP).change()
-
-    })
 
     $('#battle-notes .notes-text').blur(function() {
         localStorage.notes = $('#battle-notes .notes-text').html()
     })
 
-    $('[aria-labelledby="resultHeaderL"] label').on('contextmenu', function(e) {
-        e.preventDefault()
-        $(this).click()
-        let matches = $('#damageValues').text().match(/\d+/g)
-        let dmg = parseInt(matches[matches.length - 1])
-
-        let newHP = Math.max(parseInt($('#p2 .max-hp').text()) - dmg, 0)
-
-        $('#p2 .current-hp').val(newHP).change()
-
-    })
 
     $(document).on('change', '.set-selector', function() {
         setTimeout(function() {
@@ -455,15 +433,7 @@ $(document).ready(function() {
       window.location.href = url.toString();
     }
 
-    $(document).on('contextmenu', '.trainer-pok.right-side', function(e) {
-        e.preventDefault()
-        toggleTrainerPreviewFaint($(this).attr('data-id'))
-    })
 
-    $(document).on('contextmenu', '#p2 .poke-sprite', function(e) {
-        e.preventDefault()
-        toggleTrainerPreviewFaint($(this).attr('data-id'))
-    })
 
     $(document).on('click', '#add-party-pok', function() {
         var currentPok = $('.set-selector')[1].value
@@ -854,44 +824,9 @@ $(document).ready(function() {
         return document.body.classList.contains('main-page-calculator-view')
     }
 
-    $(document).keydown(async function (e) {
-        if (!isCalculatorHotkeyContextActive()) {
-            return
-        }
-
-        if ($('.select2-drop-active:visible').length == 0 && 
-            document.activeElement != $('textarea.import-team-text')[0] && 
-            $('.pokemon-filter:visible').length === 0 && 
-            document.activeElement != $('#battle-notes .notes-text')[0]) {
-            
-
-            if ((e.altKey || e.metaKey) && (e.key == "f" || e.key == "ƒ")){ 
-                e.preventDefault()
-                $('.panel-mid').toggle()
-                $('.panel:not(.panel-mid)').toggleClass('third')
-            } else if ((e.altKey || e.metaKey) && (e.key == "b" || e.key == "∫") && saveUploaded && (baseGame == "Pt" || baseGame == "HGSS")) {
-                e.preventDefault()
-                if (confirm("Put full party to sleep?")) {
-                    bedtime()
-                }
-            } else if (e.altKey && e.key == "c" || e.key == "ç") {
-                e.preventDefault()
-                $("#critR1")[0].checked = !$("#critR1")[0].checked
-                $("#critR2")[0].checked = !$("#critR2")[0].checked
-                $("#critR3")[0].checked = !$("#critR3")[0].checked
-                $("#critR4")[0].checked = !$("#critR4")[0].checked
-                $('.move-crit').last().change()
-                syncResultCritState('R')
-            } else if (e.altKey && e.key == "s" || e.key == "ß") {
-                toggleBoxSpriteStyle()
-            } else if (e.altKey && e.key == "p" || e.key == "π") {
-                setPartner()       
-            } else if ((e.altKey || e.metaKey) && (e.key == "t" || e.key == "†")) {
-                e.preventDefault()
-                beginManualTagPartnerSelection()
-            }
-        }
-    })
+    // Pokémon Extinction: the alt+key shortcuts (panel toggle, put party to sleep, crit every move,
+    // box sprite style, doubles partner, tag partner) are gone. None of them apply to this hack, and
+    // a hidden shortcut that does something unexpected is worse than no shortcut.
 
     $(document).keydown(function(e) {
         var keyCode = e.keyCode || e.which;
