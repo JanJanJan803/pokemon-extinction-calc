@@ -30049,9 +30049,9 @@ backup_data = {
     "Steel"
    ],
    "abilities": {
-    "0": "piercingdrill",
-    "1": "piercingdrill",
-    "2": "piercingdrill"
+    "0": "Piercing Drill",
+    "1": "Piercing Drill",
+    "2": "Piercing Drill"
    }
   },
   "Exeggutor": {
@@ -30137,9 +30137,9 @@ backup_data = {
     "Fighting"
    ],
    "abilities": {
-    "0": "instantpreparation",
-    "1": "instantpreparation",
-    "2": "instantpreparation"
+    "0": "Instant Preparation",
+    "1": "Instant Preparation",
+    "2": "Instant Preparation"
    }
   },
   "Farfetch’d": {
@@ -30246,9 +30246,9 @@ backup_data = {
     "Dragon"
    ],
    "abilities": {
-    "0": "dragonize",
-    "1": "dragonize",
-    "2": "dragonize"
+    "0": "Dragonize",
+    "1": "Dragonize",
+    "2": "Dragonize"
    }
   },
   "Ferrothorn": {
@@ -34159,9 +34159,9 @@ backup_data = {
     "Fairy"
    ],
    "abilities": {
-    "0": "megasol",
-    "1": "megasol",
-    "2": "megasol"
+    "0": "Mega Sol",
+    "1": "Mega Sol",
+    "2": "Mega Sol"
    }
   },
   "Melmetal": {
@@ -34925,7 +34925,7 @@ backup_data = {
     "Dragon"
    ],
    "abilities": {
-    "0": "dragonize",
+    "0": "Dragonize",
     "1": "Infiltrator",
     "2": "Telepathy"
    }
@@ -35769,9 +35769,9 @@ backup_data = {
     "Normal"
    ],
    "abilities": {
-    "0": "kingspride",
-    "1": "kingspride",
-    "2": "kingspride"
+    "0": "Kings Pride",
+    "1": "Kings Pride",
+    "2": "Kings Pride"
    }
   },
   "Pyukumuku": {
@@ -36814,9 +36814,9 @@ backup_data = {
     "Fire"
    ],
    "abilities": {
-    "0": "twoheaded",
-    "1": "twoheaded",
-    "2": "twoheaded"
+    "0": "Two Headed",
+    "1": "Two Headed",
+    "2": "Two Headed"
    }
   },
   "Scrafty": {
