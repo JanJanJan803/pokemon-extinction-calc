@@ -291,6 +291,7 @@
     }
 
     function updateFormToggles() {
+        preferBoxSetName();
         updateFormToggle("#p1");
         updateFormToggle("#p2");
         updateBoxTag();
@@ -393,17 +394,36 @@
     }
 
     // The calc stores every imported mon under one set name, "My Box", so the list would read
-    // "Charizard (My Box)" whichever box it came from. The pool is appended for display only:
-    // everything that parses these labels reads the species before " (" and the set name inside the
-    // brackets, so the suffix has to stay outside them.
-    function decorateBoxOptions(options) {
-        options.forEach(function (option) {
-            if (option && option.set === "My Box" && boxLabelFor(option.pokemon) &&
-                option.text.indexOf(" \u2014 ") === -1) {
-                option.text += " \u2014 " + boxLabelFor(option.pokemon);
-            }
+    // "Charizard (My Box)" whichever box it came from.
+    //
+    // Rather than rewrite the label - the species and set name are parsed back out of it in around
+    // thirty places - the box name is registered as a second name for the same set object, and the
+    // "My Box" entry is hidden from the lists. "Charizard (Box 5 Starter)" is then a real set that
+    // every one of those places can still look up. Only setdex gets the extra name; the stored box
+    // in localStorage stays keyed by "My Box", which the box view and fragsheet rely on.
+    var aliasedSets = [];
+
+    function syncBoxSetNames() {
+        if (typeof setdex !== "object" || !setdex) return;
+        aliasedSets.forEach(function (entry) {
+            if (setdex[entry[0]]) delete setdex[entry[0]][entry[1]];
         });
-        return options;
+        aliasedSets = [];
+        Object.keys(setdex).forEach(function (species) {
+            var boxSet = setdex[species] && setdex[species]["My Box"];
+            var label = boxSet && boxLabelFor(species);
+            if (!label || label === "My Box" || setdex[species][label]) return;
+            setdex[species][label] = boxSet;
+            aliasedSets.push([species, label]);
+        });
+    }
+
+    function decorateBoxOptions(options) {
+        syncBoxSetNames();
+        return options.filter(function (option) {
+            // Hide the raw "My Box" row when the same set is listed under its box name.
+            return !(option && option.set === "My Box" && boxLabelFor(option.pokemon));
+        });
     }
 
     function boxLabelFor(speciesName) {
@@ -414,12 +434,26 @@
         return labels[base] || "";
     }
 
-    // The selected label itself cannot carry the box: the calc parses that text in many places to
-    // find the species and set again. A tag next to the Pokemon list shows it instead.
+    // Clicking a box icon selects the set by its stored name, so the label would read "(My Box)"
+    // again. Both names point at the same set, so the label can be swapped without re-applying it.
+    function preferBoxSetName() {
+        var selector = $("#p1 .set-selector").first();
+        var value = selector.val() || "";
+        var match = value.match(/^(.*) \(My Box\)$/);
+        var label = match && boxLabelFor(match[1]);
+        if (!label) return;
+        var renamed = match[1] + " (" + label + ")";
+        if (typeof setdex === "object" && setdex[match[1]] && setdex[match[1]][label]) {
+            selector.val(renamed);
+            $("#p1 .select2-chosen").first().text(renamed);
+        }
+    }
+
+    // A tag next to the Pokemon list also names the box, for the panel itself.
     function updateBoxTag() {
         var chosen = $("#p1 .set-selector").first().val() || $("#p1 .select2-chosen").first().text() || "";
         var species = chosen.split(" (")[0].trim();
-        var isBoxSet = chosen.indexOf("(My Box)") !== -1;
+        var isBoxSet = /\(([^)]*)\)\s*$/.test(chosen) && !!boxLabelFor(species);
         var label = isBoxSet ? boxLabelFor($("#p1 .forme").val() || species) : "";
         var tag = $("#ext-box-tag");
         if (!tag.length) {
@@ -470,6 +504,7 @@
 
         if (texts.length && typeof addSets === "function") {
             addSets(texts.join("\n\n"), "My Box");
+            syncBoxSetNames();
             // Show a Pokemon from the new box instead of one that no longer exists.
             $(".player-poks .trainer-pok, .player-megas .trainer-pok").first().click();
         } else if (typeof get_box === "function") {
