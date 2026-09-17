@@ -307,10 +307,11 @@
             '<div class="ext-modal-dialog" role="dialog" aria-label="Pokémon Extinction box">' +
             '<div class="ext-modal-head"><strong>Which box Pokemon did you get?</strong>' +
             '<span id="ext-box-count"></span>' +
+            '<button type="button" class="bs-btn" id="ext-box-none">Unselect all</button>' +
             '<button type="button" class="bs-btn" id="ext-box-import">Import selected</button>' +
             '<button type="button" class="bs-btn" id="ext-box-close">Close</button></div>' +
             '<p class="ext-modal-help">"Import Box N" imports that whole box. Or click single Pokemon and use "Import selected". ' +
-            'Every import replaces the previously imported Pokemon. Hover for a set; held items can be changed on the left after importing.</p>' +
+            'Every import replaces the previously imported Pokemon; importing nothing empties the box. Hover for a set; held items can be changed on the left after importing.</p>' +
             '<div id="ext-box-list"></div></div></div>'
         );
 
@@ -327,6 +328,10 @@
         });
         // A new split hands out a new box and wipes the old one, so importing a box replaces
         // whatever was imported before.
+        $("#ext-box-none").on("click", function () {
+            setOwned([]);
+            renderPicker();
+        });
         $("#ext-box-list").on("click", ".ext-box-import", function () {
             var box = $(this).attr("data-box");
             setOwned($('#ext-box-list .ext-box[data-box="' + box + '"] .ext-mon').map(function () {
