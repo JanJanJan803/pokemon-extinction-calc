@@ -32,8 +32,9 @@ Then open <http://localhost:8000/>. Without a `?data=` parameter the page opens 
 
 | File | What it does |
 |---|---|
-| `backups/extinction.js` | Generated data: trainers, box pools, species, moves, per-trainer field info |
-| `js/pokemon_extinction.js` | Box picker, set-list filters, per-trainer field effects, Trick Room and Swamp speed order |
+| `backups/extinction.js` | Generated data: trainers (incl. the scripted Mossdeep bosses), box pools, species and their Mega/Primal forms, moves, per-trainer field info |
+| `js/pokemon_extinction.js` | Box picker, set-list filters, per-trainer field effects, Trick Room and Swamp speed order, Mega/Primal toggle |
+| `js/shared_controls.js` | Also refreshes the opposing sprite when the form changes |
 | `css/pokemon_extinction.css` | Styles for the above |
 | `js/initialize.js` | `Pokémon Extinction` game settings; hooks the set-list filters |
 | `js/index_randoms_controls.js` | Hooks the Trick Room / Swamp speed colouring |

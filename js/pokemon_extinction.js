@@ -173,6 +173,102 @@
     }
 
     // ------------------------------------------------------------------------------------------
+    // Mega / Primal toggle
+    //
+    // A trainer's Mega holds its stone and evolves on its first turn, so both forms matter: the base
+    // form takes the hit on the turn it comes in, the Mega does everything after. The Form dropdown
+    // can already switch between them; this is the one-click version of it, and it shows up only
+    // when the held item actually changes the form.
+    // ------------------------------------------------------------------------------------------
+
+    // The ability list holds the abilities the calc knows; a hack-only one is added so it at least
+    // shows, even though the damage engine has no behaviour for it.
+    function setAbility(panel, ability) {
+        if (!ability) return;
+        var select = panel.find(".ability");
+        if (!select.find('option[value="' + ability + '"]').length) {
+            select.append($("<option>").attr("value", ability).text(ability));
+        }
+        select.val(ability).change();
+    }
+
+    // Upstream only refreshes the left sprite when the form changes.
+    window.updateRightPokeSprite = function (speciesName) {
+        var name = (typeof getSpriteSpeciesName === "function" ? getSpriteSpeciesName(speciesName) : speciesName)
+            .toLowerCase().replace(" ", "").replace(".", "").replace("\u2019", "").replace(":", "-").replace(/-s$/, "");
+        if (name.indexOf("galarian-") === 0) name = name.slice("galarian-".length) + "-galar";
+        if (name.indexOf("hisuian-") === 0) name = name.slice("hisuian-".length) + "-hisui";
+        if (name.indexOf("alolan-") === 0) name = name.slice("alolan-".length) + "-alola";
+        var style = typeof trainerSprites !== "undefined" ? trainerSprites : "front";
+        var ext = typeof suffix !== "undefined" && suffix ? suffix : "png";
+        $("#p2 .poke-sprite").attr("src", "./img/" + style + "/" + name.replace("-glitched", "") + "." + ext);
+    };
+
+    function formTarget(item, formeSelect) {
+        if (!item) return null;
+        var stones = (typeof calc !== "undefined" && calc.MEGA_STONES) || {};
+        var candidates = [];
+        if (stones[item]) {
+            // Older entries map a stone to the base species, newer ones straight to the Mega.
+            candidates.push(stones[item], stones[item] + "-Mega");
+        }
+        if (item === "Red Orb") candidates.push("Groudon-Primal");
+        if (item === "Blue Orb") candidates.push("Kyogre-Primal");
+        for (var i = 0; i < candidates.length; i++) {
+            if (/-(Mega|Primal)/.test(candidates[i]) && formeSelect.find('option[value="' + candidates[i] + '"]').length) {
+                return candidates[i];
+            }
+        }
+        return null;
+    }
+
+    function updateFormToggle(panel) {
+        var formeSelect = $(panel).find(".forme");
+        var item = $(panel).find(".item").val();
+        var button = $(panel).find(".ext-form-toggle");
+        var current = formeSelect.val() || "";
+        // Switching to a Mega clears the stone in the calc, so once a Mega or Primal form is
+        // selected the current form is what tells us where to switch back to.
+        var target = /-(Mega|Primal)/.test(current) ? current : formTarget(item, formeSelect);
+
+        if (!isExtinction() || !target) {
+            button.remove();
+            return;
+        }
+        if (!button.length) {
+            button = $('<button type="button" class="bs-btn ext-form-toggle"></button>');
+            formeSelect.closest("div").removeClass("hide").append(button);
+            button.on("click", function () {
+                var to = $(this).attr("data-to");
+                var stone = $(this).attr("data-item");
+                var back = $(this).attr("data-ability");
+                $(panel).find(".forme").val(to).change();
+                // Mega Evolving clears the stone in the calc; put it back on the way down.
+                if (stone && !$(panel).find(".item").val()) {
+                    $(panel).find(".item").val(stone).change();
+                }
+                // The forme change re-applies the SET's ability, which belongs to the base form.
+                // A Mega has its own (Mega Ampharos is Fluffy in this hack, not Static).
+                var wanted = /-(Mega|Primal)/.test(to)
+                    ? (window.pokedex && pokedex[to] && pokedex[to].abilities && pokedex[to].abilities[0])
+                    : back;
+                setAbility($(panel), wanted);
+            });
+        }
+        var isBase = current !== target;
+        var label = /-Primal/.test(target) ? "Primal" : "Mega";
+        if (isBase && item) button.attr("data-item", item); // remember the stone for the way back
+        if (isBase) button.attr("data-ability", $(panel).find(".ability").val() || "");
+        button.text(isBase ? "\u2192 " + label : "\u2192 Base")
+              .attr("data-to", isBase ? target : target.replace(/-(Mega.*|Primal)$/, ""));
+    }
+
+    function updateFormToggles() {
+        updateFormToggle("#p1");
+        updateFormToggle("#p2");
+    }
+
+    // ------------------------------------------------------------------------------------------
     // Box picker
     // ------------------------------------------------------------------------------------------
 
@@ -354,6 +450,9 @@
     // ------------------------------------------------------------------------------------------
 
     $(document).on("change", ".opposing.set-selector", onOpposingSetChange);
+    $(document).on("change", ".set-selector, .item, .forme", function () {
+        setTimeout(updateFormToggles, 60); // after the panel is rebuilt
+    });
 
     $(function () {
         // backup_data loads asynchronously; wait for it before building the Extinction-only UI.
@@ -364,6 +463,7 @@
                 clearInterval(timer);
                 addFieldControls();
                 addBoxPicker();
+                updateFormToggles();
             } else if (tries > 200) {
                 clearInterval(timer);
             }

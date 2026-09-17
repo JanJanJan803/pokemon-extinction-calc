@@ -4113,6 +4113,40 @@ backup_data = {
     ],
     "sub_index": 5,
     "ability": "Scrappy"
+   },
+   "Lvl 75 Kangaskhan - Mossdeep City ": {
+    "level": 75,
+    "tr_id": 67,
+    "ai": 0,
+    "battle_type": "Singles",
+    "reward_item": "",
+    "form": "",
+    "item": "Kangaskhanite",
+    "ivs": {
+     "hp": 31,
+     "at": 31,
+     "df": 31,
+     "sa": 31,
+     "sd": 31,
+     "sp": 31
+    },
+    "evs": {
+     "hp": 0,
+     "at": 0,
+     "df": 0,
+     "sa": 0,
+     "sd": 0,
+     "sp": 0
+    },
+    "nature": "Adamant",
+    "moves": [
+     "Last Resort",
+     "Frustration",
+     "Power-Up Punch",
+     "Seismic Toss"
+    ],
+    "sub_index": 0,
+    "ability": "Scrappy"
    }
   },
   "Sirfetch’d": {
@@ -6495,6 +6529,40 @@ backup_data = {
      "Stealth Rock",
      "Protect",
      "Heat Crash"
+    ],
+    "sub_index": 0,
+    "ability": "Drought"
+   },
+   "Lvl 75 Groudon - Mossdeep City ": {
+    "level": 75,
+    "tr_id": 68,
+    "ai": 0,
+    "battle_type": "Singles",
+    "reward_item": "",
+    "form": "",
+    "item": "Red Orb",
+    "ivs": {
+     "hp": 31,
+     "at": 31,
+     "df": 31,
+     "sa": 31,
+     "sd": 31,
+     "sp": 31
+    },
+    "evs": {
+     "hp": 0,
+     "at": 0,
+     "df": 0,
+     "sa": 0,
+     "sd": 0,
+     "sp": 0
+    },
+    "nature": "Adamant",
+    "moves": [
+     "Fire Blast",
+     "Heat Crash",
+     "Stone Edge",
+     "Substitute"
     ],
     "sub_index": 0,
     "ability": "Drought"
@@ -9354,6 +9422,40 @@ backup_data = {
      "Origin Pulse",
      "Ice Beam",
      "Calm Mind",
+     "Thunder Wave"
+    ],
+    "sub_index": 0,
+    "ability": "Drizzle"
+   },
+   "Lvl 75 Kyogre - Mossdeep City ": {
+    "level": 75,
+    "tr_id": 69,
+    "ai": 0,
+    "battle_type": "Singles",
+    "reward_item": "",
+    "form": "",
+    "item": "Blue Orb",
+    "ivs": {
+     "hp": 31,
+     "at": 31,
+     "df": 31,
+     "sa": 31,
+     "sd": 31,
+     "sp": 31
+    },
+    "evs": {
+     "hp": 0,
+     "at": 0,
+     "df": 0,
+     "sa": 0,
+     "sd": 0,
+     "sp": 0
+    },
+    "nature": "Modest",
+    "moves": [
+     "Aqua Ring",
+     "Hydro Pump",
+     "Thunder",
      "Thunder Wave"
     ],
     "sub_index": 0,
@@ -26143,6 +26245,25 @@ backup_data = {
     "2": "Soundproof"
    }
   },
+  "Abomasnow-Mega": {
+   "bs": {
+    "hp": 90,
+    "at": 132,
+    "df": 105,
+    "sa": 132,
+    "sd": 105,
+    "sp": 30
+   },
+   "types": [
+    "Grass",
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Filter",
+    "1": "Filter",
+    "2": "Filter"
+   }
+  },
   "Absol": {
    "bs": {
     "hp": 65,
@@ -26159,6 +26280,60 @@ backup_data = {
     "0": "Pressure",
     "1": "Super Luck",
     "2": "Justified"
+   }
+  },
+  "Absol-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 150,
+    "df": 60,
+    "sa": 115,
+    "sd": 60,
+    "sp": 115
+   },
+   "types": [
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Magic Bounce",
+    "1": "Magic Bounce",
+    "2": "Magic Bounce"
+   }
+  },
+  "Absol-Mega-Z": {
+   "bs": {
+    "hp": 65,
+    "at": 154,
+    "df": 60,
+    "sa": 75,
+    "sd": 60,
+    "sp": 151
+   },
+   "types": [
+    "Dark",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Sharpness",
+    "1": "Sharpness",
+    "2": "Sharpness"
+   }
+  },
+  "Aegislash-Blade": {
+   "bs": {
+    "hp": 60,
+    "at": 140,
+    "df": 50,
+    "sa": 140,
+    "sd": 50,
+    "sp": 60
+   },
+   "types": [
+    "Steel",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Stance Change"
    }
   },
   "Aegislash-Shield": {
@@ -26197,6 +26372,25 @@ backup_data = {
     "2": "Unnerve"
    }
   },
+  "Aerodactyl-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 135,
+    "df": 85,
+    "sa": 70,
+    "sd": 95,
+    "sp": 150
+   },
+   "types": [
+    "Rock",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Tough Claws",
+    "1": "Tough Claws",
+    "2": "Tough Claws"
+   }
+  },
   "Aggron": {
    "bs": {
     "hp": 70,
@@ -26216,6 +26410,24 @@ backup_data = {
     "2": "Heavy Metal"
    }
   },
+  "Aggron-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 140,
+    "df": 230,
+    "sa": 60,
+    "sd": 80,
+    "sp": 50
+   },
+   "types": [
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Filter",
+    "1": "Filter",
+    "2": "Filter"
+   }
+  },
   "Alakazam": {
    "bs": {
     "hp": 55,
@@ -26232,6 +26444,24 @@ backup_data = {
     "0": "Synchronize",
     "1": "Inner Focus",
     "2": "Magic Guard"
+   }
+  },
+  "Alakazam-Mega": {
+   "bs": {
+    "hp": 55,
+    "at": 50,
+    "df": 65,
+    "sa": 175,
+    "sd": 105,
+    "sp": 150
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Trace",
+    "1": "Trace",
+    "2": "Trace"
    }
   },
   "Alcremie": {
@@ -26285,6 +26515,25 @@ backup_data = {
    "abilities": {
     "0": "Natural Cure",
     "2": "Cloud Nine"
+   }
+  },
+  "Altaria-Mega": {
+   "bs": {
+    "hp": 75,
+    "at": 110,
+    "df": 110,
+    "sa": 110,
+    "sd": 105,
+    "sp": 80
+   },
+   "types": [
+    "Dragon",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Pixilate",
+    "1": "Pixilate",
+    "2": "Pixilate"
    }
   },
   "Amaura": {
@@ -26358,6 +26607,25 @@ backup_data = {
     "2": "Plus"
    }
   },
+  "Ampharos-Mega": {
+   "bs": {
+    "hp": 90,
+    "at": 95,
+    "df": 105,
+    "sa": 165,
+    "sd": 110,
+    "sp": 45
+   },
+   "types": [
+    "Electric",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Fluffy",
+    "1": "Fluffy",
+    "2": "Fluffy"
+   }
+  },
   "Annihilape": {
    "bs": {
     "hp": 110,
@@ -26412,6 +26680,23 @@ backup_data = {
    "abilities": {
     "0": "Water Bubble",
     "2": "Water Absorb"
+   }
+  },
+  "Araquanid-Totem": {
+   "bs": {
+    "hp": 68,
+    "at": 70,
+    "df": 92,
+    "sa": 50,
+    "sd": 132,
+    "sp": 42
+   },
+   "types": [
+    "Water",
+    "Bug"
+   ],
+   "abilities": {
+    "0": "Water Bubble"
    }
   },
   "Arbok": {
@@ -26812,6 +27097,24 @@ backup_data = {
     "2": "Cursed Body"
    }
   },
+  "Banette-Mega": {
+   "bs": {
+    "hp": 64,
+    "at": 165,
+    "df": 75,
+    "sa": 93,
+    "sd": 83,
+    "sp": 75
+   },
+   "types": [
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Prankster",
+    "1": "Prankster",
+    "2": "Prankster"
+   }
+  },
   "Barbaracle": {
    "bs": {
     "hp": 72,
@@ -26829,6 +27132,25 @@ backup_data = {
     "0": "Tough Claws",
     "1": "Sniper",
     "2": "Pickpocket"
+   }
+  },
+  "Barbaracle-Mega": {
+   "bs": {
+    "hp": 72,
+    "at": 140,
+    "df": 130,
+    "sa": 64,
+    "sd": 106,
+    "sp": 88
+   },
+   "types": [
+    "Rock",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Tough Claws",
+    "1": "Tough Claws",
+    "2": "Tough Claws"
    }
   },
   "Barboach": {
@@ -26886,6 +27208,25 @@ backup_data = {
     "2": "Mold Breaker"
    }
   },
+  "Basculegion-F": {
+   "bs": {
+    "hp": 120,
+    "at": 92,
+    "df": 65,
+    "sa": 100,
+    "sd": 75,
+    "sp": 78
+   },
+   "types": [
+    "Water",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Swift Swim",
+    "1": "Adaptability",
+    "2": "Mold Breaker"
+   }
+  },
   "Bastiodon": {
    "bs": {
     "hp": 60,
@@ -26922,6 +27263,25 @@ backup_data = {
     "2": "Ice Body"
    }
   },
+  "Baxcalibur-Mega": {
+   "bs": {
+    "hp": 115,
+    "at": 175,
+    "df": 117,
+    "sa": 105,
+    "sd": 101,
+    "sp": 87
+   },
+   "types": [
+    "Dragon",
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Thermal Exchange",
+    "1": "Thermal Exchange",
+    "2": "Thermal Exchange"
+   }
+  },
   "Beartic": {
    "bs": {
     "hp": 95,
@@ -26956,6 +27316,25 @@ backup_data = {
    "abilities": {
     "0": "Swarm",
     "2": "Sniper"
+   }
+  },
+  "Beedrill-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 150,
+    "df": 40,
+    "sa": 15,
+    "sd": 80,
+    "sp": 145
+   },
+   "types": [
+    "Bug",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Adaptability",
+    "1": "Adaptability",
+    "2": "Adaptability"
    }
   },
   "Bellibolt": {
@@ -27050,6 +27429,24 @@ backup_data = {
     "2": "Rain Dish"
    }
   },
+  "Blastoise-Mega": {
+   "bs": {
+    "hp": 79,
+    "at": 103,
+    "df": 120,
+    "sa": 135,
+    "sd": 115,
+    "sp": 78
+   },
+   "types": [
+    "Water"
+   ],
+   "abilities": {
+    "0": "Mega Launcher",
+    "1": "Mega Launcher",
+    "2": "Mega Launcher"
+   }
+  },
   "Blaziken": {
    "bs": {
     "hp": 80,
@@ -27065,6 +27462,25 @@ backup_data = {
    ],
    "abilities": {
     "0": "Blaze",
+    "2": "Speed Boost"
+   }
+  },
+  "Blaziken-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 160,
+    "df": 80,
+    "sa": 130,
+    "sd": 80,
+    "sp": 100
+   },
+   "types": [
+    "Fire",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Speed Boost",
+    "1": "Speed Boost",
     "2": "Speed Boost"
    }
   },
@@ -27305,6 +27721,25 @@ backup_data = {
     "2": "Anger Point"
    }
   },
+  "Camerupt-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 120,
+    "df": 100,
+    "sa": 145,
+    "sd": 105,
+    "sp": 20
+   },
+   "types": [
+    "Fire",
+    "Ground"
+   ],
+   "abilities": {
+    "0": "Sheer Force",
+    "1": "Sheer Force",
+    "2": "Sheer Force"
+   }
+  },
   "Carbink": {
    "bs": {
     "hp": 50,
@@ -27352,6 +27787,54 @@ backup_data = {
    },
    "types": [
     "Normal"
+   ],
+   "abilities": {
+    "0": "Forecast"
+   }
+  },
+  "Castform-Rainy": {
+   "bs": {
+    "hp": 70,
+    "at": 70,
+    "df": 70,
+    "sa": 70,
+    "sd": 70,
+    "sp": 70
+   },
+   "types": [
+    "Water"
+   ],
+   "abilities": {
+    "0": "Forecast"
+   }
+  },
+  "Castform-Snowy": {
+   "bs": {
+    "hp": 70,
+    "at": 70,
+    "df": 70,
+    "sa": 70,
+    "sd": 70,
+    "sp": 70
+   },
+   "types": [
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Forecast"
+   }
+  },
+  "Castform-Sunny": {
+   "bs": {
+    "hp": 70,
+    "at": 70,
+    "df": 70,
+    "sa": 70,
+    "sd": 70,
+    "sp": 70
+   },
+   "types": [
+    "Fire"
    ],
    "abilities": {
     "0": "Forecast"
@@ -27465,6 +27948,25 @@ backup_data = {
     "2": "Infiltrator"
    }
   },
+  "Chandelure-Mega": {
+   "bs": {
+    "hp": 60,
+    "at": 75,
+    "df": 110,
+    "sa": 175,
+    "sd": 110,
+    "sp": 90
+   },
+   "types": [
+    "Ghost",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Shadow Shield",
+    "1": "Shadow Shield",
+    "2": "Shadow Shield"
+   }
+  },
   "Charizard": {
    "bs": {
     "hp": 78,
@@ -27481,6 +27983,44 @@ backup_data = {
    "abilities": {
     "0": "Blaze",
     "2": "Solar Power"
+   }
+  },
+  "Charizard-Mega-X": {
+   "bs": {
+    "hp": 78,
+    "at": 130,
+    "df": 111,
+    "sa": 130,
+    "sd": 85,
+    "sp": 100
+   },
+   "types": [
+    "Fire",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Tough Claws",
+    "1": "Tough Claws",
+    "2": "Tough Claws"
+   }
+  },
+  "Charizard-Mega-Y": {
+   "bs": {
+    "hp": 78,
+    "at": 104,
+    "df": 78,
+    "sa": 159,
+    "sd": 115,
+    "sp": 100
+   },
+   "types": [
+    "Fire",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Drought",
+    "1": "Drought",
+    "2": "Drought"
    }
   },
   "Charmeleon": {
@@ -27535,6 +28075,22 @@ backup_data = {
     "0": "Flower Gift"
    }
   },
+  "Cherrim-Sunshine": {
+   "bs": {
+    "hp": 70,
+    "at": 60,
+    "df": 70,
+    "sa": 87,
+    "sd": 78,
+    "sp": 85
+   },
+   "types": [
+    "Grass"
+   ],
+   "abilities": {
+    "0": "Flower Gift"
+   }
+  },
   "Chesnaught": {
    "bs": {
     "hp": 88,
@@ -27550,6 +28106,25 @@ backup_data = {
    ],
    "abilities": {
     "0": "Overgrow",
+    "2": "Bulletproof"
+   }
+  },
+  "Chesnaught-Mega": {
+   "bs": {
+    "hp": 88,
+    "at": 137,
+    "df": 172,
+    "sa": 74,
+    "sd": 115,
+    "sp": 44
+   },
+   "types": [
+    "Grass",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Bulletproof",
+    "1": "Bulletproof",
     "2": "Bulletproof"
    }
   },
@@ -27601,6 +28176,25 @@ backup_data = {
    ],
    "abilities": {
     "0": "Levitate"
+   }
+  },
+  "Chimecho-Mega": {
+   "bs": {
+    "hp": 75,
+    "at": 50,
+    "df": 110,
+    "sa": 135,
+    "sd": 120,
+    "sp": 65
+   },
+   "types": [
+    "Psychic",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Levitate",
+    "1": "Levitate",
+    "2": "Levitate"
    }
   },
   "Cinderace": {
@@ -27668,6 +28262,25 @@ backup_data = {
     "0": "Cute Charm",
     "1": "Magic Guard",
     "2": "Unaware"
+   }
+  },
+  "Clefable-Mega": {
+   "bs": {
+    "hp": 95,
+    "at": 80,
+    "df": 93,
+    "sa": 135,
+    "sd": 110,
+    "sp": 70
+   },
+   "types": [
+    "Fairy",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Soul-Heart",
+    "1": "Soul-Heart",
+    "2": "Soul-Heart"
    }
   },
   "Clefairy": {
@@ -27815,6 +28428,23 @@ backup_data = {
     "2": "Regenerator"
    }
   },
+  "Corsola-Galar": {
+   "bs": {
+    "hp": 60,
+    "at": 55,
+    "df": 100,
+    "sa": 65,
+    "sd": 100,
+    "sp": 30
+   },
+   "types": [
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Weak Armor",
+    "2": "Cursed Body"
+   }
+  },
   "Corviknight": {
    "bs": {
     "hp": 98,
@@ -27851,6 +28481,25 @@ backup_data = {
     "0": "Hyper Cutter",
     "1": "Iron Fist",
     "2": "Anger Point"
+   }
+  },
+  "Crabominable-Mega": {
+   "bs": {
+    "hp": 97,
+    "at": 157,
+    "df": 122,
+    "sa": 62,
+    "sd": 107,
+    "sp": 33
+   },
+   "types": [
+    "Fighting",
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Ice Scales",
+    "1": "Ice Scales",
+    "2": "Ice Scales"
    }
   },
   "Crabrawler": {
@@ -28049,6 +28698,24 @@ backup_data = {
     "0": "Bad Dreams"
    }
   },
+  "Darkrai-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 120,
+    "df": 130,
+    "sa": 165,
+    "sd": 130,
+    "sp": 85
+   },
+   "types": [
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Dark Aura",
+    "1": "Dark Aura",
+    "2": "Dark Aura"
+   }
+  },
   "Darmanitan": {
    "bs": {
     "hp": 105,
@@ -28083,6 +28750,42 @@ backup_data = {
     "2": "Zen Mode"
    }
   },
+  "Darmanitan-Galar-Zen": {
+   "bs": {
+    "hp": 105,
+    "at": 160,
+    "df": 55,
+    "sa": 30,
+    "sd": 55,
+    "sp": 135
+   },
+   "types": [
+    "Ice",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Gorilla Tactics",
+    "2": "Zen Mode"
+   }
+  },
+  "Darmanitan-Zen": {
+   "bs": {
+    "hp": 105,
+    "at": 30,
+    "df": 105,
+    "sa": 140,
+    "sd": 105,
+    "sp": 55
+   },
+   "types": [
+    "Fire",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Sheer Force",
+    "2": "Zen Mode"
+   }
+  },
   "Darumaka": {
    "bs": {
     "hp": 70,
@@ -28094,6 +28797,23 @@ backup_data = {
    },
    "types": [
     "Fire"
+   ],
+   "abilities": {
+    "0": "Hustle",
+    "2": "Inner Focus"
+   }
+  },
+  "Darumaka-Galar": {
+   "bs": {
+    "hp": 70,
+    "at": 90,
+    "df": 45,
+    "sa": 15,
+    "sd": 45,
+    "sp": 50
+   },
+   "types": [
+    "Ice"
    ],
    "abilities": {
     "0": "Hustle",
@@ -28191,6 +28911,25 @@ backup_data = {
     "2": "Magician"
    }
   },
+  "Delphox-Mega": {
+   "bs": {
+    "hp": 75,
+    "at": 69,
+    "df": 72,
+    "sa": 159,
+    "sd": 125,
+    "sp": 134
+   },
+   "types": [
+    "Fire",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Levitate",
+    "1": "Levitate",
+    "2": "Levitate"
+   }
+  },
   "Deoxys-Attack": {
    "bs": {
     "hp": 50,
@@ -28275,6 +29014,25 @@ backup_data = {
    "abilities": {
     "0": "Clear Body",
     "1": "Serene Grace"
+   }
+  },
+  "Diancie-Mega": {
+   "bs": {
+    "hp": 50,
+    "at": 160,
+    "df": 110,
+    "sa": 160,
+    "sd": 110,
+    "sp": 110
+   },
+   "types": [
+    "Rock",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Magic Bounce",
+    "1": "Magic Bounce",
+    "2": "Magic Bounce"
    }
   },
   "Diggersby": {
@@ -28443,6 +29201,25 @@ backup_data = {
     "2": "Adaptability"
    }
   },
+  "Dragalge-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 85,
+    "df": 105,
+    "sa": 132,
+    "sd": 163,
+    "sp": 44
+   },
+   "types": [
+    "Poison",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Regenerator",
+    "1": "Regenerator",
+    "2": "Regenerator"
+   }
+  },
   "Dragapult": {
    "bs": {
     "hp": 88,
@@ -28497,6 +29274,25 @@ backup_data = {
     "2": "Multiscale"
    }
   },
+  "Dragonite-Mega": {
+   "bs": {
+    "hp": 91,
+    "at": 124,
+    "df": 115,
+    "sa": 145,
+    "sd": 125,
+    "sp": 100
+   },
+   "types": [
+    "Dragon",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Multiscale",
+    "1": "Multiscale",
+    "2": "Multiscale"
+   }
+  },
   "Drampa": {
    "bs": {
     "hp": 78,
@@ -28514,6 +29310,25 @@ backup_data = {
     "0": "Berserk",
     "1": "Sap Sipper",
     "2": "Cloud Nine"
+   }
+  },
+  "Drampa-Mega": {
+   "bs": {
+    "hp": 78,
+    "at": 85,
+    "df": 110,
+    "sa": 160,
+    "sd": 116,
+    "sp": 36
+   },
+   "types": [
+    "Normal",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Drizzle",
+    "1": "Drizzle",
+    "2": "Drizzle"
    }
   },
   "Drapion": {
@@ -28682,6 +29497,25 @@ backup_data = {
     "2": "Sand Force"
    }
   },
+  "Dugtrio-Alola": {
+   "bs": {
+    "hp": 35,
+    "at": 100,
+    "df": 60,
+    "sa": 50,
+    "sd": 70,
+    "sp": 110
+   },
+   "types": [
+    "Ground",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Sand Veil",
+    "1": "Tangling Hair",
+    "2": "Sand Force"
+   }
+  },
   "Duosion": {
    "bs": {
     "hp": 65,
@@ -28804,6 +29638,24 @@ backup_data = {
    ],
    "abilities": {
     "0": "Levitate"
+   }
+  },
+  "Eelektross-Mega": {
+   "bs": {
+    "hp": 85,
+    "at": 145,
+    "df": 80,
+    "sa": 135,
+    "sd": 90,
+    "sp": 80
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Hadron Engine",
+    "1": "Hadron Engine",
+    "2": "Hadron Engine"
    }
   },
   "Eevee-Starter": {
@@ -28967,6 +29819,25 @@ backup_data = {
     "2": "Reckless"
    }
   },
+  "Emboar-Mega": {
+   "bs": {
+    "hp": 110,
+    "at": 148,
+    "df": 75,
+    "sa": 110,
+    "sd": 110,
+    "sp": 75
+   },
+   "types": [
+    "Fire",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Supreme Overlord",
+    "1": "Supreme Overlord",
+    "2": "Supreme Overlord"
+   }
+  },
   "Emolga": {
    "bs": {
     "hp": 55,
@@ -29019,6 +29890,23 @@ backup_data = {
    "abilities": {
     "0": "Cute Charm",
     "2": "Contrary"
+   }
+  },
+  "Enamorus-Therian": {
+   "bs": {
+    "hp": 74,
+    "at": 115,
+    "df": 110,
+    "sa": 135,
+    "sd": 100,
+    "sp": 46
+   },
+   "types": [
+    "Fairy",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Overcoat"
    }
   },
   "Entei": {
@@ -29147,6 +30035,25 @@ backup_data = {
     "2": "Mold Breaker"
    }
   },
+  "Excadrill-Mega": {
+   "bs": {
+    "hp": 110,
+    "at": 165,
+    "df": 100,
+    "sa": 65,
+    "sd": 65,
+    "sp": 103
+   },
+   "types": [
+    "Ground",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "piercingdrill",
+    "1": "piercingdrill",
+    "2": "piercingdrill"
+   }
+  },
   "Exeggutor": {
    "bs": {
     "hp": 95,
@@ -29217,6 +30124,24 @@ backup_data = {
     "2": "Defiant"
    }
   },
+  "Falinks-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 135,
+    "df": 135,
+    "sa": 70,
+    "sd": 65,
+    "sp": 100
+   },
+   "types": [
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "instantpreparation",
+    "1": "instantpreparation",
+    "2": "instantpreparation"
+   }
+  },
   "Farfetch’d": {
    "bs": {
     "hp": 52,
@@ -29234,6 +30159,23 @@ backup_data = {
     "0": "Keen Eye",
     "1": "Inner Focus",
     "2": "Defiant"
+   }
+  },
+  "Farfetch’d-Galar": {
+   "bs": {
+    "hp": 52,
+    "at": 95,
+    "df": 55,
+    "sa": 58,
+    "sd": 62,
+    "sp": 55
+   },
+   "types": [
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Steadfast",
+    "2": "Scrappy"
    }
   },
   "Farigiraf": {
@@ -29288,6 +30230,25 @@ backup_data = {
    "abilities": {
     "0": "Torrent",
     "2": "Sheer Force"
+   }
+  },
+  "Feraligatr-Mega": {
+   "bs": {
+    "hp": 85,
+    "at": 160,
+    "df": 125,
+    "sa": 89,
+    "sd": 93,
+    "sp": 78
+   },
+   "types": [
+    "Water",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "dragonize",
+    "1": "dragonize",
+    "2": "dragonize"
    }
   },
   "Ferrothorn": {
@@ -29429,6 +30390,41 @@ backup_data = {
    "abilities": {
     "0": "Flower Veil",
     "2": "Symbiosis"
+   }
+  },
+  "Floette-Eternal": {
+   "bs": {
+    "hp": 74,
+    "at": 65,
+    "df": 67,
+    "sa": 125,
+    "sd": 128,
+    "sp": 92
+   },
+   "types": [
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Flower Veil",
+    "2": "Symbiosis"
+   }
+  },
+  "Floette-Mega": {
+   "bs": {
+    "hp": 74,
+    "at": 85,
+    "df": 87,
+    "sa": 155,
+    "sd": 148,
+    "sp": 102
+   },
+   "types": [
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Fairy Aura",
+    "1": "Fairy Aura",
+    "2": "Fairy Aura"
    }
   },
   "Floragato": {
@@ -29628,6 +30624,25 @@ backup_data = {
     "2": "Justified"
    }
   },
+  "Gallade-Mega": {
+   "bs": {
+    "hp": 68,
+    "at": 165,
+    "df": 95,
+    "sa": 65,
+    "sd": 115,
+    "sp": 110
+   },
+   "types": [
+    "Psychic",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Inner Focus",
+    "1": "Inner Focus",
+    "2": "Inner Focus"
+   }
+  },
   "Galvantula": {
    "bs": {
     "hp": 70,
@@ -29683,6 +30698,43 @@ backup_data = {
     "2": "Rough Skin"
    }
   },
+  "Garchomp-Mega": {
+   "bs": {
+    "hp": 108,
+    "at": 170,
+    "df": 115,
+    "sa": 120,
+    "sd": 95,
+    "sp": 92
+   },
+   "types": [
+    "Dragon",
+    "Ground"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Intimidate",
+    "2": "Intimidate"
+   }
+  },
+  "Garchomp-Mega-Z": {
+   "bs": {
+    "hp": 108,
+    "at": 130,
+    "df": 85,
+    "sa": 141,
+    "sd": 85,
+    "sp": 151
+   },
+   "types": [
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Levitate",
+    "1": "Levitate",
+    "2": "Levitate"
+   }
+  },
   "Gardevoir": {
    "bs": {
     "hp": 68,
@@ -29700,6 +30752,25 @@ backup_data = {
     "0": "Synchronize",
     "1": "Trace",
     "2": "Telepathy"
+   }
+  },
+  "Gardevoir-Mega": {
+   "bs": {
+    "hp": 68,
+    "at": 85,
+    "df": 65,
+    "sa": 165,
+    "sd": 135,
+    "sp": 100
+   },
+   "types": [
+    "Psychic",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Pixilate",
+    "1": "Pixilate",
+    "2": "Pixilate"
    }
   },
   "Garganacl": {
@@ -29774,6 +30845,25 @@ backup_data = {
     "2": "Levitate"
    }
   },
+  "Gengar-Mega": {
+   "bs": {
+    "hp": 60,
+    "at": 65,
+    "df": 80,
+    "sa": 170,
+    "sd": 95,
+    "sp": 130
+   },
+   "types": [
+    "Ghost",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Shadow Tag",
+    "1": "Shadow Tag",
+    "2": "Shadow Tag"
+   }
+  },
   "Gholdengo": {
    "bs": {
     "hp": 87,
@@ -29846,6 +30936,23 @@ backup_data = {
     "2": "Telepathy"
    }
   },
+  "Giratina-Origin": {
+   "bs": {
+    "hp": 150,
+    "at": 120,
+    "df": 100,
+    "sa": 120,
+    "sd": 100,
+    "sp": 90
+   },
+   "types": [
+    "Ghost",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Levitate"
+   }
+  },
   "Glaceon": {
    "bs": {
     "hp": 65,
@@ -29880,6 +30987,24 @@ backup_data = {
     "0": "Inner Focus",
     "1": "Ice Body",
     "2": "Moody"
+   }
+  },
+  "Glalie-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 120,
+    "df": 80,
+    "sa": 120,
+    "sd": 80,
+    "sp": 100
+   },
+   "types": [
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Refrigerate",
+    "1": "Refrigerate",
+    "2": "Refrigerate"
    }
   },
   "Glameow": {
@@ -29969,6 +31094,25 @@ backup_data = {
    "abilities": {
     "0": "Toxic Debris",
     "2": "Corrosion"
+   }
+  },
+  "Glimmora-Mega": {
+   "bs": {
+    "hp": 83,
+    "at": 90,
+    "df": 105,
+    "sa": 150,
+    "sd": 96,
+    "sp": 101
+   },
+   "types": [
+    "Rock",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Adaptability",
+    "1": "Adaptability",
+    "2": "Adaptability"
    }
   },
   "Gliscor": {
@@ -30062,6 +31206,25 @@ backup_data = {
     "2": "Shell Armor"
    }
   },
+  "Golisopod-Mega": {
+   "bs": {
+    "hp": 75,
+    "at": 150,
+    "df": 175,
+    "sa": 70,
+    "sd": 120,
+    "sp": 40
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Regenerator",
+    "1": "Regenerator",
+    "2": "Regenerator"
+   }
+  },
   "Golurk": {
    "bs": {
     "hp": 89,
@@ -30079,6 +31242,25 @@ backup_data = {
     "0": "Iron Fist",
     "1": "Klutz",
     "2": "No Guard"
+   }
+  },
+  "Golurk-Mega": {
+   "bs": {
+    "hp": 89,
+    "at": 159,
+    "df": 105,
+    "sa": 70,
+    "sd": 105,
+    "sp": 55
+   },
+   "types": [
+    "Ground",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Unseen Fist",
+    "1": "Unseen Fist",
+    "2": "Unseen Fist"
    }
   },
   "Goodra": {
@@ -30279,6 +31461,59 @@ backup_data = {
     "2": "Protean"
    }
   },
+  "Greninja-Ash": {
+   "bs": {
+    "hp": 72,
+    "at": 145,
+    "df": 67,
+    "sa": 153,
+    "sd": 71,
+    "sp": 132
+   },
+   "types": [
+    "Water",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Battle Bond"
+   }
+  },
+  "Greninja-Bond": {
+   "bs": {
+    "hp": 72,
+    "at": 95,
+    "df": 67,
+    "sa": 103,
+    "sd": 71,
+    "sp": 122
+   },
+   "types": [
+    "Water",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Battle Bond"
+   }
+  },
+  "Greninja-Mega": {
+   "bs": {
+    "hp": 72,
+    "at": 125,
+    "df": 77,
+    "sa": 133,
+    "sd": 81,
+    "sp": 142
+   },
+   "types": [
+    "Water",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Protean",
+    "1": "Protean",
+    "2": "Protean"
+   }
+  },
   "Grimer": {
    "bs": {
     "hp": 80,
@@ -30295,6 +31530,25 @@ backup_data = {
     "0": "Stench",
     "1": "Sticky Hold",
     "2": "Poison Touch"
+   }
+  },
+  "Grimer-Alola": {
+   "bs": {
+    "hp": 80,
+    "at": 80,
+    "df": 50,
+    "sa": 40,
+    "sd": 50,
+    "sp": 25
+   },
+   "types": [
+    "Poison",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Poison Touch",
+    "1": "Gluttony",
+    "2": "Power of Alchemy"
    }
   },
   "Grimmsnarl": {
@@ -30330,6 +31584,24 @@ backup_data = {
    ],
    "abilities": {
     "0": "Drought"
+   }
+  },
+  "Groudon-Primal": {
+   "bs": {
+    "hp": 100,
+    "at": 180,
+    "df": 160,
+    "sa": 150,
+    "sd": 90,
+    "sp": 90
+   },
+   "types": [
+    "Ground",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Desolate Land",
+    "1": "Desolate Land"
    }
   },
   "Grovyle": {
@@ -30404,6 +31676,22 @@ backup_data = {
     "2": "Adaptability"
    }
   },
+  "Gumshoos-Totem": {
+   "bs": {
+    "hp": 88,
+    "at": 110,
+    "df": 60,
+    "sa": 55,
+    "sd": 60,
+    "sp": 45
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Adaptability"
+   }
+  },
   "Gurdurr": {
    "bs": {
     "hp": 85,
@@ -30438,6 +31726,25 @@ backup_data = {
    "abilities": {
     "0": "Intimidate",
     "2": "Moxie"
+   }
+  },
+  "Gyarados-Mega": {
+   "bs": {
+    "hp": 95,
+    "at": 155,
+    "df": 109,
+    "sa": 70,
+    "sd": 130,
+    "sp": 81
+   },
+   "types": [
+    "Water",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Mold Breaker",
+    "1": "Mold Breaker",
+    "2": "Mold Breaker"
    }
   },
   "Hariyama": {
@@ -30496,6 +31803,25 @@ backup_data = {
     "2": "Mold Breaker"
    }
   },
+  "Hawlucha-Mega": {
+   "bs": {
+    "hp": 78,
+    "at": 137,
+    "df": 100,
+    "sa": 74,
+    "sd": 93,
+    "sp": 118
+   },
+   "types": [
+    "Fighting",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Stamina",
+    "1": "Stamina",
+    "2": "Stamina"
+   }
+  },
   "Haxorus": {
    "bs": {
     "hp": 76,
@@ -30550,6 +31876,25 @@ backup_data = {
     "2": "Flame Body"
    }
   },
+  "Heatran-Mega": {
+   "bs": {
+    "hp": 91,
+    "at": 120,
+    "df": 106,
+    "sa": 175,
+    "sd": 141,
+    "sp": 67
+   },
+   "types": [
+    "Fire",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Earth Eater",
+    "1": "Earth Eater",
+    "2": "Earth Eater"
+   }
+  },
   "Heliolisk": {
    "bs": {
     "hp": 62,
@@ -30586,6 +31931,25 @@ backup_data = {
     "0": "Swarm",
     "1": "Guts",
     "2": "Moxie"
+   }
+  },
+  "Heracross-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 185,
+    "df": 115,
+    "sa": 40,
+    "sd": 105,
+    "sp": 75
+   },
+   "types": [
+    "Bug",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Skill Link",
+    "1": "Skill Link",
+    "2": "Skill Link"
    }
   },
   "Hippowdon": {
@@ -30746,6 +32110,25 @@ backup_data = {
     "0": "Early Bird",
     "1": "Flash Fire",
     "2": "Unnerve"
+   }
+  },
+  "Houndoom-Mega": {
+   "bs": {
+    "hp": 75,
+    "at": 90,
+    "df": 90,
+    "sa": 140,
+    "sd": 90,
+    "sp": 115
+   },
+   "types": [
+    "Dark",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Solar Power",
+    "1": "Solar Power",
+    "2": "Solar Power"
    }
   },
   "Houndour": {
@@ -31175,6 +32558,24 @@ backup_data = {
     "2": "Inner Focus"
    }
   },
+  "Kangaskhan-Mega": {
+   "bs": {
+    "hp": 105,
+    "at": 125,
+    "df": 100,
+    "sa": 60,
+    "sd": 100,
+    "sp": 100
+   },
+   "types": [
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Parental Bond",
+    "1": "Parental Bond",
+    "2": "Parental Bond"
+   }
+  },
   "Kartana": {
    "bs": {
     "hp": 59,
@@ -31193,6 +32594,23 @@ backup_data = {
    }
   },
   "Keldeo": {
+   "bs": {
+    "hp": 91,
+    "at": 72,
+    "df": 90,
+    "sa": 129,
+    "sd": 90,
+    "sp": 108
+   },
+   "types": [
+    "Water",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Justified"
+   }
+  },
+  "Keldeo-Resolute": {
    "bs": {
     "hp": 91,
     "at": 72,
@@ -31376,6 +32794,23 @@ backup_data = {
     "2": "Overcoat"
    }
   },
+  "Kommo-o-Totem": {
+   "bs": {
+    "hp": 75,
+    "at": 110,
+    "df": 125,
+    "sa": 100,
+    "sd": 105,
+    "sp": 85
+   },
+   "types": [
+    "Dragon",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Overcoat"
+   }
+  },
   "Krookodile": {
    "bs": {
     "hp": 95,
@@ -31411,6 +32846,23 @@ backup_data = {
     "0": "Drizzle"
    }
   },
+  "Kyogre-Primal": {
+   "bs": {
+    "hp": 100,
+    "at": 150,
+    "df": 90,
+    "sa": 180,
+    "sd": 160,
+    "sp": 90
+   },
+   "types": [
+    "Water"
+   ],
+   "abilities": {
+    "0": "Primordial Sea",
+    "1": "Primordial Sea"
+   }
+  },
   "Kyurem": {
    "bs": {
     "hp": 125,
@@ -31426,6 +32878,40 @@ backup_data = {
    ],
    "abilities": {
     "0": "Pressure"
+   }
+  },
+  "Kyurem-Black": {
+   "bs": {
+    "hp": 125,
+    "at": 170,
+    "df": 100,
+    "sa": 120,
+    "sd": 90,
+    "sp": 95
+   },
+   "types": [
+    "Dragon",
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Teravolt"
+   }
+  },
+  "Kyurem-White": {
+   "bs": {
+    "hp": 125,
+    "at": 120,
+    "df": 90,
+    "sa": 170,
+    "sd": 100,
+    "sp": 95
+   },
+   "types": [
+    "Dragon",
+    "Ice"
+   ],
+   "abilities": {
+    "0": "Turboblaze"
    }
   },
   "Lampent": {
@@ -31555,6 +33041,25 @@ backup_data = {
     "0": "Levitate"
    }
   },
+  "Latias-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 100,
+    "df": 120,
+    "sa": 140,
+    "sd": 150,
+    "sp": 110
+   },
+   "types": [
+    "Dragon",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Levitate",
+    "1": "Levitate",
+    "2": "Levitate"
+   }
+  },
   "Latios": {
    "bs": {
     "hp": 80,
@@ -31570,6 +33075,25 @@ backup_data = {
    ],
    "abilities": {
     "0": "Levitate"
+   }
+  },
+  "Latios-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 130,
+    "df": 100,
+    "sa": 160,
+    "sd": 120,
+    "sp": 110
+   },
+   "types": [
+    "Dragon",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Levitate",
+    "1": "Levitate",
+    "2": "Levitate"
    }
   },
   "Leafeon": {
@@ -31792,6 +33316,25 @@ backup_data = {
     "2": "Limber"
    }
   },
+  "Lopunny-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 136,
+    "df": 94,
+    "sa": 54,
+    "sd": 96,
+    "sp": 135
+   },
+   "types": [
+    "Normal",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Scrappy",
+    "1": "Scrappy",
+    "2": "Scrappy"
+   }
+  },
   "Lucario": {
    "bs": {
     "hp": 70,
@@ -31809,6 +33352,44 @@ backup_data = {
     "0": "Steadfast",
     "1": "Inner Focus",
     "2": "Justified"
+   }
+  },
+  "Lucario-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 145,
+    "df": 88,
+    "sa": 140,
+    "sd": 70,
+    "sp": 112
+   },
+   "types": [
+    "Fighting",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Adaptability",
+    "1": "Adaptability",
+    "2": "Adaptability"
+   }
+  },
+  "Lucario-Mega-Z": {
+   "bs": {
+    "hp": 70,
+    "at": 100,
+    "df": 70,
+    "sa": 164,
+    "sd": 70,
+    "sp": 151
+   },
+   "types": [
+    "Fighting",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Mind's Eye",
+    "1": "Mind's Eye",
+    "2": "Mind's Eye"
    }
   },
   "Ludicolo": {
@@ -31882,6 +33463,22 @@ backup_data = {
     "2": "Contrary"
    }
   },
+  "Lurantis-Totem": {
+   "bs": {
+    "hp": 70,
+    "at": 105,
+    "df": 90,
+    "sa": 80,
+    "sd": 90,
+    "sp": 45
+   },
+   "types": [
+    "Grass"
+   ],
+   "abilities": {
+    "0": "Leaf Guard"
+   }
+  },
   "Luvdisc": {
    "bs": {
     "hp": 43,
@@ -31933,6 +33530,40 @@ backup_data = {
     "0": "Keen Eye",
     "1": "Sand Rush",
     "2": "Steadfast"
+   }
+  },
+  "Lycanroc-Dusk": {
+   "bs": {
+    "hp": 75,
+    "at": 117,
+    "df": 65,
+    "sa": 55,
+    "sd": 65,
+    "sp": 110
+   },
+   "types": [
+    "Rock"
+   ],
+   "abilities": {
+    "0": "Tough Claws"
+   }
+  },
+  "Lycanroc-Midnight": {
+   "bs": {
+    "hp": 85,
+    "at": 115,
+    "df": 75,
+    "sa": 55,
+    "sd": 75,
+    "sp": 82
+   },
+   "types": [
+    "Rock"
+   ],
+   "abilities": {
+    "0": "Keen Eye",
+    "1": "Vital Spirit",
+    "2": "No Guard"
    }
   },
   "Mabosstiff": {
@@ -31998,6 +33629,59 @@ backup_data = {
     "sa": 130,
     "sd": 115,
     "sp": 65
+   },
+   "types": [
+    "Steel",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Soul-Heart"
+   }
+  },
+  "Magearna-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 125,
+    "df": 115,
+    "sa": 170,
+    "sd": 115,
+    "sp": 95
+   },
+   "types": [
+    "Steel",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Soul-Heart",
+    "1": "Soul-Heart",
+    "2": "Soul-Heart"
+   }
+  },
+  "Magearna-Original": {
+   "bs": {
+    "hp": 80,
+    "at": 95,
+    "df": 115,
+    "sa": 130,
+    "sd": 115,
+    "sp": 65
+   },
+   "types": [
+    "Steel",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Soul-Heart"
+   }
+  },
+  "Magearna-Original-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 125,
+    "df": 115,
+    "sa": 170,
+    "sd": 115,
+    "sp": 95
    },
    "types": [
     "Steel",
@@ -32098,6 +33782,25 @@ backup_data = {
     "2": "Infiltrator"
    }
   },
+  "Malamar-Mega": {
+   "bs": {
+    "hp": 86,
+    "at": 102,
+    "df": 88,
+    "sa": 98,
+    "sd": 120,
+    "sp": 88
+   },
+   "types": [
+    "Dark",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Contrary",
+    "1": "Contrary",
+    "2": "Contrary"
+   }
+  },
   "Mamoswine": {
    "bs": {
     "hp": 110,
@@ -32168,6 +33871,24 @@ backup_data = {
     "0": "Static",
     "1": "Lightning Rod",
     "2": "Minus"
+   }
+  },
+  "Manectric-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 75,
+    "df": 80,
+    "sa": 135,
+    "sd": 80,
+    "sp": 135
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Intimidate",
+    "2": "Intimidate"
    }
   },
   "Mankey": {
@@ -32281,6 +34002,23 @@ backup_data = {
     "2": "Rock Head"
    }
   },
+  "Marowak-Alola-Totem": {
+   "bs": {
+    "hp": 60,
+    "at": 80,
+    "df": 110,
+    "sa": 50,
+    "sd": 80,
+    "sp": 45
+   },
+   "types": [
+    "Fire",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Rock Head"
+   }
+  },
   "Marshadow": {
    "bs": {
     "hp": 90,
@@ -32353,6 +34091,25 @@ backup_data = {
     "2": "Sheer Force"
    }
   },
+  "Mawile-Mega": {
+   "bs": {
+    "hp": 50,
+    "at": 105,
+    "df": 125,
+    "sa": 55,
+    "sd": 95,
+    "sp": 50
+   },
+   "types": [
+    "Steel",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Huge Power",
+    "1": "Huge Power",
+    "2": "Huge Power"
+   }
+  },
   "Meditite": {
    "bs": {
     "hp": 30,
@@ -32386,6 +34143,25 @@ backup_data = {
    "abilities": {
     "0": "Overgrow",
     "2": "Leaf Guard"
+   }
+  },
+  "Meganium-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 92,
+    "df": 115,
+    "sa": 143,
+    "sd": 115,
+    "sp": 80
+   },
+   "types": [
+    "Grass",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "megasol",
+    "1": "megasol",
+    "2": "megasol"
    }
   },
   "Melmetal": {
@@ -32510,6 +34286,25 @@ backup_data = {
     "2": "Light Metal"
    }
   },
+  "Metagross-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 145,
+    "df": 150,
+    "sa": 105,
+    "sd": 110,
+    "sp": 110
+   },
+   "types": [
+    "Steel",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Tough Claws",
+    "1": "Tough Claws",
+    "2": "Tough Claws"
+   }
+  },
   "Mew": {
    "bs": {
     "hp": 100,
@@ -32541,6 +34336,43 @@ backup_data = {
    "abilities": {
     "0": "Pressure",
     "2": "Unnerve"
+   }
+  },
+  "Mewtwo-Mega-X": {
+   "bs": {
+    "hp": 106,
+    "at": 190,
+    "df": 100,
+    "sa": 154,
+    "sd": 100,
+    "sp": 130
+   },
+   "types": [
+    "Psychic",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Steadfast",
+    "1": "Steadfast",
+    "2": "Steadfast"
+   }
+  },
+  "Mewtwo-Mega-Y": {
+   "bs": {
+    "hp": 106,
+    "at": 150,
+    "df": 70,
+    "sa": 194,
+    "sd": 120,
+    "sp": 140
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Insomnia",
+    "1": "Insomnia",
+    "2": "Insomnia"
    }
   },
   "Mienshao": {
@@ -32598,6 +34430,40 @@ backup_data = {
    }
   },
   "Mimikyu": {
+   "bs": {
+    "hp": 55,
+    "at": 90,
+    "df": 80,
+    "sa": 50,
+    "sd": 105,
+    "sp": 96
+   },
+   "types": [
+    "Ghost",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Disguise"
+   }
+  },
+  "Mimikyu-Busted": {
+   "bs": {
+    "hp": 55,
+    "at": 90,
+    "df": 80,
+    "sa": 50,
+    "sd": 105,
+    "sp": 96
+   },
+   "types": [
+    "Ghost",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Disguise"
+   }
+  },
+  "Mimikyu-Busted-Totem": {
    "bs": {
     "hp": 55,
     "at": 90,
@@ -32700,6 +34566,25 @@ backup_data = {
     "0": "Soundproof",
     "1": "Filter",
     "2": "Technician"
+   }
+  },
+  "Mr. Mime-Galar": {
+   "bs": {
+    "hp": 50,
+    "at": 65,
+    "df": 65,
+    "sa": 90,
+    "sd": 90,
+    "sp": 100
+   },
+   "types": [
+    "Ice",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Vital Spirit",
+    "1": "Screen Cleaner",
+    "2": "Ice Body"
    }
   },
   "Mudbray": {
@@ -33115,6 +35000,23 @@ backup_data = {
     "0": "Sturdy"
    }
   },
+  "Ogerpon-Hearthflame": {
+   "bs": {
+    "hp": 80,
+    "at": 120,
+    "df": 84,
+    "sa": 60,
+    "sd": 96,
+    "sp": 110
+   },
+   "types": [
+    "Grass",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Mold Breaker"
+   }
+  },
   "Ogerpon-Wellspring": {
    "bs": {
     "hp": 80,
@@ -33497,6 +35399,25 @@ backup_data = {
     "2": "Big Pecks"
    }
   },
+  "Pidgeot-Mega": {
+   "bs": {
+    "hp": 83,
+    "at": 80,
+    "df": 80,
+    "sa": 135,
+    "sd": 80,
+    "sp": 121
+   },
+   "types": [
+    "Normal",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "No Guard",
+    "1": "No Guard",
+    "2": "No Guard"
+   }
+  },
   "Pikachu-Belle": {
    "bs": {
     "hp": 35,
@@ -33566,6 +35487,25 @@ backup_data = {
     "2": "Moxie"
    }
   },
+  "Pinsir-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 155,
+    "df": 120,
+    "sa": 65,
+    "sd": 90,
+    "sp": 105
+   },
+   "types": [
+    "Bug",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Aerilate",
+    "1": "Aerilate",
+    "2": "Aerilate"
+   }
+  },
   "Plusle": {
    "bs": {
     "hp": 60,
@@ -33619,6 +35559,23 @@ backup_data = {
    }
   },
   "Polteageist": {
+   "bs": {
+    "hp": 60,
+    "at": 65,
+    "df": 65,
+    "sa": 134,
+    "sd": 114,
+    "sp": 70
+   },
+   "types": [
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Weak Armor",
+    "2": "Cursed Body"
+   }
+  },
+  "Polteageist-Antique": {
    "bs": {
     "hp": 60,
     "at": 65,
@@ -33798,6 +35755,25 @@ backup_data = {
     "2": "Moxie"
    }
   },
+  "Pyroar-Mega": {
+   "bs": {
+    "hp": 86,
+    "at": 88,
+    "df": 92,
+    "sa": 129,
+    "sd": 86,
+    "sp": 126
+   },
+   "types": [
+    "Fire",
+    "Normal"
+   ],
+   "abilities": {
+    "0": "kingspride",
+    "1": "kingspride",
+    "2": "kingspride"
+   }
+  },
   "Pyukumuku": {
    "bs": {
     "hp": 55,
@@ -33888,6 +35864,25 @@ backup_data = {
     "2": "Intimidate"
    }
   },
+  "Qwilfish-Hisui": {
+   "bs": {
+    "hp": 65,
+    "at": 95,
+    "df": 85,
+    "sa": 55,
+    "sd": 55,
+    "sp": 85
+   },
+   "types": [
+    "Dark",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Poison Point",
+    "1": "Swift Swim",
+    "2": "Intimidate"
+   }
+  },
   "Rabsca": {
    "bs": {
     "hp": 75,
@@ -33957,6 +35952,42 @@ backup_data = {
     "0": "Surge Surfer"
    }
   },
+  "Raichu-Mega-X": {
+   "bs": {
+    "hp": 60,
+    "at": 135,
+    "df": 95,
+    "sa": 90,
+    "sd": 95,
+    "sp": 110
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Levitate",
+    "1": "Levitate",
+    "2": "Levitate"
+   }
+  },
+  "Raichu-Mega-Y": {
+   "bs": {
+    "hp": 60,
+    "at": 100,
+    "df": 55,
+    "sa": 160,
+    "sd": 80,
+    "sp": 130
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Transistor",
+    "1": "Transistor",
+    "2": "Transistor"
+   }
+  },
   "Rapidash": {
    "bs": {
     "hp": 65,
@@ -34013,6 +36044,23 @@ backup_data = {
     "2": "Thick Fat"
    }
   },
+  "Raticate-Alola-Totem": {
+   "bs": {
+    "hp": 75,
+    "at": 71,
+    "df": 70,
+    "sa": 40,
+    "sd": 80,
+    "sp": 77
+   },
+   "types": [
+    "Dark",
+    "Normal"
+   ],
+   "abilities": {
+    "0": "Thick Fat"
+   }
+  },
   "Rayquaza": {
    "bs": {
     "hp": 105,
@@ -34028,6 +36076,25 @@ backup_data = {
    ],
    "abilities": {
     "0": "Air Lock"
+   }
+  },
+  "Rayquaza-Mega": {
+   "bs": {
+    "hp": 105,
+    "at": 180,
+    "df": 100,
+    "sa": 180,
+    "sd": 100,
+    "sp": 115
+   },
+   "types": [
+    "Dragon",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Delta Stream",
+    "1": "Delta Stream",
+    "2": "Delta Stream"
    }
   },
   "Regidrago": {
@@ -34227,6 +36294,23 @@ backup_data = {
     "2": "Sweet Veil"
    }
   },
+  "Ribombee-Totem": {
+   "bs": {
+    "hp": 60,
+    "at": 55,
+    "df": 60,
+    "sa": 95,
+    "sd": 70,
+    "sp": 124
+   },
+   "types": [
+    "Bug",
+    "Fairy"
+   ],
+   "abilities": {
+    "0": "Sweet Veil"
+   }
+  },
   "Roaring Moon": {
    "bs": {
     "hp": 105,
@@ -34406,6 +36490,25 @@ backup_data = {
     "2": "Prankster"
    }
   },
+  "Sableye-Mega": {
+   "bs": {
+    "hp": 50,
+    "at": 85,
+    "df": 125,
+    "sa": 85,
+    "sd": 115,
+    "sp": 20
+   },
+   "types": [
+    "Dark",
+    "Ghost"
+   ],
+   "abilities": {
+    "0": "Magic Bounce",
+    "1": "Magic Bounce",
+    "2": "Magic Bounce"
+   }
+  },
   "Salamence": {
    "bs": {
     "hp": 95,
@@ -34424,6 +36527,25 @@ backup_data = {
     "2": "Moxie"
    }
   },
+  "Salamence-Mega": {
+   "bs": {
+    "hp": 95,
+    "at": 145,
+    "df": 130,
+    "sa": 120,
+    "sd": 90,
+    "sp": 120
+   },
+   "types": [
+    "Dragon",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Aerilate",
+    "1": "Aerilate",
+    "2": "Aerilate"
+   }
+  },
   "Salazzle": {
    "bs": {
     "hp": 68,
@@ -34440,6 +36562,23 @@ backup_data = {
    "abilities": {
     "0": "Corrosion",
     "2": "Oblivious"
+   }
+  },
+  "Salazzle-Totem": {
+   "bs": {
+    "hp": 68,
+    "at": 64,
+    "df": 60,
+    "sa": 111,
+    "sd": 60,
+    "sp": 117
+   },
+   "types": [
+    "Poison",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "Corrosion"
    }
   },
   "Samurott-Hisui": {
@@ -34547,6 +36686,25 @@ backup_data = {
     "2": "Unburden"
    }
   },
+  "Sceptile-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 110,
+    "df": 75,
+    "sa": 145,
+    "sd": 85,
+    "sp": 145
+   },
+   "types": [
+    "Grass",
+    "Dragon"
+   ],
+   "abilities": {
+    "0": "Beads of Ruin",
+    "1": "Beads of Ruin",
+    "2": "Beads of Ruin"
+   }
+  },
   "Scizor": {
    "bs": {
     "hp": 70,
@@ -34564,6 +36722,25 @@ backup_data = {
     "0": "Swarm",
     "1": "Technician",
     "2": "Light Metal"
+   }
+  },
+  "Scizor-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 150,
+    "df": 140,
+    "sa": 65,
+    "sd": 100,
+    "sp": 75
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Technician",
+    "1": "Technician",
+    "2": "Technician"
    }
   },
   "Scolipede": {
@@ -34585,6 +36762,25 @@ backup_data = {
     "2": "Speed Boost"
    }
   },
+  "Scolipede-Mega": {
+   "bs": {
+    "hp": 60,
+    "at": 140,
+    "df": 149,
+    "sa": 75,
+    "sd": 99,
+    "sp": 62
+   },
+   "types": [
+    "Bug",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Tinted Lens",
+    "1": "Tinted Lens",
+    "2": "Tinted Lens"
+   }
+  },
   "Scovillain": {
    "bs": {
     "hp": 65,
@@ -34604,6 +36800,25 @@ backup_data = {
     "2": "Moody"
    }
   },
+  "Scovillain-Mega": {
+   "bs": {
+    "hp": 85,
+    "at": 108,
+    "df": 90,
+    "sa": 138,
+    "sd": 90,
+    "sp": 75
+   },
+   "types": [
+    "Grass",
+    "Fire"
+   ],
+   "abilities": {
+    "0": "twoheaded",
+    "1": "twoheaded",
+    "2": "twoheaded"
+   }
+  },
   "Scrafty": {
    "bs": {
     "hp": 65,
@@ -34620,6 +36835,25 @@ backup_data = {
    "abilities": {
     "0": "Shed Skin",
     "1": "Moxie",
+    "2": "Intimidate"
+   }
+  },
+  "Scrafty-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 130,
+    "df": 135,
+    "sa": 55,
+    "sd": 135,
+    "sp": 68
+   },
+   "types": [
+    "Dark",
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Intimidate",
     "2": "Intimidate"
    }
   },
@@ -34764,6 +36998,25 @@ backup_data = {
    "abilities": {
     "0": "Rough Skin",
     "2": "Speed Boost"
+   }
+  },
+  "Sharpedo-Mega": {
+   "bs": {
+    "hp": 70,
+    "at": 140,
+    "df": 70,
+    "sa": 110,
+    "sd": 65,
+    "sp": 105
+   },
+   "types": [
+    "Water",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Strong Jaw",
+    "1": "Strong Jaw",
+    "2": "Strong Jaw"
    }
   },
   "Shaymin": {
@@ -34998,6 +37251,25 @@ backup_data = {
     "2": "Weak Armor"
    }
   },
+  "Skarmory-Mega": {
+   "bs": {
+    "hp": 65,
+    "at": 140,
+    "df": 110,
+    "sa": 40,
+    "sd": 100,
+    "sp": 110
+   },
+   "types": [
+    "Steel",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Good as Gold",
+    "1": "Good as Gold",
+    "2": "Good as Gold"
+   }
+  },
   "Skeledirge": {
    "bs": {
     "hp": 104,
@@ -35145,6 +37417,25 @@ backup_data = {
     "2": "Regenerator"
    }
   },
+  "Slowbro-Mega": {
+   "bs": {
+    "hp": 95,
+    "at": 75,
+    "df": 180,
+    "sa": 130,
+    "sd": 80,
+    "sp": 30
+   },
+   "types": [
+    "Water",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Shell Armor",
+    "1": "Shell Armor",
+    "2": "Shell Armor"
+   }
+  },
   "Slowking": {
    "bs": {
     "hp": 95,
@@ -35198,6 +37489,24 @@ backup_data = {
    ],
    "abilities": {
     "0": "Oblivious",
+    "1": "Own Tempo",
+    "2": "Regenerator"
+   }
+  },
+  "Slowpoke-Galar": {
+   "bs": {
+    "hp": 90,
+    "at": 65,
+    "df": 65,
+    "sa": 40,
+    "sd": 40,
+    "sp": 15
+   },
+   "types": [
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Gluttony",
     "1": "Own Tempo",
     "2": "Regenerator"
    }
@@ -35436,6 +37745,25 @@ backup_data = {
     "2": "Reckless"
    }
   },
+  "Staraptor-Mega": {
+   "bs": {
+    "hp": 85,
+    "at": 140,
+    "df": 100,
+    "sa": 60,
+    "sd": 90,
+    "sp": 110
+   },
+   "types": [
+    "Fighting",
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Tough Claws",
+    "1": "Tough Claws",
+    "2": "Tough Claws"
+   }
+  },
   "Starmie": {
    "bs": {
     "hp": 60,
@@ -35455,6 +37783,25 @@ backup_data = {
     "2": "Analytic"
    }
   },
+  "Starmie-Mega": {
+   "bs": {
+    "hp": 60,
+    "at": 140,
+    "df": 105,
+    "sa": 130,
+    "sd": 105,
+    "sp": 120
+   },
+   "types": [
+    "Water",
+    "Psychic"
+   ],
+   "abilities": {
+    "0": "Pure Power",
+    "1": "Pure Power",
+    "2": "Pure Power"
+   }
+  },
   "Steelix": {
    "bs": {
     "hp": 75,
@@ -35472,6 +37819,25 @@ backup_data = {
     "0": "Rock Head",
     "1": "Sturdy",
     "2": "Sheer Force"
+   }
+  },
+  "Steelix-Mega": {
+   "bs": {
+    "hp": 75,
+    "at": 125,
+    "df": 230,
+    "sa": 55,
+    "sd": 95,
+    "sp": 30
+   },
+   "types": [
+    "Steel",
+    "Ground"
+   ],
+   "abilities": {
+    "0": "Sand Force",
+    "1": "Sand Force",
+    "2": "Sand Force"
    }
   },
   "Stoutland": {
@@ -35617,6 +37983,25 @@ backup_data = {
    "abilities": {
     "0": "Torrent",
     "2": "Damp"
+   }
+  },
+  "Swampert-Mega": {
+   "bs": {
+    "hp": 100,
+    "at": 150,
+    "df": 110,
+    "sa": 95,
+    "sd": 110,
+    "sp": 70
+   },
+   "types": [
+    "Water",
+    "Ground"
+   ],
+   "abilities": {
+    "0": "Swift Swim",
+    "1": "Swift Swim",
+    "2": "Swift Swim"
    }
   },
   "Swanna": {
@@ -35912,6 +38297,24 @@ backup_data = {
     "2": "Cud Chew"
    }
   },
+  "Tauros-Paldea-Combat": {
+   "bs": {
+    "hp": 75,
+    "at": 110,
+    "df": 105,
+    "sa": 30,
+    "sd": 70,
+    "sp": 100
+   },
+   "types": [
+    "Fighting"
+   ],
+   "abilities": {
+    "0": "Intimidate",
+    "1": "Anger Point",
+    "2": "Cud Chew"
+   }
+  },
   "Tentacool": {
    "bs": {
     "hp": 40,
@@ -36148,6 +38551,23 @@ backup_data = {
     "2": "Defiant"
    }
   },
+  "Tornadus-Therian": {
+   "bs": {
+    "hp": 79,
+    "at": 100,
+    "df": 80,
+    "sa": 110,
+    "sd": 90,
+    "sp": 121
+   },
+   "types": [
+    "Flying"
+   ],
+   "abilities": {
+    "0": "Regenerator",
+    "2": "Regenerator"
+   }
+  },
   "Torterra": {
    "bs": {
     "hp": 95,
@@ -36366,6 +38786,25 @@ backup_data = {
    "abilities": {
     "0": "Sand Stream",
     "2": "Unnerve"
+   }
+  },
+  "Tyranitar-Mega": {
+   "bs": {
+    "hp": 100,
+    "at": 164,
+    "df": 150,
+    "sa": 95,
+    "sd": 120,
+    "sp": 71
+   },
+   "types": [
+    "Rock",
+    "Dark"
+   ],
+   "abilities": {
+    "0": "Sand Stream",
+    "1": "Sand Stream",
+    "2": "Sand Stream"
    }
   },
   "Tyrantrum": {
@@ -36622,6 +39061,25 @@ backup_data = {
     "2": "Chlorophyll"
    }
   },
+  "Venusaur-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 100,
+    "df": 123,
+    "sa": 122,
+    "sd": 120,
+    "sp": 80
+   },
+   "types": [
+    "Grass",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Thick Fat",
+    "1": "Thick Fat",
+    "2": "Thick Fat"
+   }
+  },
   "Vespiquen": {
    "bs": {
     "hp": 70,
@@ -36675,6 +39133,25 @@ backup_data = {
     "2": "Gluttony"
    }
   },
+  "Victreebel-Mega": {
+   "bs": {
+    "hp": 80,
+    "at": 125,
+    "df": 85,
+    "sa": 135,
+    "sd": 95,
+    "sp": 70
+   },
+   "types": [
+    "Grass",
+    "Poison"
+   ],
+   "abilities": {
+    "0": "Poison Puppeteer",
+    "1": "Poison Puppeteer",
+    "2": "Poison Puppeteer"
+   }
+  },
   "Vigoroth": {
    "bs": {
     "hp": 80,
@@ -36692,6 +39169,23 @@ backup_data = {
    }
   },
   "Vikavolt": {
+   "bs": {
+    "hp": 77,
+    "at": 70,
+    "df": 90,
+    "sa": 145,
+    "sd": 75,
+    "sp": 43
+   },
+   "types": [
+    "Bug",
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Levitate"
+   }
+  },
+  "Vikavolt-Totem": {
    "bs": {
     "hp": 77,
     "at": 70,
@@ -37016,6 +39510,24 @@ backup_data = {
     "2": "Overcoat"
    }
   },
+  "Wormadam-Trash": {
+   "bs": {
+    "hp": 60,
+    "at": 69,
+    "df": 95,
+    "sa": 69,
+    "sd": 95,
+    "sp": 36
+   },
+   "types": [
+    "Bug",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Anticipation",
+    "2": "Overcoat"
+   }
+  },
   "Wugtrio": {
    "bs": {
     "hp": 35,
@@ -37123,6 +39635,23 @@ backup_data = {
     "0": "Intrepid Sword"
    }
   },
+  "Zacian-Crowned": {
+   "bs": {
+    "hp": 92,
+    "at": 150,
+    "df": 115,
+    "sa": 80,
+    "sd": 115,
+    "sp": 148
+   },
+   "types": [
+    "Fairy",
+    "Steel"
+   ],
+   "abilities": {
+    "0": "Intrepid Sword"
+   }
+  },
   "Zangoose": {
    "bs": {
     "hp": 73,
@@ -37175,6 +39704,23 @@ backup_data = {
     "0": "Leaf Guard"
    }
   },
+  "Zarude-Dada": {
+   "bs": {
+    "hp": 105,
+    "at": 120,
+    "df": 105,
+    "sa": 70,
+    "sd": 95,
+    "sp": 105
+   },
+   "types": [
+    "Dark",
+    "Grass"
+   ],
+   "abilities": {
+    "0": "Leaf Guard"
+   }
+  },
   "Zekrom": {
    "bs": {
     "hp": 100,
@@ -37206,6 +39752,24 @@ backup_data = {
    ],
    "abilities": {
     "0": "Volt Absorb"
+   }
+  },
+  "Zeraora-Mega": {
+   "bs": {
+    "hp": 88,
+    "at": 157,
+    "df": 75,
+    "sa": 147,
+    "sd": 80,
+    "sp": 153
+   },
+   "types": [
+    "Electric"
+   ],
+   "abilities": {
+    "0": "Iron Fist",
+    "1": "Iron Fist",
+    "2": "Iron Fist"
    }
   },
   "Zorua-Hisui": {
@@ -42576,6 +45140,39 @@ backup_data = {
    "map": "RustboroCity_DevonCorp_1F",
    "map_weather": null,
    "map_terrain": null
+  },
+  "67": {
+   "label": "Kangaskhan - Mossdeep City",
+   "id": "EVENT_SPECIES_KANGASKHAN",
+   "location": "MossdeepCity",
+   "doubles": false,
+   "starting_status": [],
+   "ai": "Smart Trainer",
+   "map": "MossdeepCity",
+   "map_weather": null,
+   "map_terrain": null
+  },
+  "68": {
+   "label": "Groudon - Mossdeep City",
+   "id": "EVENT_SPECIES_GROUDON",
+   "location": "MossdeepCity",
+   "doubles": false,
+   "starting_status": [],
+   "ai": "Smart Trainer",
+   "map": "MossdeepCity",
+   "map_weather": null,
+   "map_terrain": null
+  },
+  "69": {
+   "label": "Kyogre - Mossdeep City",
+   "id": "EVENT_SPECIES_KYOGRE",
+   "location": "MossdeepCity",
+   "doubles": false,
+   "starting_status": [],
+   "ai": "Smart Trainer",
+   "map": "MossdeepCity",
+   "map_weather": null,
+   "map_terrain": null
   }
  },
  "order": {
@@ -42841,7 +45438,19 @@ backup_data = {
   },
   "66": {
    "prev": 65,
-   "next": 66
+   "next": 67
+  },
+  "67": {
+   "prev": 66,
+   "next": 68
+  },
+  "68": {
+   "prev": 67,
+   "next": 69
+  },
+  "69": {
+   "prev": 68,
+   "next": 69
   }
  }
 }

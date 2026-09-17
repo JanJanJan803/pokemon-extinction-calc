@@ -3150,6 +3150,8 @@ $(".forme").change(function () {
 	var pokeInfo = $(this).closest(".poke-info");
 	if (isLeftPlayerPoke(pokeInfo)) {
 		updateLeftPokeSprite($(this).val());
+	} else if (typeof updateRightPokeSprite === "function") {
+		updateRightPokeSprite($(this).val());
 	}
 
 	$(this).parent().siblings().find(".type1").val(altForme.types[0]);
