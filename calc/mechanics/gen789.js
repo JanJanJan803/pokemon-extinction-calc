@@ -21,6 +21,15 @@ function getSwitchInPlayerName() {
 function isLocalStorageFlagEnabled(flagName) {
     return typeof localStorage !== "undefined" && localStorage && localStorage[flagName] == '1';
 }
+// Pokemon Extinction: Misty and Draconic Terrain reach airborne battlers too, so the teams built
+// around them (Lance's Levitators and Flying types) are affected by their own terrain. The other
+// three terrains still only reach Pokemon standing on the ground.
+function isReachedByTerrain(pokemon, field, terrain) {
+    if (!field.hasTerrain(terrain)) return false;
+    if (terrain === 'Misty' || terrain === 'Draconic') return true;
+    return (0, util_2.isGrounded)(pokemon, field);
+}
+
 function calculateSMSSSV(gen, attacker, defender, move, field) {
     var _a;
     var title = typeof TITLE === "string" ? TITLE : "";
@@ -210,7 +219,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         desc.attackerItem = attacker.item;
     }
     else if (move.named('Nature Power') ||
-        (move.named('Terrain Pulse') && (0, util_2.isGrounded)(attacker, field))) {
+        (move.named('Terrain Pulse') && (isReachedByTerrain(attacker, field, 'Misty') ||
+            isReachedByTerrain(attacker, field, 'Draconic') || (0, util_2.isGrounded)(attacker, field)))) {
         type =
             field.hasTerrain('Electric') ? 'Electric'
                 : field.hasTerrain('Grassy') ? 'Grass'
@@ -698,7 +708,8 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
             desc.moveBP = basePower;
             break;
         case 'Terrain Pulse':
-            basePower = move.bp * ((0, util_2.isGrounded)(attacker, field) && field.terrain ? 2 : 1);
+            basePower = move.bp * ((field.terrain && (isReachedByTerrain(attacker, field, 'Misty') ||
+                isReachedByTerrain(attacker, field, 'Draconic') || (0, util_2.isGrounded)(attacker, field))) ? 2 : 1);
             desc.moveBP = basePower;
             break;
         case 'Rising Voltage':
@@ -879,7 +890,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         move.type = 'Stellar';
     }
     else if ((move.named('Knock Off') && !resistedKnockOffDamage) ||
-        (move.named('Misty Explosion') && (0, util_2.isGrounded)(attacker, field) && field.hasTerrain('Misty')) ||
+        (move.named('Misty Explosion') && isReachedByTerrain(attacker, field, 'Misty')) ||
         (move.named('Grav Apple') && field.isGravity)) {
         bpMods.push(6144);
         desc.moveBP = basePower * 1.5;
@@ -917,14 +928,13 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
             desc.terrain = field.terrain;
         }
     }
-    if ((0, util_2.isGrounded)(defender, field)) {
-        if ((field.hasTerrain('Misty') && move.hasType('Dragon')) ||
-            // Pokemon Extinction: Draconic Terrain is Misty Terrain's mirror - it halves Fairy.
-            (field.hasTerrain('Draconic') && move.hasType('Fairy')) ||
-            (field.hasTerrain('Grassy') && move.named('Bulldoze', 'Earthquake'))) {
-            bpMods.push(2048);
-            desc.terrain = field.terrain;
-        }
+    // Draconic Terrain is Misty Terrain's mirror: it halves Fairy. Neither needs the target on the
+    // ground here; Grassy Terrain's Earthquake damping still does.
+    if ((isReachedByTerrain(defender, field, 'Misty') && move.hasType('Dragon')) ||
+        (isReachedByTerrain(defender, field, 'Draconic') && move.hasType('Fairy')) ||
+        ((0, util_2.isGrounded)(defender, field) && field.hasTerrain('Grassy') && move.named('Bulldoze', 'Earthquake'))) {
+        bpMods.push(2048);
+        desc.terrain = field.terrain;
     }
     if ((attacker.hasAbility('Technician') && basePower <= 60) ||
         (attacker.hasAbility('Flare Boost') &&
