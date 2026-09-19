@@ -29,6 +29,11 @@
     window.extinctionSetOptionAllowed = function (option, side) {
         if (!isExtinction()) return true;
         if (!option.set) return false; // bare species rows would allow free-form sets
+        // An imported box mon is registered under both "My Box" (how the calc stores it) and its box
+        // name (how a player thinks of it), so hide the raw one or it is listed twice. Checked here
+        // rather than only in decorateBoxOptions because the select2 query calls THIS hook directly -
+        // it is the one filter guaranteed to run on the dropdown the player actually sees.
+        if (option.set === "My Box" && hasBoxNamedCopy(option.pokemon)) return false;
         if (side === "player") return !!option.isCustom;
         return !option.isCustom && option.set !== "Blank Set";
     };
@@ -397,12 +402,22 @@
 
     var LABELS_KEY = "extinctionBoxLabels";
 
+    var boxLabelCache = null;
+
     function getBoxLabels() {
+        if (boxLabelCache) return boxLabelCache;
         try {
-            return JSON.parse(localStorage.getItem(LABELS_KEY) || "{}");
+            boxLabelCache = JSON.parse(localStorage.getItem(LABELS_KEY) || "{}");
         } catch (e) {
-            return {};
+            boxLabelCache = {};
         }
+        return boxLabelCache;
+    }
+
+    // The set list asks for a label once per option on every keystroke, so the map is read from
+    // storage once and dropped again whenever an import rewrites it.
+    function invalidateBoxLabels() {
+        boxLabelCache = null;
     }
 
     // The calc stores every imported mon under one set name, "My Box", so the list would read
@@ -434,8 +449,16 @@
         syncBoxSetNames();
         return options.filter(function (option) {
             // Hide the raw "My Box" row when the same set is listed under its box name.
-            return !(option && option.set === "My Box" && boxLabelFor(option.pokemon));
+            return !(option && option.set === "My Box" && hasBoxNamedCopy(option.pokemon));
         });
+    }
+
+    // Only hide the raw row once the renamed one is really in setdex - otherwise a box mon whose
+    // alias has not been registered yet would vanish from the list entirely.
+    function hasBoxNamedCopy(speciesName) {
+        var label = boxLabelFor(speciesName);
+        return !!(label && typeof setdex === "object" && setdex && setdex[speciesName]
+               && setdex[speciesName][label]);
     }
 
     function boxLabelFor(speciesName) {
@@ -499,6 +522,7 @@
         try {
             localStorage.setItem(LABELS_KEY, JSON.stringify(labels));
         } catch (e) { /* storage unavailable */ }
+        invalidateBoxLabels();
 
         if (texts.length && typeof addSets === "function") {
             addSets(texts.join("\n\n"), "My Box");
@@ -580,6 +604,7 @@
                 clearInterval(timer);
                 addFieldControls();
                 addBoxPicker();
+                syncBoxSetNames(); // the stored box is already in setdex by now, under "My Box"
                 updateFormToggles();
                 if (typeof getSetOptions === "function" && !getSetOptions.extinctionWrapped) {
                     var original = getSetOptions;
