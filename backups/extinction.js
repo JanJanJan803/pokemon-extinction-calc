@@ -6437,7 +6437,7 @@ backup_data = {
     "battle_type": "Singles",
     "reward_item": "",
     "form": "",
-    "item": "Choice Specs",
+    "item": "Choice Scarf",
     "ivs": {
      "hp": 31,
      "at": 0,
@@ -10066,7 +10066,7 @@ backup_data = {
      "Beat Up",
      "Icicle Crash",
      "Ice Shard",
-     "Low Kick"
+     "Low Sweep"
     ],
     "sub_index": 1,
     "ability": "Technician"
@@ -17107,7 +17107,7 @@ backup_data = {
    "Box 2": {
     "level": 34,
     "nature": "Jolly",
-    "ability": "Moxie",
+    "ability": "Intimidate",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -18093,7 +18093,7 @@ backup_data = {
    "Box 3 Starter": {
     "level": 50,
     "nature": "Jolly",
-    "ability": "Moxie",
+    "ability": "Technician",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -18113,7 +18113,7 @@ backup_data = {
     },
     "moves": [
      "Aqua Step",
-     "Brick Break",
+     "Low Sweep",
      "Knock Off",
      "U-turn"
     ]
@@ -21315,7 +21315,7 @@ backup_data = {
    "Box 4 Mega": {
     "level": 65,
     "nature": "Jolly",
-    "ability": "Moxie",
+    "ability": "Hyper Cutter",
     "item": "Pinsirite",
     "ivs": {
      "hp": 31,
@@ -21855,7 +21855,7 @@ backup_data = {
    "Box 4": {
     "level": 65,
     "nature": "Jolly",
-    "ability": "Moxie",
+    "ability": "Super Luck",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -37069,6 +37069,7 @@ backup_data = {
    ],
    "abilities": {
     "0": "Torrent",
+    "1": "Technician",
     "2": "Moxie"
    }
   },
@@ -41950,7 +41951,7 @@ backup_data = {
    "isWind": false
   },
   "Aqua Step": {
-   "basePower": 80,
+   "basePower": 60,
    "type": "Water",
    "category": "Physical",
    "priority": 0,
@@ -44078,7 +44079,7 @@ backup_data = {
    "isWind": false
   },
   "Low Sweep": {
-   "basePower": 65,
+   "basePower": 60,
    "type": "Fighting",
    "category": "Physical",
    "priority": 0,
