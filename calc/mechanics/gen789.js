@@ -426,7 +426,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     desc.HPEVs = (0, util_2.getStatDescriptionText)(gen, defender, 'hp');
     var fixedDamage = (0, util_2.handleFixedDamageMoves)(attacker, move);
     if (fixedDamage) {
-        if (attacker.hasAbility('Parental Bond', 'ORAORAORAORA', 'Two Headed')) {
+        if (attacker.hasAbility('Parental Bond', 'ORAORAORAORA', 'Two-Headed')) {
             result.damage = [fixedDamage, fixedDamage];
             desc.attackerAbility = attacker.ability;
         }
@@ -522,8 +522,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     var isSpread = field.gameType !== 'Singles' &&
         ['allAdjacent', 'allAdjacentFoes'].includes(move.target);
     var childDamage;
-    // Pokemon Extinction: Two Headed is Parental Bond under another name.
-    if (attacker.hasAbility('Parental Bond', 'Two Headed') && move.hits === 1 && !isSpread) {
+    // Pokemon Extinction: Two-Headed is Parental Bond under another name.
+    if (attacker.hasAbility('Parental Bond', 'Two-Headed') && move.hits === 1 && !isSpread) {
         var child = attacker.clone();
         child.ability = 'Parental Bond (Child)';
         (0, util_2.checkMultihitBoost)(gen, child, defender, move, field, desc);
@@ -701,7 +701,10 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
             desc.moveBP = basePower;
             break;
         case 'Weather Ball':
-            basePower = move.bp * (field.weather && !field.hasWeather('Strong Winds') ? 2 : 1);
+            // Pokemon Extinction: Mega Sol doubles it with no weather up at all, the same way the
+            // ROM does - the ability stands in for the sun rather than summoning it.
+            basePower = move.bp * ((attacker.hasAbility('Mega Sol') ||
+                (field.weather && !field.hasWeather('Strong Winds'))) ? 2 : 1);
             if (field.hasWeather('Sun', 'Harsh Sunshine', 'Rain', 'Heavy Rain') &&
                 attacker.hasItem('Utility Umbrella'))
                 basePower = move.bp;
@@ -1230,8 +1233,8 @@ function calculateAtModsSMSSSV(gen, attacker, defender, move, field, desc, profi
         field.hasTerrain('Electric') && (0, util_2.isGrounded)(attacker, field)) ||
         (attacker.hasAbility('Orichalcum Pulse') && move.category === 'Physical' &&
             field.hasWeather('Sun', 'Harsh Sunshine') && !attacker.hasItem('Utility Umbrella')) ||
-        // Pokemon Extinction: Kings Pride - Orichalcum Pulse for special moves.
-        (attacker.hasAbility('Kings Pride') && move.category === 'Special' &&
+        // Pokemon Extinction: King's Pride - Orichalcum Pulse for special moves.
+        (attacker.hasAbility("King's Pride") && move.category === 'Special' &&
             field.hasWeather('Sun', 'Harsh Sunshine') && !attacker.hasItem('Utility Umbrella'))) {
         atMods.push(5461);
         desc.attackerAbility = attacker.ability;

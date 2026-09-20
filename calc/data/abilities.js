@@ -425,7 +425,20 @@ var RR = SV.concat([
     'Striker',
     'Surprise!',
 ]);
-exports.ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, RR, RR];
+// Pokemon Extinction abilities, from the hack file src/data/abilities.h. Spelled exactly as the
+// game spells them: the data exporter matches each ROM ability name against this list, so any
+// difference here becomes an "ability not in calc" warning and a Pokemon with no ability at all.
+// Keep apostrophes out of comments in this file - the exporter scans it for quoted strings, and a
+// stray apostrophe opens a match that swallows every entry up to the next one.
+var EXT = RR.concat([
+    'Dragonize',
+    'Instant Prep',
+    "King's Pride",
+    'Mega Sol',
+    'Piercing Drill',
+    'Two-Headed'
+]);
+exports.ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, EXT, EXT];
 var Abilities = (function () {
     function Abilities(gen) {
         this.gen = gen;
