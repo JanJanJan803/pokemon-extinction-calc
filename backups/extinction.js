@@ -30451,9 +30451,9 @@ backup_data = {
     "Falinks-Mega"
    ],
    "abilities": {
-    "0": "Instant Preparation",
-    "1": "Instant Preparation",
-    "2": "Instant Preparation"
+    "0": "Instant Prep",
+    "1": "Instant Prep",
+    "2": "Instant Prep"
    }
   },
   "Farfetch’d": {
@@ -37013,9 +37013,9 @@ backup_data = {
     "Pyroar-Mega"
    ],
    "abilities": {
-    "0": "Kings Pride",
-    "1": "Kings Pride",
-    "2": "Kings Pride"
+    "0": "King's Pride",
+    "1": "King's Pride",
+    "2": "King's Pride"
    }
   },
   "Pyukumuku": {
@@ -38199,9 +38199,9 @@ backup_data = {
     "Scovillain-Mega"
    ],
    "abilities": {
-    "0": "Two Headed",
-    "1": "Two Headed",
-    "2": "Two Headed"
+    "0": "Two-Headed",
+    "1": "Two-Headed",
+    "2": "Two-Headed"
    }
   },
   "Scrafty": {
