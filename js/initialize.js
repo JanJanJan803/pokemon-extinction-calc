@@ -1051,7 +1051,7 @@ const backupFileCacheKeys = {
     // Restamped from the file's own hash by the hack repo's tools/calc_export/update_calc.sh on
     // every export. Without it GitHub Pages serves a cached extinction.js and the calculator shows
     // the previous build's trainers, box sets and move powers.
-    extinction: "ed94d61a"
+    extinction: "58874c12"
 };
 
 const trainerOrderFileCacheKeys = {

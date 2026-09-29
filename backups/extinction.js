@@ -424,7 +424,7 @@ backup_data = {
     },
     "nature": "Bold",
     "moves": [
-     "Giga Drain",
+     "Mega Drain",
      "Pollen Puff",
      "Leech Seed",
      "Protect"
@@ -1035,7 +1035,7 @@ backup_data = {
     },
     "nature": "Bold",
     "moves": [
-     "Giga Drain",
+     "Mega Drain",
      "Brine",
      "Leech Seed",
      "Protect"
@@ -1628,7 +1628,7 @@ backup_data = {
     "battle_type": "Doubles",
     "reward_item": "",
     "form": "",
-    "item": "Light Ball",
+    "item": "Expert Belt",
     "ivs": {
      "hp": 31,
      "at": 31,
@@ -1645,9 +1645,9 @@ backup_data = {
      "sd": 0,
      "sp": 0
     },
-    "nature": "Jolly",
+    "nature": "Naive",
     "moves": [
-     "Thunder Punch",
+     "Thunderbolt",
      "Trailblaze",
      "Nuzzle",
      "Fake Out"
@@ -1684,7 +1684,7 @@ backup_data = {
     "nature": "Bold",
     "moves": [
      "Air Cutter",
-     "Giga Drain",
+     "Mega Drain",
      "Electroweb",
      "Tailwind"
     ],
@@ -1722,7 +1722,7 @@ backup_data = {
      "Acrobatics",
      "Thunder Fang",
      "Rock Slide",
-     "Tailwind"
+     "Sand Tomb"
     ],
     "sub_index": 2,
     "ability": "Hyper Cutter"
@@ -1736,7 +1736,7 @@ backup_data = {
     "battle_type": "Doubles",
     "reward_item": "",
     "form": "",
-    "item": "Assault Vest",
+    "item": "Air Balloon",
     "ivs": {
      "hp": 31,
      "at": 31,
@@ -1755,7 +1755,7 @@ backup_data = {
     },
     "nature": "Brave",
     "moves": [
-     "Iron Head",
+     "Metal Claw",
      "Power-Up Punch",
      "Bite",
      "Ice Fang"
@@ -14974,7 +14974,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Giga Drain",
+     "Mega Drain",
      "Knock Off",
      "Spore",
      "Leech Seed"
@@ -15365,7 +15365,7 @@ backup_data = {
     },
     "moves": [
      "Drain Punch",
-     "Giga Drain",
+     "Mega Drain",
      "Throat Chop",
      "Substitute"
     ]
@@ -44191,7 +44191,7 @@ backup_data = {
    "isWind": false
   },
   "Mega Drain": {
-   "basePower": 40,
+   "basePower": 60,
    "type": "Grass",
    "category": "Special",
    "priority": 0,
@@ -45089,6 +45089,20 @@ backup_data = {
   "Salt Cure": {
    "basePower": 40,
    "type": "Rock",
+   "category": "Physical",
+   "priority": 0,
+   "makesContact": false,
+   "isPunch": false,
+   "isBite": false,
+   "isBullet": false,
+   "isSound": false,
+   "isPulse": false,
+   "isSword": false,
+   "isWind": false
+  },
+  "Sand Tomb": {
+   "basePower": 35,
+   "type": "Ground",
    "category": "Physical",
    "priority": 0,
    "makesContact": false,
