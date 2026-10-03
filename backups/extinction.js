@@ -1628,7 +1628,7 @@ backup_data = {
     "battle_type": "Doubles",
     "reward_item": "",
     "form": "",
-    "item": "Expert Belt",
+    "item": "Focus Sash",
     "ivs": {
      "hp": 31,
      "at": 31,
@@ -1645,9 +1645,9 @@ backup_data = {
      "sd": 0,
      "sp": 0
     },
-    "nature": "Naive",
+    "nature": "Jolly",
     "moves": [
-     "Thunderbolt",
+     "Thunder Punch",
      "Trailblaze",
      "Nuzzle",
      "Fake Out"
@@ -1685,7 +1685,7 @@ backup_data = {
     "moves": [
      "Air Cutter",
      "Mega Drain",
-     "Electroweb",
+     "Draining Kiss",
      "Tailwind"
     ],
     "sub_index": 1,
@@ -1721,7 +1721,7 @@ backup_data = {
     "moves": [
      "Acrobatics",
      "Thunder Fang",
-     "Rock Slide",
+     "Rock Tomb",
      "Sand Tomb"
     ],
     "sub_index": 2,
@@ -1826,7 +1826,7 @@ backup_data = {
     "nature": "Impish",
     "moves": [
      "Headbutt",
-     "Dig",
+     "Rock Smash",
      "Sucker Punch",
      "Thunder Wave"
     ],
@@ -1861,8 +1861,8 @@ backup_data = {
     },
     "nature": "Jolly",
     "moves": [
-     "Poison Jab",
-     "Iron Tail",
+     "Poison Tail",
+     "Pluck",
      "Fell Stinger",
      "Protect"
     ],
