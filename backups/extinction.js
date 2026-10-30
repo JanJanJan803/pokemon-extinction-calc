@@ -1069,9 +1069,9 @@ backup_data = {
      "sd": 0,
      "sp": 0
     },
-    "nature": "Adamant",
+    "nature": "Careful",
     "moves": [
-     "Grassy Glide",
+     "Razor Leaf",
      "Knock Off",
      "Fake Out",
      "Low Kick"
@@ -1325,11 +1325,11 @@ backup_data = {
     "moves": [
      "Air Slash",
      "Draining Kiss",
-     "Roost",
+     "Protect",
      "Yawn"
     ],
     "sub_index": 2,
-    "ability": "Serene Grace"
+    "ability": "Super Luck"
    }
   },
   "Dedenne": {
@@ -1825,7 +1825,7 @@ backup_data = {
     },
     "nature": "Impish",
     "moves": [
-     "Headbutt",
+     "Take Down",
      "Rock Smash",
      "Sucker Punch",
      "Thunder Wave"
@@ -13506,7 +13506,7 @@ backup_data = {
     "moves": [
      "Magical Leaf",
      "Acid Spray",
-     "Leech Seed",
+     "Protect",
      "Toxic"
     ]
    }
@@ -13684,7 +13684,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Facade",
+     "Frustration",
      "Ice Fang",
      "Thief",
      "Super Fang"
@@ -13715,7 +13715,7 @@ backup_data = {
     },
     "moves": [
      "Bug Bite",
-     "Poison Tail",
+     "Poison Jab",
      "Rock Tomb",
      "Spikes"
     ]
@@ -13775,7 +13775,7 @@ backup_data = {
     },
     "moves": [
      "Mega Drain",
-     "Leech Seed",
+     "Icy Wind",
      "Chilling Water",
      "Fake Out"
     ]
@@ -14314,9 +14314,9 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Dive",
+     "Surf",
      "Steel Roller",
-     "Body Slam",
+     "Ice Beam",
      "Rest"
     ]
    }
@@ -14614,10 +14614,10 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Slash",
+     "Return",
      "Play Rough",
      "Fake Out",
-     "Torment"
+     "Sucker Punch"
     ]
    }
   },
@@ -14645,7 +14645,7 @@ backup_data = {
     },
     "moves": [
      "Bulldoze",
-     "Dragon Tail",
+     "Dragon Claw",
      "Aerial Ace",
      "Swagger"
     ]
@@ -15285,7 +15285,7 @@ backup_data = {
    "Box 1": {
     "level": 16,
     "nature": "Timid",
-    "ability": "Poison Point",
+    "ability": "Natural Cure",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -16678,7 +16678,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "return",
+     "Return",
      "Acrobatics",
      "Play Rough",
      "Encore"
@@ -16737,7 +16737,7 @@ backup_data = {
     },
     "moves": [
      "Hammer Arm",
-     "return",
+     "Return",
      "Darkest Lariat",
      "Pain Split"
     ]
@@ -17904,7 +17904,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "return",
+     "Return",
      "Play Rough",
      "Fake Out",
      "U-turn"
@@ -18526,7 +18526,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "return",
+     "Return",
      "Dragon Claw",
      "Earthquake",
      "Roost"
@@ -18886,7 +18886,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "return",
+     "Return",
      "Quick Attack",
      "Earthquake",
      "Spikes"
@@ -19391,7 +19391,7 @@ backup_data = {
     },
     "moves": [
      "Brave Bird",
-     "return",
+     "Return",
      "Steel Wing",
      "U-turn"
     ]
@@ -27077,7 +27077,7 @@ backup_data = {
   },
   "Axew": {
    "bs": {
-    "hp": 46,
+    "hp": 51,
     "at": 87,
     "df": 60,
     "sa": 30,
@@ -28041,11 +28041,11 @@ backup_data = {
   "Cetoddle": {
    "bs": {
     "hp": 108,
-    "at": 68,
-    "df": 45,
+    "at": 73,
+    "df": 50,
     "sa": 30,
-    "sd": 40,
-    "sp": 43
+    "sd": 45,
+    "sp": 48
    },
    "types": [
     "Ice"
@@ -28378,7 +28378,7 @@ backup_data = {
     "df": 62,
     "sa": 58,
     "sd": 63,
-    "sp": 44
+    "sp": 39
    },
    "types": [
     "Water"
@@ -28964,11 +28964,11 @@ backup_data = {
   "Darumaka": {
    "bs": {
     "hp": 70,
-    "at": 90,
-    "df": 45,
+    "at": 85,
+    "df": 50,
     "sa": 15,
-    "sd": 45,
-    "sp": 50
+    "sd": 50,
+    "sp": 60
    },
    "types": [
     "Fire"
@@ -29035,9 +29035,9 @@ backup_data = {
    "bs": {
     "hp": 67,
     "at": 58,
-    "df": 57,
-    "sa": 81,
-    "sd": 67,
+    "df": 52,
+    "sa": 71,
+    "sd": 57,
     "sp": 101
    },
    "types": [
@@ -29348,10 +29348,10 @@ backup_data = {
   },
   "Dottler": {
    "bs": {
-    "hp": 50,
+    "hp": 55,
     "at": 35,
     "df": 80,
-    "sa": 50,
+    "sa": 55,
     "sd": 90,
     "sp": 30
    },
@@ -29628,7 +29628,7 @@ backup_data = {
   "Drilbur": {
    "bs": {
     "hp": 60,
-    "at": 85,
+    "at": 80,
     "df": 40,
     "sa": 30,
     "sd": 45,
@@ -29850,8 +29850,8 @@ backup_data = {
     "at": 65,
     "df": 85,
     "sa": 35,
-    "sd": 35,
-    "sp": 55
+    "sd": 45,
+    "sp": 60
    },
    "types": [
     "Bug",
@@ -30756,11 +30756,11 @@ backup_data = {
   "Floragato": {
    "bs": {
     "hp": 61,
-    "at": 80,
+    "at": 75,
     "df": 63,
     "sa": 60,
     "sd": 63,
-    "sp": 83
+    "sp": 78
    },
    "types": [
     "Grass"
@@ -30881,12 +30881,12 @@ backup_data = {
   },
   "Furfrou": {
    "bs": {
-    "hp": 75,
-    "at": 80,
-    "df": 60,
+    "hp": 70,
+    "at": 70,
+    "df": 50,
     "sa": 65,
     "sd": 90,
-    "sp": 102
+    "sp": 92
    },
    "types": [
     "Normal"
@@ -30897,11 +30897,11 @@ backup_data = {
   },
   "Furret": {
    "bs": {
-    "hp": 85,
-    "at": 76,
-    "df": 64,
+    "hp": 75,
+    "at": 71,
+    "df": 54,
     "sa": 45,
-    "sd": 55,
+    "sd": 50,
     "sp": 90
    },
    "types": [
@@ -31459,10 +31459,10 @@ backup_data = {
   "Glameow": {
    "bs": {
     "hp": 49,
-    "at": 55,
-    "df": 42,
+    "at": 60,
+    "df": 52,
     "sa": 42,
-    "sd": 37,
+    "sd": 42,
     "sp": 85
    },
    "types": [
@@ -31493,11 +31493,11 @@ backup_data = {
   "Gligar": {
    "bs": {
     "hp": 65,
-    "at": 75,
-    "df": 105,
+    "at": 70,
+    "df": 100,
     "sa": 35,
     "sd": 65,
-    "sp": 85
+    "sp": 80
    },
    "types": [
     "Ground",
@@ -33033,8 +33033,8 @@ backup_data = {
    "bs": {
     "hp": 60,
     "at": 62,
-    "df": 63,
-    "sa": 80,
+    "df": 58,
+    "sa": 75,
     "sd": 80,
     "sp": 60
    },
@@ -33905,11 +33905,11 @@ backup_data = {
   },
   "Lombre": {
    "bs": {
-    "hp": 60,
+    "hp": 55,
     "at": 50,
     "df": 50,
     "sa": 60,
-    "sd": 70,
+    "sd": 65,
     "sp": 50
    },
    "types": [
@@ -34599,7 +34599,7 @@ backup_data = {
     "hp": 45,
     "at": 20,
     "df": 50,
-    "sa": 60,
+    "sa": 50,
     "sd": 120,
     "sp": 50
    },
@@ -34705,8 +34705,8 @@ backup_data = {
   "Maschiff": {
    "bs": {
     "hp": 60,
-    "at": 78,
-    "df": 60,
+    "at": 73,
+    "df": 55,
     "sa": 40,
     "sd": 51,
     "sp": 51
@@ -35328,8 +35328,8 @@ backup_data = {
     "hp": 60,
     "at": 40,
     "df": 50,
-    "sa": 75,
-    "sd": 85,
+    "sa": 70,
+    "sd": 70,
     "sp": 95
    },
    "types": [
@@ -35398,8 +35398,8 @@ backup_data = {
     "hp": 40,
     "at": 45,
     "df": 65,
-    "sa": 100,
-    "sd": 120,
+    "sa": 80,
+    "sd": 110,
     "sp": 90
    },
    "types": [
@@ -35507,10 +35507,10 @@ backup_data = {
   "Munchlax": {
    "bs": {
     "hp": 135,
-    "at": 85,
+    "at": 80,
     "df": 40,
     "sa": 40,
-    "sd": 85,
+    "sd": 80,
     "sp": 5
    },
    "types": [
@@ -35561,11 +35561,11 @@ backup_data = {
   "Nacli": {
    "bs": {
     "hp": 55,
-    "at": 55,
-    "df": 75,
+    "at": 65,
+    "df": 90,
     "sa": 35,
-    "sd": 35,
-    "sp": 25
+    "sd": 50,
+    "sp": 30
    },
    "types": [
     "Rock"
@@ -35796,10 +35796,10 @@ backup_data = {
    "bs": {
     "hp": 40,
     "at": 30,
-    "df": 35,
-    "sa": 45,
-    "sd": 40,
-    "sp": 55
+    "df": 40,
+    "sa": 60,
+    "sd": 50,
+    "sp": 70
    },
    "types": [
     "Flying",
@@ -36413,10 +36413,10 @@ backup_data = {
   },
   "Pikachu": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36430,10 +36430,10 @@ backup_data = {
   },
   "Pikachu-Alola": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36447,10 +36447,10 @@ backup_data = {
   },
   "Pikachu-Belle": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36464,10 +36464,10 @@ backup_data = {
   },
   "Pikachu-Cosplay": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36481,10 +36481,10 @@ backup_data = {
   },
   "Pikachu-Hoenn": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36498,10 +36498,10 @@ backup_data = {
   },
   "Pikachu-Kalos": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36515,10 +36515,10 @@ backup_data = {
   },
   "Pikachu-Libre": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36532,10 +36532,10 @@ backup_data = {
   },
   "Pikachu-Original": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36549,10 +36549,10 @@ backup_data = {
   },
   "Pikachu-Partner": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36566,10 +36566,10 @@ backup_data = {
   },
   "Pikachu-PhD": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36583,10 +36583,10 @@ backup_data = {
   },
   "Pikachu-Pop-Star": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36600,10 +36600,10 @@ backup_data = {
   },
   "Pikachu-Rock-Star": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36617,10 +36617,10 @@ backup_data = {
   },
   "Pikachu-Sinnoh": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36651,10 +36651,10 @@ backup_data = {
   },
   "Pikachu-Unova": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36668,10 +36668,10 @@ backup_data = {
   },
   "Pikachu-World": {
    "bs": {
-    "hp": 35,
+    "hp": 45,
     "at": 55,
     "df": 40,
-    "sa": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 90
    },
@@ -36731,8 +36731,8 @@ backup_data = {
     "hp": 60,
     "at": 50,
     "df": 40,
-    "sa": 85,
-    "sd": 75,
+    "sa": 70,
+    "sd": 70,
     "sp": 95
    },
    "types": [
@@ -37076,7 +37076,7 @@ backup_data = {
   "Quaxwell": {
    "bs": {
     "hp": 70,
-    "at": 85,
+    "at": 75,
     "df": 65,
     "sa": 65,
     "sd": 60,
@@ -37524,7 +37524,7 @@ backup_data = {
     "at": 85,
     "df": 95,
     "sa": 30,
-    "sd": 30,
+    "sd": 40,
     "sp": 25
    },
    "types": [
@@ -37632,9 +37632,9 @@ backup_data = {
     "hp": 50,
     "at": 60,
     "df": 45,
-    "sa": 100,
-    "sd": 80,
-    "sp": 65
+    "sa": 80,
+    "sd": 70,
+    "sp": 60
    },
    "types": [
     "Grass",
@@ -38560,12 +38560,12 @@ backup_data = {
   },
   "Silicobra": {
    "bs": {
-    "hp": 52,
-    "at": 57,
+    "hp": 57,
+    "at": 67,
     "df": 75,
     "sa": 35,
     "sd": 50,
-    "sp": 46
+    "sp": 51
    },
    "types": [
     "Ground"
@@ -38937,10 +38937,10 @@ backup_data = {
   },
   "Sizzlipede": {
    "bs": {
-    "hp": 50,
-    "at": 65,
-    "df": 45,
-    "sa": 50,
+    "hp": 60,
+    "at": 70,
+    "df": 50,
+    "sa": 60,
     "sd": 50,
     "sp": 45
    },
@@ -39391,9 +39391,9 @@ backup_data = {
   "Spheal": {
    "bs": {
     "hp": 70,
-    "at": 40,
+    "at": 60,
     "df": 50,
-    "sa": 55,
+    "sa": 65,
     "sd": 50,
     "sp": 25
    },
@@ -40319,12 +40319,12 @@ backup_data = {
   },
   "Toedscool": {
    "bs": {
-    "hp": 40,
-    "at": 40,
-    "df": 35,
+    "hp": 50,
+    "at": 50,
+    "df": 45,
     "sa": 50,
     "sd": 100,
-    "sp": 70
+    "sp": 80
    },
    "types": [
     "Ground",
@@ -40355,10 +40355,10 @@ backup_data = {
   },
   "Togepi": {
    "bs": {
-    "hp": 35,
+    "hp": 55,
     "at": 20,
     "df": 65,
-    "sa": 40,
+    "sa": 55,
     "sd": 65,
     "sp": 20
    },
@@ -40886,12 +40886,12 @@ backup_data = {
   },
   "Venipede": {
    "bs": {
-    "hp": 30,
-    "at": 45,
-    "df": 59,
+    "hp": 50,
+    "at": 60,
+    "df": 69,
     "sa": 30,
     "sd": 39,
-    "sp": 57
+    "sp": 67
    },
    "types": [
     "Bug",
@@ -41114,10 +41114,10 @@ backup_data = {
   },
   "Vivillon": {
    "bs": {
-    "hp": 80,
+    "hp": 70,
     "at": 52,
     "df": 50,
-    "sa": 90,
+    "sa": 75,
     "sd": 50,
     "sp": 89
    },
@@ -41133,10 +41133,10 @@ backup_data = {
   },
   "Vivillon-Fancy": {
    "bs": {
-    "hp": 80,
+    "hp": 70,
     "at": 52,
     "df": 50,
-    "sa": 90,
+    "sa": 75,
     "sd": 50,
     "sp": 89
    },
@@ -41152,10 +41152,10 @@ backup_data = {
   },
   "Vivillon-Pokeball": {
    "bs": {
-    "hp": 80,
+    "hp": 70,
     "at": 52,
     "df": 50,
-    "sa": 90,
+    "sa": 75,
     "sd": 50,
     "sp": 89
    },
@@ -41516,12 +41516,12 @@ backup_data = {
   },
   "Yungoos": {
    "bs": {
-    "hp": 48,
+    "hp": 53,
     "at": 70,
-    "df": 30,
+    "df": 45,
     "sa": 30,
-    "sd": 30,
-    "sp": 45
+    "sd": 45,
+    "sp": 60
    },
    "types": [
     "Normal"
@@ -41761,12 +41761,12 @@ backup_data = {
   },
   "Zubat": {
    "bs": {
-    "hp": 40,
-    "at": 45,
-    "df": 35,
+    "hp": 60,
+    "at": 60,
+    "df": 40,
     "sa": 30,
     "sd": 40,
-    "sp": 55
+    "sp": 70
    },
    "types": [
     "Poison",
@@ -43631,7 +43631,7 @@ backup_data = {
    "isWind": false
   },
   "Horn Leech": {
-   "basePower": 75,
+   "basePower": 70,
    "type": "Grass",
    "category": "Physical",
    "priority": 0,
@@ -45806,6 +45806,20 @@ backup_data = {
    "category": "Special",
    "priority": 0,
    "makesContact": false,
+   "isPunch": false,
+   "isBite": false,
+   "isBullet": false,
+   "isSound": false,
+   "isPulse": false,
+   "isSword": false,
+   "isWind": false
+  },
+  "Take Down": {
+   "basePower": 75,
+   "type": "Normal",
+   "category": "Physical",
+   "priority": 0,
+   "makesContact": true,
    "isPunch": false,
    "isBite": false,
    "isBullet": false,
