@@ -172,7 +172,7 @@ backup_data = {
     },
     "nature": "Timid",
     "moves": [
-     "Swift",
+     "Hyper Voice",
      "Hex",
      "Calm Mind",
      "Will-O-Wisp"
@@ -244,7 +244,7 @@ backup_data = {
     },
     "nature": "Calm",
     "moves": [
-     "Sludge",
+     "Sludge Bomb",
      "Dark Pulse",
      "Toxic",
      "Protect"
@@ -513,7 +513,7 @@ backup_data = {
     "battle_type": "Singles",
     "reward_item": "",
     "form": "",
-    "item": "Lum Berry",
+    "item": "Eject Button",
     "ivs": {
      "hp": 31,
      "at": 31,
@@ -535,7 +535,7 @@ backup_data = {
      "Karate Chop",
      "Beat Up",
      "U-turn",
-     "Seismic Toss"
+     "Acrobatics"
     ],
     "sub_index": 0,
     "ability": "Defiant"
@@ -12506,12 +12506,12 @@ backup_data = {
     "nature": "Timid",
     "moves": [
      "Boomburst",
-     "Hurricane",
+     "Draco Meteor",
      "U-turn",
      "Heat Wave"
     ],
     "sub_index": 3,
-    "ability": "Dragonize"
+    "ability": "Aerilate"
    }
   },
   "Latios": {
@@ -13725,7 +13725,7 @@ backup_data = {
    "Box 1": {
     "level": 16,
     "nature": "Timid",
-    "ability": "Infiltrator",
+    "ability": "Aerilate",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -13744,7 +13744,7 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Air Slash",
+     "Hyper Voice",
      "Dragon Pulse",
      "U-turn",
      "Tailwind"
@@ -13865,7 +13865,7 @@ backup_data = {
     },
     "moves": [
      "X-Scissor",
-     "Shadow Claw",
+     "Rock Slide",
      "Counter",
      "Stealth Rock"
     ]
@@ -14294,7 +14294,7 @@ backup_data = {
   "Spheal": {
    "Box 1": {
     "level": 16,
-    "nature": "Adamant",
+    "nature": "Quiet",
     "ability": "Thick Fat",
     "item": null,
     "ivs": {
@@ -14884,8 +14884,8 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Skitter Smack",
-     "Burn Up",
+     "First Impression",
+     "Fire Lash",
      "Scorching Sands",
      "Brutal Swing"
     ]
@@ -15124,8 +15124,8 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Water Pulse",
-     "Shock Wave",
+     "Scald",
+     "Shadow Ball",
      "Icy Wind",
      "Swagger"
     ]
@@ -27736,7 +27736,7 @@ backup_data = {
   "Bronzor": {
    "bs": {
     "hp": 57,
-    "at": 24,
+    "at": 39,
     "df": 86,
     "sa": 24,
     "sd": 86,
@@ -29035,9 +29035,9 @@ backup_data = {
    "bs": {
     "hp": 67,
     "at": 58,
-    "df": 52,
+    "df": 47,
     "sa": 71,
-    "sd": 57,
+    "sd": 52,
     "sp": 101
    },
    "types": [
@@ -29847,10 +29847,10 @@ backup_data = {
   "Dwebble": {
    "bs": {
     "hp": 50,
-    "at": 65,
-    "df": 85,
+    "at": 75,
+    "df": 105,
     "sa": 35,
-    "sd": 45,
+    "sd": 55,
     "sp": 60
    },
    "types": [
@@ -30844,9 +30844,9 @@ backup_data = {
   },
   "Frillish": {
    "bs": {
-    "hp": 55,
+    "hp": 70,
     "at": 40,
-    "df": 50,
+    "df": 60,
     "sa": 65,
     "sd": 85,
     "sp": 40
@@ -35560,11 +35560,11 @@ backup_data = {
   },
   "Nacli": {
    "bs": {
-    "hp": 55,
-    "at": 65,
+    "hp": 70,
+    "at": 75,
     "df": 90,
     "sa": 35,
-    "sd": 50,
+    "sd": 70,
     "sp": 30
    },
    "types": [
@@ -35797,9 +35797,9 @@ backup_data = {
     "hp": 40,
     "at": 30,
     "df": 40,
-    "sa": 60,
+    "sa": 70,
     "sd": 50,
-    "sp": 70
+    "sp": 90
    },
    "types": [
     "Flying",
@@ -35807,7 +35807,7 @@ backup_data = {
    ],
    "abilities": {
     "0": "Frisk",
-    "1": "Infiltrator",
+    "1": "Aerilate",
     "2": "Telepathy"
    }
   },
@@ -35825,7 +35825,7 @@ backup_data = {
     "Dragon"
    ],
    "abilities": {
-    "0": "Dragonize",
+    "0": "Aerilate",
     "1": "Infiltrator",
     "2": "Telepathy"
    }
@@ -38938,7 +38938,7 @@ backup_data = {
   "Sizzlipede": {
    "bs": {
     "hp": 60,
-    "at": 70,
+    "at": 80,
     "df": 50,
     "sa": 60,
     "sd": 50,
@@ -39390,10 +39390,10 @@ backup_data = {
   },
   "Spheal": {
    "bs": {
-    "hp": 70,
+    "hp": 100,
     "at": 60,
     "df": 50,
-    "sa": 65,
+    "sa": 70,
     "sd": 50,
     "sp": 25
    },
@@ -40266,11 +40266,11 @@ backup_data = {
   "Thwackey": {
    "bs": {
     "hp": 70,
-    "at": 85,
+    "at": 75,
     "df": 70,
     "sa": 55,
     "sd": 60,
-    "sp": 80
+    "sp": 70
    },
    "types": [
     "Grass"
@@ -40319,10 +40319,10 @@ backup_data = {
   },
   "Toedscool": {
    "bs": {
-    "hp": 50,
-    "at": 50,
+    "hp": 55,
+    "at": 55,
     "df": 45,
-    "sa": 50,
+    "sa": 55,
     "sd": 100,
     "sp": 80
    },
@@ -41119,7 +41119,7 @@ backup_data = {
     "df": 50,
     "sa": 75,
     "sd": 50,
-    "sp": 89
+    "sp": 79
    },
    "types": [
     "Bug",
@@ -41138,7 +41138,7 @@ backup_data = {
     "df": 50,
     "sa": 75,
     "sd": 50,
-    "sp": 89
+    "sp": 79
    },
    "types": [
     "Bug",
@@ -41157,7 +41157,7 @@ backup_data = {
     "df": 50,
     "sa": 75,
     "sd": 50,
-    "sp": 89
+    "sp": 79
    },
    "types": [
     "Bug",
@@ -41370,9 +41370,9 @@ backup_data = {
   },
   "Wingull": {
    "bs": {
-    "hp": 40,
+    "hp": 45,
     "at": 30,
-    "df": 30,
+    "df": 55,
     "sa": 55,
     "sd": 30,
     "sp": 85
@@ -41761,12 +41761,12 @@ backup_data = {
   },
   "Zubat": {
    "bs": {
-    "hp": 60,
-    "at": 60,
-    "df": 40,
+    "hp": 70,
+    "at": 70,
+    "df": 50,
     "sa": 30,
-    "sd": 40,
-    "sp": 70
+    "sd": 50,
+    "sp": 85
    },
    "types": [
     "Poison",
@@ -42379,20 +42379,6 @@ backup_data = {
    "isPunch": false,
    "isBite": false,
    "isBullet": true,
-   "isSound": false,
-   "isPulse": false,
-   "isSword": false,
-   "isWind": false
-  },
-  "Burn Up": {
-   "basePower": 130,
-   "type": "Fire",
-   "category": "Special",
-   "priority": 0,
-   "makesContact": false,
-   "isPunch": false,
-   "isBite": false,
-   "isBullet": false,
    "isSound": false,
    "isPulse": false,
    "isSword": false,
@@ -45296,20 +45282,6 @@ backup_data = {
    "isSword": false,
    "isWind": false
   },
-  "Shock Wave": {
-   "basePower": 60,
-   "type": "Electric",
-   "category": "Special",
-   "priority": 0,
-   "makesContact": false,
-   "isPunch": false,
-   "isBite": false,
-   "isBullet": false,
-   "isSound": false,
-   "isPulse": false,
-   "isSword": false,
-   "isWind": false
-  },
   "Signal Beam": {
    "basePower": 75,
    "type": "Bug",
@@ -45350,20 +45322,6 @@ backup_data = {
    "isSound": false,
    "isPulse": false,
    "isSword": true,
-   "isWind": false
-  },
-  "Sludge": {
-   "basePower": 65,
-   "type": "Poison",
-   "category": "Special",
-   "priority": 0,
-   "makesContact": false,
-   "isPunch": false,
-   "isBite": false,
-   "isBullet": false,
-   "isSound": false,
-   "isPulse": false,
-   "isSword": false,
    "isWind": false
   },
   "Sludge Bomb": {
@@ -45793,20 +45751,6 @@ backup_data = {
    "priority": 0,
    "makesContact": true,
    "isPunch": true,
-   "isBite": false,
-   "isBullet": false,
-   "isSound": false,
-   "isPulse": false,
-   "isSword": false,
-   "isWind": false
-  },
-  "Swift": {
-   "basePower": 60,
-   "type": "Normal",
-   "category": "Special",
-   "priority": 0,
-   "makesContact": false,
-   "isPunch": false,
    "isBite": false,
    "isBullet": false,
    "isSound": false,
