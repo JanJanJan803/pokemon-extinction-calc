@@ -1071,7 +1071,7 @@ backup_data = {
     },
     "nature": "Careful",
     "moves": [
-     "Razor Leaf",
+     "Grassy Glide",
      "Knock Off",
      "Fake Out",
      "Low Kick"
@@ -15255,7 +15255,7 @@ backup_data = {
    "Box 1": {
     "level": 16,
     "nature": "Bold",
-    "ability": "Lightning Rod",
+    "ability": "Plus",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -30844,7 +30844,7 @@ backup_data = {
   },
   "Frillish": {
    "bs": {
-    "hp": 70,
+    "hp": 60,
     "at": 40,
     "df": 60,
     "sa": 65,
@@ -30898,7 +30898,7 @@ backup_data = {
   "Furret": {
    "bs": {
     "hp": 75,
-    "at": 71,
+    "at": 66,
     "df": 54,
     "sa": 45,
     "sd": 50,
@@ -33031,7 +33031,7 @@ backup_data = {
   },
   "Ivysaur": {
    "bs": {
-    "hp": 60,
+    "hp": 55,
     "at": 62,
     "df": 58,
     "sa": 75,
@@ -37629,7 +37629,7 @@ backup_data = {
   },
   "Roselia": {
    "bs": {
-    "hp": 50,
+    "hp": 40,
     "at": 60,
     "df": 45,
     "sa": 80,
@@ -38939,8 +38939,8 @@ backup_data = {
    "bs": {
     "hp": 60,
     "at": 80,
-    "df": 50,
-    "sa": 60,
+    "df": 65,
+    "sa": 80,
     "sd": 50,
     "sp": 45
    },
@@ -40358,7 +40358,7 @@ backup_data = {
     "hp": 55,
     "at": 20,
     "df": 65,
-    "sa": 55,
+    "sa": 65,
     "sd": 65,
     "sp": 20
    },
