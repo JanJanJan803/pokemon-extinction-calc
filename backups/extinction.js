@@ -14354,8 +14354,8 @@ backup_data = {
   "Togepi": {
    "Box 1": {
     "level": 16,
-    "nature": "Bold",
-    "ability": "Super Luck",
+    "nature": "Modest",
+    "ability": "Serene Grace",
     "item": null,
     "ivs": {
      "hp": 31,
@@ -14374,10 +14374,10 @@ backup_data = {
      "sp": 0
     },
     "moves": [
-     "Hyper Voice",
-     "Dazzling Gleam",
+     "Mystical Fire",
+     "Moonblast",
      "Extrasensory",
-     "Yawn"
+     "Thunder Wave"
     ]
    }
   },
@@ -15306,7 +15306,7 @@ backup_data = {
     "moves": [
      "Venoshock",
      "Magical Leaf",
-     "Shadow Ball",
+     "Hex",
      "Toxic"
     ]
    }
@@ -40355,7 +40355,7 @@ backup_data = {
   },
   "Togepi": {
    "bs": {
-    "hp": 55,
+    "hp": 65,
     "at": 20,
     "df": 65,
     "sa": 65,
