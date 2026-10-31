@@ -14864,7 +14864,7 @@ backup_data = {
   "Sizzlipede": {
    "Box 1": {
     "level": 16,
-    "nature": "Naive",
+    "nature": "Jolly",
     "ability": "Flame Body",
     "item": null,
     "ivs": {
@@ -14886,7 +14886,7 @@ backup_data = {
     "moves": [
      "First Impression",
      "Fire Lash",
-     "Scorching Sands",
+     "Power Whip",
      "Brutal Swing"
     ]
    }
@@ -38939,9 +38939,9 @@ backup_data = {
    "bs": {
     "hp": 60,
     "at": 80,
-    "df": 65,
-    "sa": 80,
-    "sd": 50,
+    "df": 55,
+    "sa": 50,
+    "sd": 55,
     "sp": 45
    },
    "types": [
